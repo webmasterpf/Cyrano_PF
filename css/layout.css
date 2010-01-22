@@ -21,10 +21,10 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
 	font-size: 12px;
-	background-color: #FFF;
-	color: #000;
+	background-color: white;
+	color: grey;
 }
 
  /*------------------------------------------------------*
@@ -43,9 +43,9 @@ body {
 #header{
 	margin:0 auto;
 	padding:0;
-	width:990px;
+	width:980px;
 	height:auto;
-	background-color:#FFCC66;
+	background-color:transparent;
 }
 
 /*Contenu de page  CONTENT */
@@ -53,7 +53,7 @@ body {
 #contentPage {
 	margin:0 auto;
 	padding:0;
-	width: 990px;
+	width: 980px;
 	background-color:#CCC;
 }
 #content-inner,#left-content,#right-content{
@@ -63,7 +63,7 @@ height: 100%;
 #content-top{
 	margin:0 auto;
 	padding:5px;
-	width:590px;
+	width:580px;
 	height:auto;
 	background-color: #999;
 	}
@@ -87,7 +87,7 @@ height: 100%;
 }
 /*inner content*/
 #content-inner{
-width:590px;
+width:580px;
 margin:0 auto;
 float:left;
 background-color:blue;
@@ -97,7 +97,7 @@ background-color:blue;
 	float:left;
 	position:relative;
 	background-color:yellow;
-	width:590px;
+	width:580px;
 	padding:5px;
 }
 .swftools-wrapper wijering-imagerotator{
@@ -108,16 +108,25 @@ border: 1px solid #000;
 /*PIED DE CONTENU*/
 #content-bottom{
 background:#C0c0c0;
-width:590px;
+width:580px;
 }
 
 /*Bas de page  FOOTER*/
 
 #footer{
 	margin:0 auto;
-	padding:10px 0;
-	width:990px;
-	background-color:#666;
-	text-align: center;
-	color: #FFF;
+	padding:5px 0;
+	width:980px;
+	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+	text-align: left;
+	color: #9898a6;
 }
+
+#footer a{
+color: #9898a6;
+text-decoration:none;
+}
+#footer a:hover{
+color: #000000;
+}
+/**----Fin FOOTER---***/

@@ -13,9 +13,9 @@ stylesheets[all][] = css/nice_menus_default.css
 
 
 regions[header] = Header
-regions[menuHaut] = Menu Header
-regions[iconeNav] = Navigation par icones
-regions[edito] = Edito
+regions[menuDyn] = Menu Header
+regions[navStatic] = Navigation par icones
+regions[Anim] = Animation Flash
 regions[content_top] = Content top
 regions[left] = Colonne Gauche
 regions[right] = Colonne Droite

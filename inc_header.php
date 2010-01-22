@@ -20,7 +20,7 @@
 	 
 		<div id="header-inner">
 	
-        <div id="headGauche">
+        <div id="headHaut">
 		
           <div id="logoHead">
 	           <?php if (!empty($logo)): ?>
@@ -29,40 +29,37 @@
 	       </div>   
 		   
          <div id="menuImg">
-              <?php if (!empty($navPictos)): ?>
-		           <?php print $navPictos; ?>
+              <?php if (!empty($navStatic)): ?>
+		           <?php print $navStatic; ?>
 	          <?php endif; ?>
           </div>
 
-          </div><!-- /headGauche -->
-
+          </div><!-- /headHaut -->
+		 <div id="headBas">
+		 
+		 <?php if (!empty($site_slogan)): ?>
+            <div id="site-slogan">
+			<?php print $site_slogan; ?>
+			</div><!-- /site-slogan -->
+          <?php endif; ?>
+		  </br>
           <div id="menuHead">
-	        
-	    <?php if (!empty($menuHaut)): ?>
-			   <?php print $menuHaut; ?>
-        <?php endif; ?>
+	        <?php if (!empty($menuDyn)): ?>
+			   <?php print $menuDyn; ?>
+            <?php endif; ?>
 
-          </div>
+          </div><!-- /menuHead -->
+		  </br>
+		  <div id="headSearch">
+		  <?php if (!empty($search_box)): ?>
+		  <?php print $search_box ?>
+		  <?php endif; ?>
+		  </div><!-- /recherche -->
+		</div><!-- /headBas -->
           
         
 
-        <div id="name-and-slogan">
-          <?php if (!empty($site_name)): ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-          <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan" style="display:none;"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> 
-        
-         <?php if ($header): ?>
-        <div id="header-region">
-          <?php print $header; ?>
-        </div>
-      <?php endif; ?>
-
+     
       
       
 	  </div> <!-- /header-inner -->

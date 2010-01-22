@@ -3,53 +3,54 @@ Template page d'accueil custom
  */
 #header-inner{
 	margin:auto;
-	height:259px;
-	width:990px;
+	height:auto;
+	width:980px;
 	background:none;
 	
 
 }
 /*Partie gauche du header*/
-#headGauche{
-	width:200px;
-	height:259px;
-	float:left;
+#headHaut{
+	width:980px;
+	height:55px;
+	float:none;
 	display:block;
 	margin:0;
 	
 }
 #logoHead{
-	height:209px !important;
-	width:200px;
+	height:55px !important;
+	width:335px;
 	float:left;
 	display:block;
 	margin:0;
 }
 #logoHead img{
-	height:133px !important;
-	width:198px;
-	padding:40px 0 33px;
+	height:55px !important;
+	width:335px;
+	padding:5px 0 33px;
 	margin:0;
 }
 /*Menu pictos header*/
 #menuImg{
-	height:50px;
-	width:200px;
-	float:left;
-	background:#f97d0d;
+	height:30px;
+	width:auto;
+	float:right;
+	background:transparent;
+	padding:30px 0 0;
 
 }
 #navPicto{
 border:0;
-height:48px;
-width:200px;
+height:25px;
+width:430px;
 
 }
 
 #navPicto td{
 border:0;
-height:39px;
-width:38px;
+height:25px;
+width:auto;
 display:block;
 float:left;
 padding:5px;
@@ -59,22 +60,35 @@ padding:5px;
 	border:0;
 	}
 #navPicto a :hover{}
-
+/************PARTIE BASSE**************/
+#headBas{
+	width:980px;
+	height:110px;
+	float:none;
+	display:block;
+	margin:5px 0 0 0;
+	background:url(../images/bg_menu_rp.gif) repeat-x top left;
+	
+}
 /*Menu principal haut du header*/
 #menuHead{
-	float:left;
-	height:59px;
-	padding:0;
-	width:790px;
-	background:#DFDFDF;
+	float:none;
+	height:auto;
+	padding:20px 0 0 0;
+	width:980px;
+	background:url(../images/bg_header.jpg) no-repeat top left;
 	
+	
+}
+#headSearch{
+float:right;
+margin:55px 0 0;
 }
 
 #name-and-slogan{
-	height:200px;
-	width:790px;
+	height:20px;
+	width:980px;
 	vertical-align:bottom;
-	background:url(../images/bg_header.jpg) no-repeat top left;
 	float:right;
 }
 #site-name a{
@@ -87,6 +101,18 @@ text-transform: uppercase;
 padding:160px 0 0 10px;
 margin:0;
 }
+#site-slogan{
+display:block;
+height: 20px;
+width: auto;
+}
+
+#site-slogan a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
 
 /*FIN CSS HEADER*/
 /*****************/
@@ -97,7 +123,9 @@ margin:0;
 	clear:none;
 	
 }
+#content-annonce{
 
+}
 #contentHome{
 	width:50%;
 	float:left;
@@ -111,16 +139,17 @@ text-decoration:none;
 #contentHome a:hover{
 text-decoration:underline;
 }
-#contentEdito{
+#contentAnim{
 	width:50%;
 	float:left;
 	background:none;
 }
 
-#textEdito{
+#textAnim{
 background: none;
 color: black;
-padding: 10px;
+padding: 0px;
+text-align:right;
 }
 /*Table pour lycees sur accueil*/
 tbody{

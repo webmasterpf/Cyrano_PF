@@ -13,7 +13,7 @@
           <?php endif; ?>
 
           <?php if ($breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
-            <div id="content-header">
+            <div id="content-annonce">
 
               
 
@@ -52,17 +52,17 @@
 	   <!-- ______________________ EDITO DROITE _______________________ -->
       
 	  
-	  <div id="contentEdito">
+	  <div id="contentAnim">
        
 		
-		  <?php if ($edito): ?>
-        <div id="textEdito">
+		  <?php if ($Anim): ?>
+        <div id="textAnim">
 		
-          <?php print $edito; ?>
-        </div><!-- /#textEdito -->
+          <?php print $Anim; ?>
+        </div><!-- /#textAnim -->
         <?php endif; ?>
 		
-      </div><!-- /#contentEdito -->
+      </div><!-- /#contentAnim -->
 	  
    
 	<br clear="all"/>

@@ -13,8 +13,11 @@
           <?php endif; ?>
 
           <?php if ($breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
-            <div id="content-annonce">
-
+            <div id="content-areaHaut">
+			
+			  <?php if ($annonceImg): ?>
+                 <div id="annonceImg"><?php print $annonceImg; ?></div>
+              <?php endif; ?>
               
 
               <?php if ($title): ?>
@@ -52,12 +55,10 @@
 	   <!-- ______________________ EDITO DROITE _______________________ -->
       
 	  
-	  <div id="contentAnim">
-       
+	  <div id="contentAnim"> 
 		
 		  <?php if ($Anim): ?>
-        <div id="textAnim">
-		
+        <div id="textAnim">		
           <?php print $Anim; ?>
         </div><!-- /#textAnim -->
         <?php endif; ?>

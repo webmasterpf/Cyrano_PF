@@ -42,14 +42,14 @@
 			<?php print $site_slogan; ?>
 			</div><!-- /site-slogan -->
           <?php endif; ?>
-		  </br>
+		
           <div id="menuHead">
 	        <?php if (!empty($menuDyn)): ?>
 			   <?php print $menuDyn; ?>
             <?php endif; ?>
 
           </div><!-- /menuHead -->
-		  </br>
+		 
 		  <div id="headSearch">
 		  <?php if (!empty($search_box)): ?>
 		  <?php print $search_box ?>

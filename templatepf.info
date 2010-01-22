@@ -15,6 +15,7 @@ stylesheets[all][] = css/nice_menus_default.css
 regions[header] = Header
 regions[menuDyn] = Menu Header
 regions[navStatic] = Navigation par icones
+regions[annonceImg] = Image pour annonce
 regions[Anim] = Animation Flash
 regions[content_top] = Content top
 regions[left] = Colonne Gauche

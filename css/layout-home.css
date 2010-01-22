@@ -28,7 +28,7 @@ Template page d'accueil custom
 #logoHead img{
 	height:55px !important;
 	width:335px;
-	padding:5px 0 33px;
+	padding:0;
 	margin:0;
 }
 /*Menu pictos header*/
@@ -74,15 +74,15 @@ padding:5px;
 #menuHead{
 	float:none;
 	height:auto;
-	padding:20px 0 0 0;
+	padding:0;
 	width:980px;
-	background:url(../images/bg_header.jpg) no-repeat top left;
+	
 	
 	
 }
 #headSearch{
-float:right;
-margin:55px 0 0;
+text-align:right;
+margin:40px 0 0;
 }
 
 #name-and-slogan{
@@ -105,6 +105,8 @@ margin:0;
 display:block;
 height: 20px;
 width: auto;
+padding:0px 0 0 40px;
+color: white;
 }
 
 #site-slogan a{
@@ -118,12 +120,20 @@ text-transform: uppercase;
 /*****************/
 #mainPage{
 	margin:auto;
-	background:#ffffff url(../images/bg_colonne_g_rp.jpg) repeat-y top left;
-	width:990px;
+	width:980px;
 	clear:none;
 	
 }
-#content-annonce{
+#content-areaHaut{
+height: auto;
+width: auto;
+margin:0;
+padding:0;
+}
+#annonceImg{
+display: block;
+width: 530px;
+height: 160px;
 
 }
 #contentHome{
@@ -158,7 +168,7 @@ padding:0;
 border:0;
 }
 #tb_lycees{
-width:990px;
+width:980px;
 margin: 0 auto;
 padding:0;
 }

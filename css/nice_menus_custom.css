@@ -180,10 +180,10 @@ ul.nice-menu-down li a,ul.nice-menu-down .menuparent a {  /*Pour les rubriques a
 	background: #ebebeb;
 	color:#156597;
 	border: 0;
-	width:100px;  
 	height: 30px;
 	display: block;	
-	padding:13px 3px ;
+	padding:13px 4px;
+	width:130px;
 	
 }
 ul.nice-menu-down li a:hover {

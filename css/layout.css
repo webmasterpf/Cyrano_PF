@@ -1,0 +1,123 @@
+/**
+ * @file
+ * Stark layout method
+ *
+ * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
+ * Stark theme itself has no styling, except just enough CSS to arrange the page
+ * in a traditional "Header, sidebars, content, and footer" layout.
+ *
+ * This layout method works reasonably well, but shouldn't be used on a
+ * production site because it can break. For example, if an over-large image
+ * (one that is wider than 20% of the viewport) is in a sidebar, the entire
+ * #main content can shift completely below the sidebar.
+ */
+
+html {
+ margin: 0;
+ padding: 0;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFF;
+	color: #000;
+}
+
+ /*------------------------------------------------------*
+  *--------    CSS BLOCS     						 ----*
+  *------------------------------------------------------*/
+
+
+#general{
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+
+/*Haut de page  HEADER*/
+
+#header{
+	margin:0 auto;
+	padding:0;
+	width:990px;
+	height:auto;
+	background-color:#FFCC66;
+}
+
+/*Contenu de page  CONTENT */
+
+#contentPage {
+	margin:0 auto;
+	padding:0;
+	width: 990px;
+	background-color:#CCC;
+}
+#content-inner,#left-content,#right-content{
+height: 100%;
+}
+/*//////SOUS ENTETE/////*/
+#content-top{
+	margin:0 auto;
+	padding:5px;
+	width:590px;
+	height:auto;
+	background-color: #999;
+	}
+	
+/*/// debut des colonnes ///*/
+#left-content{
+	float:left;
+	position:relative;
+	background-color:#00CC99;
+	width:200px;
+	left:0px;
+}
+
+/*/// partie de droite ///*/
+#right-content{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+/*inner content*/
+#content-inner{
+width:590px;
+margin:0 auto;
+float:left;
+background-color:blue;
+}
+/*///    partie du centre   ///*/
+#middle-content{
+	float:left;
+	position:relative;
+	background-color:yellow;
+	width:590px;
+	padding:5px;
+}
+.swftools-wrapper wijering-imagerotator{
+margin: 0 auto;
+width: auto;
+border: 1px solid #000;
+}
+/*PIED DE CONTENU*/
+#content-bottom{
+background:#C0c0c0;
+width:590px;
+}
+
+/*Bas de page  FOOTER*/
+
+#footer{
+	margin:0 auto;
+	padding:10px 0;
+	width:990px;
+	background-color:#666;
+	text-align: center;
+	color: #FFF;
+}

@@ -7,8 +7,8 @@ stylesheets[all][] = css/layout-home.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/global.css
 stylesheets[all][] = css/nice_menus_custom.css
+stylesheets[all][] = css/nice_menu_down-horiz-children.css
 stylesheets[all][] = css/nice_menus_default.css
-
 
 
 

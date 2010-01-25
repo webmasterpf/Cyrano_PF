@@ -166,13 +166,16 @@ ul.nice-menu-down {
   float: left; /* LTR */
   border: 0;
 }
-
+/* override nice_menus.css */
+ul.nice-menu-down li {
+   position: static;
+}
 ul.nice-menu-down li {
 	text-align:center;
 	margin:0 2px 0 0;
 	font-family: Arial;
 	font-size: 10px;
-	list-style:none;
+	/*list-style:none;*/
 	
 }
 ul.nice-menu-down li a,ul.nice-menu-down .menuparent a {  /*Pour les rubriques avec sous rubriques*/
@@ -196,6 +199,8 @@ ul.nice-menu-down li a:hover {
 ul.nice-menu-down li.menuparent ul {
 margin: 50px 0 0 0;
 background: none;
+
+
 
 }
  
@@ -225,7 +230,7 @@ ul.nice-menu-down li.menuparent ul li a:hover{
 display:none;
 }
 /**************************/
-/*Style sous sous rubriques*/
+/*Style sous sous rubriques - downdown*/
 ul.nice-menu-down li.menuparent ul li.menuparent ul{
 margin:0;
 background: none;
@@ -258,7 +263,7 @@ ul.nice-menu-down ul {
 }
 
 ul.nice-menu-down ul li {
-  clear: both;
+  clear: none;
 
 }
 

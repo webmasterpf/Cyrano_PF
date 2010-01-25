@@ -5,6 +5,7 @@ HORIZONTAL (downdown) menus
 ul.nice-menu-downdown {
   width: 980px; /* width of the 1st level menu horizontal line */
   float: left;
+  background: #EFEFEF;
 }
 
 ul.nice-menu-downdown li {
@@ -60,13 +61,13 @@ ul.nice-menu-downdown li a {
 ul.nice-menu-downdown li a:hover {
 	text-decoration: none;
 	background: none;
-	color:#ebebeb;
+	color:#E85134;
 	border: 0;
 }
 /*Style sous rubriques horizontales downdown*/
 
 ul.nice-menu-downdown li.menuparent ul {
-margin: 40px 0 0 0;
+margin: 50px 0 0 0;
 background: none;
 text-align: center;
 

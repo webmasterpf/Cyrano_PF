@@ -76,7 +76,7 @@ ul.nice-menu a {
 ul.nice-menu ul,
 /* Repeat for Garland header. */
 #header-region ul.nice-menu ul {
-  top: 1.8em;
+  top: 0.8em;/*réglage de la marge pour la sous rubrique*/
   left: -1px; /* LTR */
   border: 0;
   border-top: 0;

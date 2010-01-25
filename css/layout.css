@@ -63,7 +63,7 @@ height: 100%;
 #content-top{
 	margin:0 auto;
 	padding:5px;
-	width:580px;
+	width:570px;
 	height:auto;
 	background-color: #999;
 	}
@@ -87,7 +87,7 @@ height: 100%;
 }
 /*inner content*/
 #content-inner{
-width:580px;
+width:570px;
 margin:0 auto;
 float:left;
 background-color:blue;
@@ -97,7 +97,7 @@ background-color:blue;
 	float:left;
 	position:relative;
 	background-color:yellow;
-	width:580px;
+	width:570px;
 	padding:5px;
 }
 .swftools-wrapper wijering-imagerotator{
@@ -108,7 +108,7 @@ border: 1px solid #000;
 /*PIED DE CONTENU*/
 #content-bottom{
 background:#C0c0c0;
-width:580px;
+width:570px;
 }
 
 /*Bas de page  FOOTER*/

@@ -13,10 +13,11 @@ stylesheets[all][] = css/nice_menus_default.css
 
 
 regions[header] = Header
-regions[menuDyn] = Menu Header
-regions[navStatic] = Navigation par icones
-regions[annonceImg] = Image pour annonce
-regions[Anim] = Animation Flash
+regions[menuDyn] = Menu Header - Nice Menu
+regions[navStatic] = Navigation par icones - Bloc
+regions[annonceImg] = Image pour annonce - Bloc
+regions[blocLycee] = Acces Lycees - Bloc
+regions[Anim] = Animation Flash - Bloc
 regions[content_top] = Content top
 regions[left] = Colonne Gauche
 regions[right] = Colonne Droite

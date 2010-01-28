@@ -12,7 +12,7 @@
             </div> <!-- /#content-top -->
           <?php endif; ?>
 
-          <?php if ($breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
+          <?php if ($annonceImg || $breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
             <div id="content-areaHaut">
 			
               <?php if ($annonceImg): ?>
@@ -36,10 +36,12 @@
                 <div class="tabs"><?php print $tabs; ?></div>
               <?php endif; ?>
 
-            </div> <!-- /#content-header -->
+            </div> <!-- /#content-areaHaut -->
           <?php endif; ?>
 
-                
+                 <?php if ($blocLycee): ?>
+                 <div id="blocLycee"><?php print $blocLycee; ?></div>
+              <?php endif; ?>
 
          
 
@@ -53,9 +55,7 @@
 	  
 	  <div id="contentAnim"> 		
         <?php if ($Anim): ?>
-            <div id="textAnim">
-          <?php print $Anim; ?>
-            </div><!-- /#textAnim -->
+            <div id="textAnim"><?php print $Anim; ?></div><!-- /#textAnim -->
         <?php endif; ?>
 		
       </div><!-- /#contentAnim -->

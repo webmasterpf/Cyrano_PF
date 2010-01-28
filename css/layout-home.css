@@ -136,7 +136,7 @@ text-transform: uppercase;
 }
 
 #contentHome{
-	width:50%;
+	width:54%;
 	float:left;
 	background:none;
 	color:black;
@@ -157,11 +157,24 @@ padding:0;
 #annonceImg{
 width: auto;
 height: auto;
+padding:10px 0 0;
+
+}
+#annonceTb{
+width:506px;
+margin: 0 auto;
+padding:0;
+
+}
+#blocLycee{
+width:506px;
+margin: 0 auto;
+padding:0;
 
 }
 
 #contentAnim{
-	width:50%;
+	width:46%;
 	float:left;
 	background:none;
 }
@@ -178,8 +191,8 @@ margin:0;
 padding:0;
 border:0;
 }
-#tb_lycees{
-width:980px;
+#table_acces_lycee{
+width:506px;
 margin: 0 auto;
 padding:0;
 }

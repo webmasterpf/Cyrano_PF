@@ -63,9 +63,9 @@ height: 100%;
 #content-top{
 	margin:0 auto;
 	padding:5px;
-	width:570px;
+	width:500px;
 	height:auto;
-	background-color: #999;
+	background-color: red;
 	}
 	
 /*/// debut des colonnes ///*/

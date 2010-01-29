@@ -67,12 +67,19 @@ padding: 5px;
 }
 /**style du fil d'ariane**/
 .breadcrumb {
-color:#C0c0c0;
+color:#d63e2a;
 text-decoration:none;
 }
+##ariane{
+    display: block;
+    width: auto;
+background: white;
+}
+
 .breadcrumb a{
-color:#FFF;
+color:#4e4d5e;
 text-decoration:none;
+background: white;
 }
 .breadcrumb a:hover{
 color:#000;

@@ -1,27 +1,32 @@
 <?php include "inc_header.php"; ?>  
  <!-- ______________________ LAYOUT PAGE LYCEE _______________________ -->
+ <?php
+$page_lycee_ok = 1;
+?>
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
-      
-      
+      <!-- ______________________ CONTENT TOP _______________________ -->
+      <?php if ($breadcrumb ||$content_top ): ?>
+            <div id="content-top-pageLycee">
+			<span id="ariane"> <?php print $breadcrumb; ?></span>
+
+              <?php print $content_top; ?>
+            </div> <!-- /#content-top -->
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			<?php include "inc_left_content.php";?>
-        
-        <div id="content-inner" class="inner column lycee">
-		
-			<?php if ($breadcrumb || $title ||$content_top ): ?>
-            <div id="content-top">
-			 <?php print $breadcrumb; ?>
-			 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-              <?php print $content_top; ?>
-            </div> <!-- /#content-top -->
-            <?php endif; ?>
+			<?php if ($left): ?>
+         <div id="left-content-pageLycee">
+            <?php print $left; ?>
+          </div>
+             <?php endif; ?> <!-- /sidebar-left -->
 
+		<!--fin du contenu gauche -->
+        
+        <div id="content-inner-pageLycee">
+		
+			
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
 
@@ -40,7 +45,10 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-lycee">
+          <div id="middle-content-pageLycee">
+               <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -59,8 +67,13 @@
 
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
-       
-         <!--pas de colonne droite -->
+
+                   <!-- colonne droite pageLycee -->
+          <?php if ($right): ?>
+            <div id="right-content-pageLycee">
+              <?php print $right; ?>
+            </div>
+        <?php endif; ?> <!-- /colonne droite pageLycee -->
 		
 
    
@@ -74,5 +87,5 @@
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>
-    
+         <?php endif; ?>
      

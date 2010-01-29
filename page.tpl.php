@@ -3,8 +3,8 @@
   
       <div id="contentPage">
       
-      <!-- un commentaire test de commit git -->
-	  <!-- un commentaire test de commit git depuis vistaHome-->
+      <!-- page.tpl.php -->
+	  
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
@@ -20,7 +20,7 @@
 		
 			<?php if ($breadcrumb || $title ||$content_top ): ?>
             <div id="content-top">
-			 <?php print $breadcrumb; ?>
+                <span id="ariane"> <?php print $breadcrumb; ?></span>
 			 <?php if ($title): ?>
                 <h1 class="title"><?php print $title; ?></h1>
               <?php endif; ?>
@@ -71,7 +71,7 @@
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
         <?php if ($right): ?>
-         <!--début du contenu droit -->
+         <!--dï¿½but du contenu droit -->
 		<div id="right-content">
 			
 				

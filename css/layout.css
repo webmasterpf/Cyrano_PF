@@ -90,13 +90,14 @@ height: 100%;
 width:580px;
 margin:0 auto;
 float:left;
-background-color:blue;
+background-color: white;
+color: purple;
 }
 /*///    partie du centre   ///*/
 #middle-content{
 	float:left;
 	position:relative;
-	background-color:yellow;
+	background-color:silver;
 	width:570px;
 	padding:5px;
 }

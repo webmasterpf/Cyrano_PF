@@ -60,14 +60,14 @@ body {
 height: 100%;
 }
 /*//////SOUS ENTETE/////*/
-#content-top{
+/*#content-top{
 	margin:0 auto;
 	padding:5px;
 	width:500px;
 	height:auto;
 	background-color: red;
 	}
-	
+*/
 /*/// debut des colonnes ///*/
 #left-content{
 	float:left;
@@ -100,6 +100,7 @@ color: purple;
 	background-color:silver;
 	width:570px;
 	padding:5px;
+        margin: 0 auto;
 }
 .swftools-wrapper wijering-imagerotator{
 margin: 0 auto;
@@ -138,7 +139,7 @@ margin:0 auto;
 float:left;
 background-color:pink;
 }
-#content-top-pageLycee{
+#content-top, #content-top-pageLycee{
     margin:0 auto;
     padding:5px;
     width:970px;
@@ -177,3 +178,4 @@ background-color:pink;
     padding: 5px;
 
     }
+  

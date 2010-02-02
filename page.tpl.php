@@ -3,7 +3,13 @@
   
       <div id="contentPage">
       
-      <!-- page.tpl.php -->
+          <!-- ______________________ CONTENT TOP _______________________ -->
+      <?php if ($breadcrumb ||$content_top ): ?>
+            <div id="content-top">
+	<span id="ariane"> <?php print $breadcrumb; ?></span>
+
+              <?php print $content_top; ?>
+            </div> <!-- /#content-top -->
 	  
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
@@ -17,16 +23,11 @@
 		<!--fin du contenu gauche -->
         
         <div id="content-inner" class="inner column center">
-		
-			<?php if ($breadcrumb || $title ||$content_top ): ?>
-            <div id="content-top">
-                <span id="ariane"> <?php print $breadcrumb; ?></span>
-			 <?php if ($title): ?>
+		             
+		 <?php if ($title): ?>
                 <h1 class="title"><?php print $title; ?></h1>
               <?php endif; ?>
-              <?php print $content_top; ?>
-            </div> <!-- /#content-top -->
-            <?php endif; ?>
+           
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -84,5 +85,5 @@
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>
-    
+         <?php endif; ?>
      

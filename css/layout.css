@@ -151,7 +151,7 @@ background-color:pink;
 #left-content-pageLycee{
     float:left;
     position:relative;
-    background-color:#00CC99;
+    background-color:#FFF;
     width:340px;
     left:0px;
     padding:5px;
@@ -167,7 +167,7 @@ background-color:pink;
 #right-content-pageLycee{
     float:right;
     position:relative;
-    background-color:#FF66CC;
+    background-color:#FFF;
     width:335px;
     right:0px;
     padding:5px;
@@ -178,4 +178,22 @@ background-color:pink;
     padding: 5px;
 
     }
-  
+ /* LAYOUT PAGE FORMATION*/
+ #middle-content-pageFormation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:645px;
+    padding:5px;
+    border-right: 1px solid #da5714;
+}
+
+#right-content-pageFormation{
+    float:right;
+    position:relative;
+    background-color:white;
+    color: grey;
+    width:314px;
+    right:0px;
+    padding:5px;
+}

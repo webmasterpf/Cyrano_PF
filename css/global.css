@@ -194,4 +194,44 @@ h6 {
 	font-size: 10px;
 }
 
+/*STYLE PAGE LYCEE*/
+#table-formation{
+    width: 320px;
+    border: 0;
 
+
+
+}
+#table-formation tr.diplome{
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px dotted grey;
+
+}
+#table-formation tr.diplome-domaine{
+    color: #9C9DA1;
+
+}
+/*STYLE PAGE LYCEE*/
+.table-liste-formation{
+    width: 500px;
+    background: none;
+
+}
+.view-liste-formation-initiales{
+    background: none;
+    width:auto;
+}
+.views-field-titre-categorie{
+    color: gray;
+    text-align: right;
+
+}
+.tr-table-formations{
+    background: none;
+
+}
+.views-field-table{
+    color:black;
+}

@@ -21,6 +21,7 @@ regions[Anim] = Animation Flash - Bloc
 regions[content_top] = Content top
 regions[left] = Colonne Gauche
 regions[right] = Colonne Droite
+regions[centralBloc] = Zone pour bloc central - View Bloc
 regions[content_bottom] = Content bottom
 regions[content_bottom_home] = Content bottom homepage
 regions[footer_block] = Footer

@@ -17,7 +17,7 @@
         <div id="content-inner" class="inner column center">
 		             
 		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
+                <h1 class="title-formation"><?php print $title; ?></h1>
               <?php endif; ?>
            
 

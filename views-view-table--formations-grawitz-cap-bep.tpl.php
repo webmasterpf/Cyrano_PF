@@ -15,14 +15,14 @@
  * @ingroup views_templates
  */
 ?>
-<table class="table-liste-formation">
+<table class="table-formation">
   <?php if (!empty($title)) : ?>
     <caption><?php print $title; ?></caption>
   <?php endif; ?>
   <thead>
     <tr>
       <?php foreach ($header as $field => $label): ?>
-        <th class="titre-categorie-diplome">
+        <th class="diplome">
           <?php print $label; ?>
         </th>
       <?php endforeach; ?>
@@ -30,9 +30,9 @@
   </thead>
   <tbody>
     <?php foreach ($rows as $count => $row): ?>
-      <tr class="tr-table-formations">
+      <tr class="diplome-domaine"">
         <?php foreach ($row as $field => $content): ?>
-          <td class="views-field views-field-titre-categorie">
+          <td class="views-field views-field-diplome">
             <?php print $content; ?>
           </td>
         <?php endforeach; ?>

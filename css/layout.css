@@ -54,7 +54,7 @@ body {
 	margin:0 auto;
 	padding:0;
 	width: 980px;
-	background-color:#CCC;
+	background: white;/*couleur fond de page content*/
 }
 #content-inner,#left-content,#right-content{
 height: 100%;
@@ -122,6 +122,7 @@ width:570px;
 	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
 	text-align: left;
 	color: #9898a6;
+        height:75px;
 }
 
 #footer a{
@@ -132,21 +133,19 @@ text-decoration:none;
 color: #000000;
 }
 /**----Fin FOOTER---***/
+#content-top, #content-top-pageLycee, #content-top-pageAssociation{
+    margin:0 auto;
+    padding:5px;
+    width:970px;
+    height:auto;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
+   }
 /* LAYOUT PAGE LYCEE*/
 #content-inner-pageLycee{
 width:285px;
 margin:0 auto;
 float:left;
 background-color:pink;
-}
-#content-top, #content-top-pageLycee{
-    margin:0 auto;
-    padding:5px;
-    width:970px;
-    height:auto;
-    background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
-    
-
 }
 #left-content-pageLycee{
     float:left;
@@ -197,3 +196,34 @@ background-color:pink;
     right:0px;
     padding:5px;
 }
+/* LAYOUT PAGE ASSOCIATION*/
+#content-inner-pageAssociation{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:pink;
+}
+#left-content-pageAssociation{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:280px;
+    left:0px;
+    padding:5px;
+}
+#middle-content-pageAssociation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:420px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#right-content-pageAssociation{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:240px;
+    right:0px;
+    padding:5px;
+    }

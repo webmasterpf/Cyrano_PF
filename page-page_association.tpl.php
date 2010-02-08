@@ -1,12 +1,12 @@
 <?php include "inc_header.php"; ?>  
- <!-- ______________________ LAYOUT PAGE LYCEE _______________________ -->
+ <!-- ______________________ LAYOUT PAGE ASSOCIATION _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
       <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top-pageLycee">
+            <div id="content-top-pageAssociation">
 			<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
@@ -14,15 +14,18 @@
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			<?php if ($left): ?>
-         <div id="left-content-pageLycee">
+			
+         <div id="left-content-pageAssociation">
+              <?php if ($title): ?>
+                <h1 class="title-association"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $left; ?>
           </div>
-             <?php endif; ?> <!-- /sidebar-left -->
+             <!-- /sidebar-left -->
 
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner-pageLycee">
+        <div id="content-inner-pageAssociation">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -43,10 +46,8 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pageLycee">
-               <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+          <div id="middle-content-pageAssociation">
+              
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -66,18 +67,18 @@
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
 
-                   <!-- colonne droite pageLycee -->
+                   <!-- colonne droite pageAssociation -->
           <?php if ($right): ?>
-            <div id="right-content-pageLycee">
+            <div id="right-content-pageAssociation">
               <?php print $right; ?>
             </div>
-        <?php endif; ?> <!-- /colonne droite pageLycee -->
+        <?php endif; ?> <!-- /colonne droite pageAssociation -->
 		
 
    
     	 <br clear="all">
           <?php if ($content_bottom): ?>
-            <div id="content-bottom-lycee">
+            <div id="content-bottom-pageAssociation">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>

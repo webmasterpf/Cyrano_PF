@@ -195,38 +195,51 @@ h6 {
 }
 
 /*STYLE PAGE LYCEE*/
-#table-formation{
+.table-formation{
     width: 320px;
     border: 0;
-
-
-
+    text-align:right;
 }
-#table-formation tr.diplome{
+.table-formation .diplome{
     text-transform: capitalize;
     color: black;
     font-weight: bold;
-    border-bottom: 1px dotted grey;
+    border-bottom: 1px dotted gray;
 
 }
-#table-formation tr.diplome-domaine{
-    color: #9C9DA1;
-
+.views-field-diplome a{
+     color: gray;
+      text-decoration: none;
 }
-/*STYLE PAGE LYCEE*/
+.views-field-diplome a:hover{
+   text-decoration: underline;
+}
+/*STYLE PAGE FORMATIONS INITIALES*/
+.title-formation, .title-association{
+    text-align: center;
+    color: #EA703F;
+}
 .table-liste-formation{
-    width: 500px;
+    width: 630px;/*largeur du tableau contenant les formations*/
     background: none;
-
+    margin: 0 auto;
+    
+}
+.titre-categorie-diplome{
+    border-bottom: 1px dotted gray;
+    color: black;
 }
 .view-liste-formation-initiales{
     background: none;
     width:auto;
 }
-.views-field-titre-categorie{
+.views-field-titre-categorie, .views-field-titre-categorie a{
     color: gray;
     text-align: right;
-
+    text-decoration: none;
+}
+.views-field-titre-categorie a:hover{
+    text-decoration: underline;
 }
 .tr-table-formations{
     background: none;

@@ -196,7 +196,7 @@ background-color:pink;
     right:0px;
     padding:5px;
 }
-/* LAYOUT PAGE ASSOCIATION*/
+/* LAYOUT PAGE ASSOCIATION ET ERREUR*/
 #content-inner-pageAssociation, #content-inner-pageErreur{
 width:auto;
 margin:0 auto;
@@ -219,7 +219,56 @@ background-color:pink;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
+#middle-content-pageAssociation a, #middle-content-pageErreur a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-pageAssociation a:hover, #middle-content-pageErreur a:hover{
+    text-decoration: underline;
+}
 #right-content-pageAssociation, #right-content-pageErreur{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:240px;
+    right:0px;
+    padding:5px;
+    }
+
+/*****************************/
+/* LAYOUT PAGE LOGIN*/
+#content-inner-pageLogin{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:pink;
+}
+#left-content-pageLogin{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:280px;
+    left:0px;
+    padding:5px;
+}
+#middle-content-pageLogin{
+    float:left;
+    position:relative;
+    background-color: green;
+    width:420px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-pageLogin a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-pageLogin a:hover{
+    text-decoration: underline;
+}
+#right-content-pageLogin{
     float:right;
     position:relative;
     background-color:#FFF;

@@ -1,12 +1,12 @@
 <?php include "inc_header.php"; ?>  
- <!-- ______________________ LAYOUT PAGE ERREUR _______________________ -->
+ <!-- ______________________ LAYOUT PAGE LOGIN _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
       <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top-pageErreur">
+            <div id="content-top-pageLogin">
 			<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
@@ -15,7 +15,7 @@
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
 			
-         <div id="left-content-pageErreur">
+         <div id="left-content-pageLogin">
               
             <?php print $left; ?>
           </div>
@@ -23,7 +23,7 @@
 
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner-pageErreur">
+        <div id="content-inner-pageLogin">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -44,7 +44,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-pageErreur">
+          <div id="middle-content-pageLogin">
               
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -65,18 +65,18 @@
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
 
-                   <!-- colonne droite pageErreur -->
+                   <!-- colonne droite pageLogin -->
           <?php if ($right): ?>
-            <div id="right-content-pageErreur">
+            <div id="right-content-pageLogin">
               <?php print $right; ?>
             </div>
-        <?php endif; ?> <!-- /colonne droite pageErreur -->
+        <?php endif; ?> <!-- /colonne droite pageLogin -->
 		
 
    
     	 <br clear="all">
           <?php if ($content_bottom): ?>
-            <div id="content-bottom-pageErreur">
+            <div id="content-bottom-pageLogin">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>

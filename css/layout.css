@@ -197,13 +197,13 @@ background-color:pink;
     padding:5px;
 }
 /* LAYOUT PAGE ASSOCIATION*/
-#content-inner-pageAssociation{
+#content-inner-pageAssociation, #content-inner-pageErreur{
 width:auto;
 margin:0 auto;
 float:left;
 background-color:pink;
 }
-#left-content-pageAssociation{
+#left-content-pageAssociation, #left-content-pageErreur{
     float:left;
     position:relative;
     background-color:#FFF;
@@ -211,7 +211,7 @@ background-color:pink;
     left:0px;
     padding:5px;
 }
-#middle-content-pageAssociation{
+#middle-content-pageAssociation, #middle-content-pageErreur{
     float:left;
     position:relative;
     background-color:white;
@@ -219,7 +219,7 @@ background-color:pink;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
-#right-content-pageAssociation{
+#right-content-pageAssociation, #right-content-pageErreur{
     float:right;
     position:relative;
     background-color:#FFF;

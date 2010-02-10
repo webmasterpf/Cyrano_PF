@@ -3,7 +3,7 @@
 *------------------------------------------------------*/
 
 /*------------------------------------------------*
- *---  Provence Formation Oct.2009 --*
+ *---  Provence Formation Janv. 2010 --*
  *------------------------------------------------*/
 
 /**********STYLE POUR LES BLOCS*******************/
@@ -16,20 +16,6 @@
 	color:#000;
 	padding: 3px;
 
-}
-
-.item-list ul li {
-list-style-image:none;
-list-style-position:none;
-list-style-type:none;
-margin:0 0 0.25em 1.5em;
-padding:0;
-}
-
-.item-list ul{
-	margin: 0;
-	padding: 0;
-	list-style-type:none;
 }
 
 /*style lien en savoir plus*/
@@ -60,7 +46,7 @@ margin: auto;
 width: 550px;
 padding: 0;
 }
-/*---------------------------*/
+
 /**----CONTENT TOP---***/
 #content-header{
 padding: 5px;
@@ -121,8 +107,7 @@ padding:10px 0;
 #left-content li{
 	margin:0;
 	padding: 0;
-	list-style:none;
-}
+	}
 /**----COLONNE DROITE---***/
 #right-content p{
 	color:#000;
@@ -167,7 +152,11 @@ h2.title{
 	font-size: 18px;
 }
 h2.title a{
-	color:#EF1D1D;
+	color:#EA5132;
+        text-decoration: none;
+}
+h2.title a:hover{
+	text-decoration: underline;
 }
 h3 {
 	margin: 0;
@@ -215,9 +204,12 @@ h6 {
    text-decoration: underline;
 }
 /*STYLE PAGE FORMATIONS INITIALES*/
-.title-formation, .title-association{
+.title-formation, .title-association, .title-fiche-formation{
     text-align: center;
     color: #EA703F;
+}
+.title-fiche-formation{
+    text-align: right;
 }
 .table-liste-formation{
     width: 630px;/*largeur du tableau contenant les formations*/

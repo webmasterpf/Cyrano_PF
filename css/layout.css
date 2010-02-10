@@ -87,7 +87,7 @@ height: 100%;
 }
 /*inner content*/
 #content-inner{
-width:580px;
+width:570px;
 margin:0 auto;
 float:left;
 background-color: white;
@@ -97,10 +97,11 @@ color: purple;
 #middle-content{
 	float:left;
 	position:relative;
-	background-color:silver;
+	background-color:#EFEFEF;
 	width:570px;
 	padding:5px;
         margin: 0 auto;
+        text
 }
 .swftools-wrapper wijering-imagerotator{
 margin: 0 auto;
@@ -235,7 +236,45 @@ background-color:pink;
     right:0px;
     padding:5px;
     }
-
+/****LAYOUT FICHE FORMATION********/
+#left-content-ficheFormation{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:305px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-ficheFormation{
+width:650px;
+margin:0 auto;
+float:left;
+background-color:pink;
+}
+#middle-content-ficheFormation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:650px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-ficheFormation a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-ficheFormation a:hover{
+    text-decoration: underline;
+}
+#right-content-ficheFormation{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:auto;
+    right:0px;
+    padding:5px;
+    }
 /*****************************/
 /* LAYOUT PAGE LOGIN*/
 #content-inner-pageLogin{

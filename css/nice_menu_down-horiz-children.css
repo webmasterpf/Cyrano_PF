@@ -49,13 +49,15 @@ ul.nice-menu-downdown li li.over {
 ul.nice-menu-downdown li a {
  	text-decoration: none;
 	background: none;
-	color:#156597;
+	color:#606070;
 	border: 0;
 	height: 30px;
 	display: block;
 	padding:13px 4px;
 	width:130px;
         text-align: center;
+        text-transform:uppercase;
+        font-weight: bold;
 
 }
 ul.nice-menu-downdown li a:hover {

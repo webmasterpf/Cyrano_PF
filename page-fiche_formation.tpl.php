@@ -1,5 +1,5 @@
 <?php include "inc_header.php"; ?>
- <!-- ______________________ LAYOUT PAGE BASIQUE _______________________ -->
+ <!-- ______________________ LAYOUT PAGE FICHE FORMATION _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -15,19 +15,23 @@
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			  <?php if ($left): ?>
-         <div id="left-content">
+			  
+         <div id="left-content-ficheFormation">
+             <?php if ($decoTitre): ?>
+                <div id="$decoTitreImg"><?php print $decoTitre; ?></div>
+              <?php endif; ?>
+              <?php if ($title): ?>
+                <h1 class="title-fiche-formation"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $left; ?>
           </div>
-             <?php endif; ?> <!-- /sidebar-left -->
+             <!-- /sidebar-left -->
 		
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner" class="inner column center">
+        <div id="content-inner-ficheFormation" class="inner column center">
 		             
-		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+		
            
 
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -48,7 +52,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content">
+          <div id="middle-content-ficheFormation">
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -74,7 +78,7 @@
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
         <?php if ($right): ?>
          <!--d�but du contenu droit -->
-		<div id="right-content">
+		<div id="right-content-ficheFormation">
 			
 				
             <?php print $right; ?>

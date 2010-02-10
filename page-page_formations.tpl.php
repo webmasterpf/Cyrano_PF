@@ -1,4 +1,5 @@
-<?php include "inc_header.php"; ?>  
+<?php include "inc_header.php"; ?>
+ <!-- ______________________ LAYOUT PAGE FORMATION _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -19,9 +20,8 @@
 		 <?php if ($title): ?>
                 <h1 class="title-formation"><?php print $title; ?></h1>
               <?php endif; ?>
-           
-
-         
+                
+               
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content-pageFormation">
             <?php if ($centralBloc): ?>
@@ -40,12 +40,13 @@
           
       </div> <!-- /content-inner /content -->
 
-        <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
+       <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
             <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
           </div> <!-- /navigation -->
         <?php endif; ?>
+    
 
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
@@ -71,6 +72,9 @@
           <?php endif; ?>
             
 		<?php print $content; ?>
+
+               
+          
 	 </div>
        
 

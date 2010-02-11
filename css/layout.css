@@ -91,7 +91,7 @@ width:570px;
 margin:0 auto;
 float:left;
 background-color: white;
-color: purple;
+
 }
 /*///    partie du centre   ///*/
 #middle-content{
@@ -101,8 +101,7 @@ color: purple;
 	width:570px;
 	padding:5px;
         margin: 0 auto;
-        text
-}
+ }
 .swftools-wrapper wijering-imagerotator{
 margin: 0 auto;
 width: auto;
@@ -142,12 +141,7 @@ color: #000000;
     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
    }
 /* LAYOUT PAGE LYCEE*/
-#content-inner-pageLycee{
-width:285px;
-margin:0 auto;
-float:left;
-background-color:pink;
-}
+
 #left-content-pageLycee{
     float:left;
     position:relative;
@@ -168,7 +162,7 @@ background-color:pink;
     float:right;
     position:relative;
     background-color:#FFF;
-    width:335px;
+    width:330px;
     right:0px;
     padding:5px;
     }
@@ -176,8 +170,11 @@ background-color:pink;
     margin:0 auto;
     width: 305px;
     padding: 5px;
+}
+#tb-fiche-illus img{
+    margin: 5px;
 
-    }
+}
  /* LAYOUT PAGE FORMATION*/
  #middle-content-pageFormation{
     float:left;
@@ -198,11 +195,11 @@ background-color:pink;
     padding:5px;
 }
 /* LAYOUT PAGE ASSOCIATION ET ERREUR*/
-#content-inner-pageAssociation, #content-inner-pageErreur{
+#content-inner-pageAssociation, #content-inner-pageErreur, #content-inner-ficheFormation, #content-inner-pageLycee{
 width:auto;
 margin:0 auto;
 float:left;
-background-color:pink;
+background-color:#EFEFEF;
 }
 #left-content-pageAssociation, #left-content-pageErreur{
     float:left;
@@ -245,12 +242,6 @@ background-color:pink;
     left:0px;
     padding:5px;
 }
-#content-inner-ficheFormation{
-width:650px;
-margin:0 auto;
-float:left;
-background-color:pink;
-}
 #middle-content-ficheFormation{
     float:left;
     position:relative;
@@ -266,6 +257,19 @@ background-color:pink;
 }
 #middle-content-ficheFormation a:hover{
     text-decoration: underline;
+}
+#middle-content-ficheFormation h2, #left-content-ficheFormation h2{
+   font-size: 14px;
+   color: black;
+}
+#middle-content-ficheFormation h3{
+   font-size: 12px;
+   font-weight: bold;
+   color: #95107D;
+}
+#middle-content-ficheFormation h4{
+   font-size: 14px;
+   color: #EA703F;
 }
 #right-content-ficheFormation{
     float:right;

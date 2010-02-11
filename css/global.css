@@ -37,8 +37,8 @@ width:400px;
 
 /***placement miniatures lightbox2**/
 a.lightbox-processed img {
-float:left;
-margin:5px;
+float:none;
+margin:0;
 }
 /****------formulaire contact/////////*/
 #contact-mail-page{
@@ -216,6 +216,12 @@ h6 {
     background: none;
     margin: 0 auto;
     
+}
+.table-liste-formation caption{
+    color:black;
+    font-weight:bold;
+    text-align:left;
+    text-transform:uppercase;
 }
 .titre-categorie-diplome{
     border-bottom: 1px dotted gray;

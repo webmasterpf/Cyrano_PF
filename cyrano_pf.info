@@ -19,6 +19,7 @@ regions[navStatic] = Navigation par icones - Bloc
 regions[annonceImg] = Image pour annonce - Bloc
 regions[blocLycee] = Acces Lycees - Bloc
 regions[Anim] = Animation Flash - Bloc
+regions[actu-association] = Zone Actualité de l'association - Bloc
 regions[content_top] = Content top
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations

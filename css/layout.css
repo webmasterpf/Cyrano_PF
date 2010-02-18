@@ -150,11 +150,17 @@ color: #000000;
     left:0px;
     padding:5px;
 }
-#middle-content-pageLycee{
+#content-inner-pageLycee{
     float:left;
     position:relative;
     background-color:white;
     width:275px;
+}
+#middle-content-pageLycee{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:305px;
     padding:5px;
     border-left: 1px solid #da5714;
 }
@@ -162,7 +168,7 @@ color: #000000;
     float:right;
     position:relative;
     background-color:#FFF;
-    width:330px;
+    width:300px;
     right:0px;
     padding:5px;
     }
@@ -195,7 +201,7 @@ color: #000000;
     padding:5px;
 }
 /* LAYOUT PAGE ASSOCIATION ET ERREUR*/
-#content-inner-pageAssociation, #content-inner-pageErreur, #content-inner-ficheFormation, #content-inner-pageLycee{
+#content-inner-pageErreur, #content-inner-ficheFormation{
 width:auto;
 margin:0 auto;
 float:left;
@@ -205,15 +211,21 @@ background-color:#EFEFEF;
     float:left;
     position:relative;
     background-color:#FFF;
-    width:280px;
+    width:185px;
     left:0px;
     padding:5px;
+}
+#content-inner-pageAssociation{
+     width:515px;
+     float:left;
+    position:relative;
+    background-color:white;
 }
 #middle-content-pageAssociation, #middle-content-pageErreur{
     float:left;
     position:relative;
     background-color:white;
-    width:420px;
+    width:515px;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
@@ -316,6 +328,53 @@ background-color:pink;
     position:relative;
     background-color:#FFF;
     width:240px;
+    right:0px;
+    padding:5px;
+    }
+
+/*LAYOUT PAGE ACTUALITES*/
+#content-inner-actualites{
+width:240px;
+margin:0 auto;
+float:left;
+background-color:pink;
+}
+#left-content-actualites{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:430px;
+    left:0px;
+    padding:5px;
+}
+#middle-content-actualites{
+    float:left;
+    position:relative;
+    background-color: green;
+    width:auto;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-actualites a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-actualites a:hover{
+    text-decoration: underline;
+}
+#actualite-association{
+     width:auto;
+     height: auto;
+     display: block;
+     padding: 0;
+     margin: 0;
+}
+#right-content-actualites{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:290px;
     right:0px;
     padding:5px;
     }

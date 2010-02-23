@@ -212,19 +212,19 @@ h6 {
 .title-fiche-formation, .title-association{
     text-align: right;
 }
-.table-liste-formation{
+.table-liste-formation, .table-revue-presse-archives{
     width: 630px;/*largeur du tableau contenant les formations*/
     background: none;
     margin: 0 auto;
     
 }
-.table-liste-formation caption, .table-formation caption{
+.table-liste-formation caption,.table-formation caption,.table-revue-presse-archives caption{
     color:black;
     font-weight:bold;
     text-align:left;
     text-transform:uppercase;
 }
-.titre-categorie-diplome{
+.titre-categorie-diplome, .titre-categorie-revue{
     border-bottom: 1px dotted gray;
     color: black;
 }
@@ -232,15 +232,15 @@ h6 {
     background: none;
     width:auto;
 }
-.views-field-titre-categorie, .views-field-titre-categorie a{
+.views-field-titre-categorie, .views-field-titre-categorie a, .views-field-titre-revue-presse, .views-field-titre-revue-presse a{
     color: gray;
     text-align: right;
     text-decoration: none;
 }
-.views-field-titre-categorie a:hover{
+.views-field-titre-categorie a:hover, .views-field-titre-revue-presse a:hover{
     text-decoration: underline;
 }
-.tr-table-formations{
+.tr-table-formations, .tr-table-revue-presse{
     background: none;
 
 }
@@ -277,6 +277,7 @@ span.field-content-savoir-plus{
 .table-revue-presse{
     padding: 0;
     margin: 0;
+    width:99%;
 }
 .table-revue-presse td, .table-actu-asso td{
     border-bottom: 1px solid #F09500;

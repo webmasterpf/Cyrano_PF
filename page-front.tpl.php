@@ -62,7 +62,7 @@
 	  
    
 	<br clear="all"/>
-	
+	<!-- ______________________ CONTENU BAS _______________________ -->
     <?php if ($content_bottom_home): ?>
     <div id="content-bottom-home">
       <?php print $content_bottom_home; ?>

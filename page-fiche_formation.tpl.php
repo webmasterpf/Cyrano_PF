@@ -59,14 +59,16 @@
 
         
 
-          <?php if ($content_bottom): ?>
+         
+      </div> <!-- /content-inner /content -->
+  <br clear="all" />
+  <!-- ______________________ CONTENU BAS _______________________ -->
+<?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-          
-      </div> <!-- /content-inner /content -->
-
+            
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>

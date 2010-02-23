@@ -55,6 +55,7 @@
 		
           
       </div> <!-- /content-inner /content -->
+     
 
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
@@ -72,15 +73,15 @@
               <?php print $right; ?>
             </div>
         <?php endif; ?> <!-- /colonne droite pageLycee -->
-		
-
-   
-    	 <br clear="all">
-          <?php if ($content_bottom): ?>
-            <div id="content-bottom-lycee">
+		<!-- ______________________ CONTENU BAS _______________________ -->
+ <br clear="all" />
+<?php if ($content_bottom): ?>
+            <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
+   
+    	
 		  
 	 </div> <!-- /contentPage -->
 	  

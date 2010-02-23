@@ -2,9 +2,12 @@
 Layout de positionnement des blocs
 Inclusion des polices en css3
  */
-@font-face { font-family : 'Arista';
-src: url('../typos/Arista2.0_light.ttf') format('truetype');
+@font-face {
+    font-family : 'Arista';
+    src: url('../typos/ARISTA.eot'); /* IE */
+    src: local('Arista'), url('../typos/Arista2.0_light.ttf') format('truetype');/* non-IE */
 }
+
 
 html {
  margin: 0;
@@ -44,7 +47,7 @@ body {
 
 /*Contenu de page  CONTENT */
 
-#contentPage {
+#contentPage, #contentPageActu {
 	margin:0 auto;
 	padding:0;
 	width: 980px;
@@ -92,7 +95,8 @@ background-color: white;
 	float:left;
 	position:relative;
 	background-color:#EFEFEF;
-	width:570px;
+	width:570px !important;
+        width: 560px;
 	padding:5px;
         margin: 0 auto;
  }
@@ -104,7 +108,8 @@ border: 1px solid #000;
 /*PIED DE CONTENU*/
 #content-bottom{
 background:#C0c0c0;
-width:570px;
+width:100%;
+margin: 0 auto;
 }
 
 /*Bas de page  FOOTER*/
@@ -154,7 +159,8 @@ color: #000000;
     float:left;
     position:relative;
     background-color:white;
-    width:305px;
+    width:305px !important;
+    width: 275px;
     padding:5px;
     border-left: 1px solid #da5714;
 }
@@ -162,7 +168,8 @@ color: #000000;
     float:right;
     position:relative;
     background-color:#FFF;
-    width:300px;
+    width:300px !important;
+    width: 290px;
     right:0px;
     padding:5px;
     }
@@ -210,7 +217,7 @@ background-color:#EFEFEF;
     padding:5px;
 }
 #content-inner-pageAssociation{
-     width:515px;
+     width:560px;
      float:left;
     position:relative;
     background-color:white;
@@ -219,7 +226,7 @@ background-color:#EFEFEF;
     float:left;
     position:relative;
     background-color:white;
-    width:515px;
+    width:560px;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
@@ -235,7 +242,7 @@ background-color:#EFEFEF;
     float:right;
     position:relative;
     background-color:#FFF;
-    width:240px;
+    width:200px;
     right:0px;
     padding:5px;
     }
@@ -338,15 +345,15 @@ border-right: 1px solid #02A7D5;
 #left-content-actualites{
     float:left;
     position:relative;
-    background:transparent url('../images/titre_revue_presse.gif') no-repeat top left;
+    /*background:transparent url('../images/titre_revue_presse.gif') no-repeat top left;*/
     width:430px;
     left:0px;
-    padding:20px 5px 5px;
+    padding:25px 5px 5px;
 }
 #middle-content-actualites{
     float:left;
     position:relative;
-    background: transparent url('../images/titre_texte_reference.gif') no-repeat left top;
+    /*background: transparent url('../images/titre_texte_reference.gif') no-repeat left top;*/
     width:auto;
     padding:5px;
     
@@ -365,18 +372,30 @@ border-right: 1px solid #02A7D5;
      display: block;
      padding: 25px 5px 0;
      margin: 0 0 15px 0;
-     background: #ADC91F url('../images/titre_actu_association.gif') no-repeat top left;
+     background: #EFEFEF /*url('../images/titre_actu_association.gif') no-repeat top left*/;
 }
 #right-content-actualites{
     float:right;
     position:relative;
-    background:#FFF url('../images/titre_actu_lycees.gif') no-repeat top left;;
+    /*background:#FFF url('../images/titre_actu_lycees.gif') no-repeat top left;*/
     width:285px;
     right:0px;
     padding:25px 5px 5px;
     }
-#right-content-actualites h3.block-title {
+    /*CSS pour les titres avec typo perso*/
+#contentPageActu h3.block-title{
     font-family: Arista,Trebuchet MS,sans serif;
     font-size: 18px;
     font-weight: bold;
+    margin: 5px 0;
+    text-align:center;
+}
+#right-content-actualites h3.block-title {
+    color: purple;
+}
+#left-content-actualites h3.block-title{
+    color: #E2017B;
+}
+#actualite-association h3.block-title{
+    color: #E3001B;
 }

@@ -137,7 +137,7 @@ text-transform: uppercase;
 
 #contentHome{
 	width:54%;
-	float:left;
+        float:left;
 	background:none;
 	color:black;
 }
@@ -174,8 +174,9 @@ padding:0;
 }
 
 #contentAnim{
-	width:46%;
-	float:left;
+	width:46% !important;
+        width: 43%;
+	float:right;
 	background:none;
 }
 
@@ -184,6 +185,7 @@ background: none;
 color: black;
 padding: 0px;
 text-align:right;
+float: right;
 }
 /*Table pour lycees sur accueil*/
 tbody{

@@ -55,6 +55,7 @@
           
       </div> <!-- /content-inner /content -->
 
+            
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
@@ -72,14 +73,14 @@
             </div>
         <?php endif; ?> <!-- /colonne droite pageErreur -->
 		
-
-   
-    	 <br clear="all">
-          <?php if ($content_bottom): ?>
-            <div id="content-bottom-pageErreur">
+<!-- ______________________ CONTENU BAS _______________________ -->
+     <br clear="all" />
+<?php if ($content_bottom): ?>
+            <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
+    
 		  
 	 </div> <!-- /contentPage -->
 	  

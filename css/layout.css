@@ -1,16 +1,10 @@
 /**
- * @file
- * Stark layout method
- *
- * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
- * Stark theme itself has no styling, except just enough CSS to arrange the page
- * in a traditional "Header, sidebars, content, and footer" layout.
- *
- * This layout method works reasonably well, but shouldn't be used on a
- * production site because it can break. For example, if an over-large image
- * (one that is wider than 20% of the viewport) is in a sidebar, the entire
- * #main content can shift completely below the sidebar.
+Layout de positionnement des blocs
+Inclusion des polices en css3
  */
+@font-face { font-family : 'Arista';
+src: url('../typos/Arista2.0_light.ttf') format('truetype');
+}
 
 html {
  margin: 0;
@@ -337,23 +331,25 @@ background-color:pink;
 width:240px;
 margin:0 auto;
 float:left;
-background-color:pink;
+background-color:transparent;
+border-left: 1px solid #AFC824;
+border-right: 1px solid #02A7D5;
 }
 #left-content-actualites{
     float:left;
     position:relative;
-    background-color:#FFF;
+    background:transparent url('../images/titre_revue_presse.gif') no-repeat top left;
     width:430px;
     left:0px;
-    padding:5px;
+    padding:20px 5px 5px;
 }
 #middle-content-actualites{
     float:left;
     position:relative;
-    background-color: green;
+    background: transparent url('../images/titre_texte_reference.gif') no-repeat left top;
     width:auto;
     padding:5px;
-    border-left: 1px solid #CFD0D2;
+    
 }
 #middle-content-actualites a{
     color: #d63e2a;
@@ -367,14 +363,20 @@ background-color:pink;
      width:auto;
      height: auto;
      display: block;
-     padding: 0;
-     margin: 0;
+     padding: 25px 5px 0;
+     margin: 0 0 15px 0;
+     background: #ADC91F url('../images/titre_actu_association.gif') no-repeat top left;
 }
 #right-content-actualites{
     float:right;
     position:relative;
-    background-color:#FFF;
-    width:290px;
+    background:#FFF url('../images/titre_actu_lycees.gif') no-repeat top left;;
+    width:285px;
     right:0px;
-    padding:5px;
+    padding:25px 5px 5px;
     }
+#right-content-actualites h3.block-title {
+    font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+}

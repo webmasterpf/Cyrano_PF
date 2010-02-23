@@ -38,7 +38,7 @@ width:400px;
 
 /***placement miniatures lightbox2**/
 a.lightbox-processed img {
-float:none;
+padding: 2px;
 margin:0;
 }
 /****------formulaire contact/////////*/
@@ -136,7 +136,7 @@ padding:10px 0;
 h1 {
 	margin: 0;
 	padding: 0;
-	color:#000;
+	color:#F49402;
 	font-size: 20px;
 }
   
@@ -218,7 +218,7 @@ h6 {
     margin: 0 auto;
     
 }
-.table-liste-formation caption{
+.table-liste-formation caption, .table-formation caption{
     color:black;
     font-weight:bold;
     text-align:left;
@@ -269,4 +269,40 @@ span.field-content-savoir-plus{
     color: #02A7D5;
     font-size: 14px;
     font-weight: bold;
+}
+/*STYLE REVUE DE PRESSE ET ACTU ASSO */
+.table-actu-asso{
+    padding: 2px;
+}
+.table-revue-presse{
+    padding: 0;
+    margin: 0;
+}
+.table-revue-presse td, .table-actu-asso td{
+    border-bottom: 1px solid #F09500;
+    padding: 5px 0;
+}
+.table-revue-presse .views-field-title a,.table-actu-asso .views-field-title a{
+    color: #606071;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-actu-asso tr{
+     border-top: 1px solid #F09500;
+    padding: 5px 0;
+}
+.table-actu-asso .views-field-teaser a{
+    color: white;
+    text-decoration: none;
+}
+.table-actu-asso .views-field-teaser a:hover{
+    text-decoration: underline;
+}
+/*BLOC FLUX RSS*/
+.block-aggregator a{
+    color: black;
+    text-decoration: none;
+}
+.block-aggregator a:hover{
+    text-decoration: underline;
 }

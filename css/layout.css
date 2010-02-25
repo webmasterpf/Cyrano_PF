@@ -3,9 +3,9 @@ Layout de positionnement des blocs
 Inclusion des polices en css3
  */
 @font-face {
-    font-family : 'Arista';
-    src: url('../typos/ARISTA.eot'); /* IE */
-    src: local('Arista'), url('../typos/Arista2.0_light.ttf') format('truetype');/* non-IE */
+    font-family : "Arista";
+    src: url(../typos/Arista2.0_light.eot); /* IE */
+    src: local("Arista"), url(../typos/Arista2.0_light.ttf) format('truetype');/* non-IE */
 }
 
 
@@ -23,7 +23,9 @@ body {
 	background-color: white;
 	color: grey;
 }
-
+ul,li,dl,dd,dt{
+    list-style-position: inside;
+}
  /*------------------------------------------------------*
   *--------    CSS BLOCS     						 ----*
   *------------------------------------------------------*/
@@ -139,6 +141,63 @@ color: #000000;
     height:auto;
     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
    }
+  /*------------------------------------------------------*
+  *------------ CSS H  ----*
+  *------------------------------------------------------*/
+
+h1 {
+	margin: 0;
+	padding: 5px 0;
+	color:#F49402;
+	font-size: 20px;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title{
+	margin: 5px;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title a{
+	color:#EA5132;
+        text-decoration: none;
+}
+h2.title a:hover{
+	text-decoration: underline;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 16px;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 14px;
+}
+h5 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 12px;
+}
+h6 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 10px;
+}
+/*-----FIN LAYOUT DE BASE-----------*/
+/***************************************/
+
 /* LAYOUT PAGE LYCEE*/
 
 #left-content-pageLycee{
@@ -182,6 +241,42 @@ color: #000000;
     margin: 5px;
 
 }
+/*LAYOUT PAGE PARTENAIRE*/
+#left-content-partenaire{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:210px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-partenaire{
+    float:left;
+    position:relative;
+    background-color:transparent;
+    width:515px;
+    padding:5px;
+    border-left: 1px solid #da5714;
+    border-right: 1px solid #da5714;
+}
+#middle-content-partenaire{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:515px !important;
+    width: 515px;
+    padding:0;
+    
+}
+#right-content-partenaire{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:220px !important;
+    right:0px;
+    padding:5px;
+    }
+
  /* LAYOUT PAGE FORMATION*/
  #middle-content-pageFormation{
     float:left;
@@ -263,6 +358,9 @@ background-color:#EFEFEF;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
+#middle-content-ficheFormation p{
+    padding:5px 0;
+  }
 #middle-content-ficheFormation a{
     color: #d63e2a;
     text-decoration: none;

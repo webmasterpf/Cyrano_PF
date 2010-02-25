@@ -119,14 +119,14 @@ ul.nice-menu-right ul ul {
 
 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat;
+  background:  url(arrow-right.png) right center no-repeat;
 }
 
 ul.nice-menu-right li.menuparent:hover,
 ul.nice-menu-right li.over,
 ul.nice-menu-right li li.menuparent:hover,
 ul.nice-menu-right li li.over {
-  background: #ccc url(arrow-right.png) right center no-repeat;
+  background:  url(arrow-right.png) right center no-repeat;
 }
 
 /* VERTICAL menus where submenus pop LEFT. */
@@ -329,3 +329,70 @@ ul#nice-menu-1  li.active-trail ul li.active-trail a{
 */
 /*********************************************************************************************/
 /*********************************************************************************************/
+/****************NICE MENU 2*******************/
+
+ul#nice-menu-2{
+	margin:0 auto;
+	padding:0;
+	width:160px;
+	list-style:none;
+	text-align:left;
+	color:#fff;
+}
+
+ul#nice-menu-2 li{
+	margin:0 0 1px 0;
+        padding: 0;
+        height: 40px;
+}
+
+ul#nice-menu-2 li a{
+	padding:10px 3px;
+	font-size:11px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	height:12px;
+        text-align: center;
+        background: url("../images/bg_bt_menu_part.jpg") repeat-x top left;
+        border: 1px solid #7ca800;
+
+}
+ul#nice-menu-2 li a:hover{
+     background: url("../images/bg_bt_menu_part_hover.jpg") repeat-x top left;
+     color: #91127D;
+     
+
+}
+
+/*Style sous rubriques menu 2*/
+ul#nice-menu-2 li.menuparent ul {
+margin: 0 0 0 5px;
+background: none;
+}
+
+ul#nice-menu-2 li.menuparent ul li {
+  border: 0;
+  background: none;
+ list-style:square;
+ height: auto;
+}
+
+ul#nice-menu-2 li.menuparent ul li a{
+  background:#94127F;
+  border: 0;
+  width: auto;
+  height: auto;
+  color:white;
+  text-align:left;
+  padding: 0 0 0 5px;
+  line-height: 2.0em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; 
+
+}
+ul#nice-menu-2 li.menuparent ul li a:hover{
+ color:#94127F;
+ background:#ebebeb;
+}

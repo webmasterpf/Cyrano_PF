@@ -148,8 +148,8 @@ color: #000000;
 h1 {
 	margin: 0;
 	padding: 5px 0;
-	color:#F49402;
-	font-size: 20px;
+	color:#E85231;
+	font-size: 24px;
 }
 
 h2 {
@@ -316,8 +316,16 @@ background-color:#EFEFEF;
      float:left;
     position:relative;
     background-color:white;
+    border-left: 1px solid #02A7D5;
 }
-#middle-content-pageAssociation, #middle-content-pageErreur{
+#middle-content-pageAssociation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+}
+#middle-content-pageErreur{
     float:left;
     position:relative;
     background-color:white;
@@ -496,4 +504,44 @@ border-right: 1px solid #02A7D5;
 }
 #actualite-association h3.block-title{
     color: #E3001B;
+}
+
+/*PAGE BOURSES*/
+#content-inner-bourses{
+width:610px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+border-left: 1px solid #93117E;
+}
+#left-content-bourses{
+    float:left;
+    position:relative;
+    width:340px;
+    left:0px;
+    padding:25px 5px 5px;
+}
+#middle-content-bourses{
+    float:left;
+    position:relative;
+    width:auto;
+    padding:5px;
+    width: 620px;
+
+}
+#middle-content-bourses p{
+    padding: 2px 0;
+}
+#middle-content-bourses h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+#middle-content-bourses a{
+    text-decoration: none;
+    color: #E2017B;
+}
+#middle-content-bourses a:hover{
+    text-decoration: underline;
 }

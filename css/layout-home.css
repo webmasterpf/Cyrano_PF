@@ -82,14 +82,14 @@ padding:5px;
 }
 #headSearch{
 text-align:right;
-margin:10px 0 0;
-background: url(../images/bg_recherche.gif) no-repeat top left;
+margin: 2px 0 0 0;
+background: url(../images/bg_recherche.gif) no-repeat left 5px;
 height: 25px;
 display: block;
 float: right;
 }
 #search{
-  width: 210px;
+  width: 225px;
   height: 25px;
   display: block;
   padding:0 3px 0 0;
@@ -112,11 +112,12 @@ padding:160px 0 0 10px;
 margin:0;
 }
 #site-slogan{
+color:white;
 display:block;
-height: 20px;
-width: auto;
-padding:0px 0 0 40px;
-color: white;
+float:left;
+height:20px;
+padding:3px 0 0 40px;
+width:400px;
 }
 
 #site-slogan a{

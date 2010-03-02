@@ -40,10 +40,18 @@
 		 
 		 <?php if (!empty($site_slogan)): ?>
             <div id="site-slogan">
-			<?php print $site_slogan; ?>
-			</div><!-- /site-slogan -->
-          <?php endif; ?>
-		
+	<?php print $site_slogan; ?>
+            </div><!-- /site-slogan -->
+            <?php endif; ?>
+
+
+            <div id="headSearch">
+		  <?php if (!empty($search_box)): ?>
+		  <?php print $search_box ?>
+		  <?php endif; ?>
+		  </div><!-- /recherche -->
+
+                  
           <div id="menuHead">
 	        <?php if (!empty($menuDyn)): ?>
 			   <?php print $menuDyn; ?>
@@ -51,11 +59,7 @@
 
           </div><!-- /menuHead -->
 		 
-		  <div id="headSearch">
-		  <?php if (!empty($search_box)): ?>
-		  <?php print $search_box ?>
-		  <?php endif; ?>
-		  </div><!-- /recherche -->
+		  
 		</div><!-- /headBas -->
           
         

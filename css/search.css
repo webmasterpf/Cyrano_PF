@@ -30,3 +30,20 @@
   float: left; /* LTR */
   clear: left; /* LTR */
 }
+/*resultats de la recherche*/
+.title-search-result a{
+    color: #93117E;
+    text-decoration: none;
+}
+.title-search-result a:hover{
+    color: white;
+    background: #93117E;
+}
+/*champ recherche header*/
+#edit-search-theme-form-1-wrapper{
+    width: auto;
+}
+#edit-search-theme-form-1{/*texte dans champ recherche*/
+    font-size: 10px;
+    width:115px;
+}

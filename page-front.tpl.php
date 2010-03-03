@@ -12,30 +12,13 @@
             </div> <!-- /#content-top -->
           <?php endif; ?>
 
-          <?php if ($annonceImg || $breadcrumb || $title || $mission || $messages || $help || $tabs): ?>
+          <?php if ($annonceImg): ?>
             <div id="content-areaHaut">
 			
               <?php if ($annonceImg): ?>
                  <div id="annonceImg"><?php print $annonceImg; ?></div>
               <?php endif; ?>
               
-
-              <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-
-              <?php if ($mission): ?>
-                <div id="mission"><?php print $mission; ?></div>
-              <?php endif; ?>
-
-              <?php print $messages; ?>
-
-              <?php print $help; ?> 
-
-              <?php if ($tabs): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-              <?php endif; ?>
-
             </div> <!-- /#content-areaHaut -->
           <?php endif; ?>
 

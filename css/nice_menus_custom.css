@@ -119,14 +119,14 @@ ul.nice-menu-right ul ul {
 
 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
-  background:  url(arrow-right.png) right center no-repeat;
+  background:  url(../images/arrow-right.png) right center no-repeat;
 }
 
 ul.nice-menu-right li.menuparent:hover,
 ul.nice-menu-right li.over,
 ul.nice-menu-right li li.menuparent:hover,
 ul.nice-menu-right li li.over {
-  background:  url(arrow-right.png) right center no-repeat;
+  background:  url(../images/arrow-right.png) right center no-repeat;
 }
 
 /* VERTICAL menus where submenus pop LEFT. */
@@ -144,14 +144,14 @@ ul.nice-menu-left li ul li ul {
 
 ul.nice-menu-left li.menuparent,
 ul.nice-menu-left li li.menuparent {
-  background: #eee url(arrow-left.png) left center no-repeat;
+  background: #eee url(../images/arrow-left.png) left center no-repeat;
 }
 
 ul.nice-menu-left li.menuparent:hover,
 ul.nice-menu-left li.over,
 ul.nice-menu-left li li.menuparent:hover,
 ul.nice-menu-left li li.over {
-  background: #ccc url(arrow-left.png) left center no-repeat;
+  background: #ccc url(../images/arrow-left.png) left center no-repeat;
 }
 
 ul.nice-menu-left a, ul.nice-menu-left ul a {
@@ -212,7 +212,7 @@ ul.nice-menu-down li.menuparent ul li {
 }
 
 ul.nice-menu-down li.menuparent ul li a{
-  background: transparent url(../images/..puce.png) no-repeat 15px;
+  background: transparent url(../images/puce.png) no-repeat 15px;
   border: 0;
   width: auto;
   height: auto;

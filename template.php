@@ -27,3 +27,9 @@ function phptemplate_preprocess_page(&$vars) {
   }
 }
 ?>
+<?php
+// permet le debugage de php avec drupal
+function debug_print($var) {
+  drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
+}
+?>

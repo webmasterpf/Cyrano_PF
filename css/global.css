@@ -291,8 +291,12 @@ span.field-content-savoir-plus{
     background: url("../images/bt_objectif_reussite_hover.jpg") no-repeat top left;
     }
 
-    #formulaire_partenaire{
+#formulaire_partenaire{
         width: 500px;
         margin: 0 auto;
         padding:5px 0;
+}
+/*STYLE QUICKTABS*/
+.block-quicktabs{
+    margin: 10px 0;
 }

@@ -12,6 +12,7 @@ stylesheets[all][] = css/nice_menu_down-horiz-children.css
 stylesheets[all][] = css/nice_menus_default.css
 stylesheets[all][] = css/style-backoffice.css
 stylesheets[all][] = css/search.css
+stylesheets[all][] = css/maintenance.css
 
 
 regions[header] = Header
@@ -23,7 +24,7 @@ regions[Anim] = Animation Flash - Bloc
 regions[content_top] = Content top
 regions[revue_presse] = Revue de presse Colonne Gauche - Bloc
 regions[actuAssociation] = Zone Actualité de l'association - Bloc
-regions[formulaire] = Zone formulaire page partenaire
+regions[formulaire] = Zone formulaire bloc
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations
 regions[right] = Colonne Droite

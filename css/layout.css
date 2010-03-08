@@ -134,7 +134,7 @@ text-decoration:none;
 color: #000000;
 }
 /**----Fin FOOTER---***/
-#content-top, #content-top-pageLycee, #content-top-pageAssociation{
+#content-top, #content-top-pageLycee, #content-top-detailActu-presse{
     margin:0 auto;
     padding:5px;
     width:970px;
@@ -545,4 +545,101 @@ border-left: 1px solid #93117E;
 }
 #middle-content-bourses a:hover{
     text-decoration: underline;
+}
+/*PAGE RECRUTEMENT*/
+#content-inner-recrutement{
+width:550px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+border-right: 1px solid #93117E;
+}
+#right-content-recrutement{
+    float:right;
+    position:relative;
+    width:410px;
+    left:0px;
+    padding:25px 5px 5px;
+}
+#middle-content-recrutement{
+    float:left;
+    position:relative;
+    width:auto;
+    padding:5px;
+    width: 550px;
+
+}
+#middle-content-recrutement p{
+    padding: 2px 0;
+}
+#middle-content-recrutement h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+#middle-content-recrutement a{
+    text-decoration: none;
+    color: #E2017B;
+}
+#middle-content-recrutement a:hover{
+    text-decoration: underline;
+}
+/*PAGE DETAIL ACTU PRESSE*/
+#content-inner-detailActu-presse{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:#EFEFEF;
+}
+#left-content-detailActu-presse{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:185px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-detailActu-presse{
+     width:560px;
+     float:left;
+    position:relative;
+    background-color:white;
+    border-left: 1px solid #02A7D5;
+}
+#middle-content-detailActu-presse{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+}
+#middle-content-pageErreur{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-detailActu-presse a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-detailActu-presse a:hover{
+    text-decoration: underline;
+}
+#right-content-pageAssociation{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:200px;
+    right:0px;
+    padding:5px;
+    }
+#middle-content-detailActu-presse li{
+    padding:0;
+    margin: 0;
+    list-style: inside;
 }

@@ -12,13 +12,57 @@
 
 
 /**----MIDDLE---***/
-#middle-content p{
-	color:#000;
-	padding: 0;
+a#retour_haut{
+    display: none;
+    color: green;
+    text-decoration: none;
+    text-align: right;
+    float:right;
+}
+a:hover#retour_haut{
+    text-decoration: underline;
+}
+p{
+	
+	padding: 2px 0;
         margin: 0;
 
 }
-
+#middle-content-pageAssociation p, ul{
+    padding: 5px;
+    margin: 0;
+}
+#middle-content-pageAssociation h3, h2{
+    color: #EA703F;
+    padding: 2px;
+}
+#middle-content-pageAssociation h2{
+   text-align: center;
+}
+#middle-content-pageAssociation h4{
+    color: #94127F;
+    padding: 2px;
+    text-indent: 3px;
+}
+.table_generik{
+    border: 0px solid black;
+    width: 95%;
+}
+.table_generik tr{
+    border: 0px solid black;
+}
+.table_generik tr.ligne_1{
+    background: transparent;
+    color: black;
+}
+.table_generik tr.ligne_2{
+   background: #ADC91F;
+   color: white;
+}
+.table_generik td{
+    border: 0px solid black;
+   
+}
 /*style lien en savoir plus*/
 li.node_read_more a{
 color : red;

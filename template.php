@@ -1,4 +1,5 @@
 <?php
+// permet template suggestions avec page-
 function phptemplate_preprocess(&$vars, $hook)
 {
   switch($hook)
@@ -9,6 +10,7 @@ function phptemplate_preprocess(&$vars, $hook)
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
       }
       break;
+
   }
 }
 ?>
@@ -32,4 +34,9 @@ function phptemplate_preprocess_page(&$vars) {
 function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
 }
+//Webform "You have already submitted this form." message off
+function Cyrano_PF_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles) {
+  theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
+}
 ?>
+

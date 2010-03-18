@@ -3,6 +3,8 @@ description = Theme pour site Provence Formation - Design by Cyrano - Integratio
 core = 6.x
 engine = phptemplate
 
+scripts[] = js/general.js
+
 stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/layout-home.css
 stylesheets[all][] = css/layout.css

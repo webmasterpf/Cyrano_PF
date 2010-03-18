@@ -326,6 +326,10 @@ background-color:#EFEFEF;
     width:560px;
     padding:5px;
 }
+#middleGalerie{
+    width:560px;
+    padding:5px;
+}
 #middle-content-pageErreur{
     float:left;
     position:relative;
@@ -531,9 +535,7 @@ border-left: 1px solid #93117E;
     width: 620px;
 
 }
-#middle-content-bourses p{
-    padding: 2px 0;
-}
+
 #middle-content-bourses h3{
     color: #AEC81F;
     text-decoration: none;
@@ -558,7 +560,8 @@ border-right: 1px solid #93117E;
 #right-content-recrutement{
     float:right;
     position:relative;
-    width:410px;
+    width:405px !important;
+    width: 400px; /*pour ie6*/
     left:0px;
     padding:25px 5px 5px;
 }
@@ -630,7 +633,7 @@ background-color:#EFEFEF;
 #middle-content-detailActu-presse a:hover{
     text-decoration: underline;
 }
-#right-content-pageAssociation{
+#right-content-detailActu-presse{
     float:right;
     position:relative;
     background-color:#FFF;
@@ -643,3 +646,39 @@ background-color:#EFEFEF;
     margin: 0;
     list-style: inside;
 }
+
+/*PAGE WEBFORM*/
+#left-content-formulaire{
+	float:left;
+	position:relative;
+	background-color:#00CC99;
+	width:200px;
+	left:0px;
+}
+
+
+#right-content-formulaire{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+
+#content-inner-formulaire{
+width:570px;
+margin:0 auto;
+float:left;
+background-color: white;
+
+}
+
+#middle-content-formulaire{
+	float:left;
+	position:relative;
+	background-color:#EFEFEF;
+	width:570px !important;
+        width: 560px;
+	padding:5px;
+        margin: 0 auto;
+ }

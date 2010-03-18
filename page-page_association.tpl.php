@@ -49,9 +49,17 @@
           <div id="middle-content-pageAssociation">
               
             <?php print $content; ?>
+             <?php if ($centralBloc): ?>
+                <div id="middleGalerie"><?php print $centralBloc; ?></div>
+              <?php endif; ?>
+                   <!-- retour haut selon resolution de l'ecran -->
+          <a href="#general" id="retour_haut">Haut de page</a>
+     
+
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
-
+     
+          
         
 		
           

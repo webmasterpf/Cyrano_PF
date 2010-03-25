@@ -11,6 +11,7 @@
       <?php endif; ?>
 
     </div> <!-- /general OR /page -->
-    <?php print $closure; ?>
+    
+	<?php print $closure ?>
   </body>
 </html>

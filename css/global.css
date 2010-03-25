@@ -14,7 +14,7 @@
 /**----MIDDLE---***/
 a#retour_haut{
     display: none;
-    color: green;
+    color: #AEC721;
     text-decoration: none;
     text-align: right;
     float:right;
@@ -23,11 +23,10 @@ a:hover#retour_haut{
     text-decoration: underline;
 }
 p{
-	
-	padding: 2px 0;
-        margin: 0;
-
+    padding: 2px 0;
+    margin: 0;
 }
+
 #middle-content-pageAssociation p, ul{
     padding: 5px;
     margin: 0;

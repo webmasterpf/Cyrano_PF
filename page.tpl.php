@@ -17,6 +17,9 @@
 		
 			  <?php if ($left): ?>
          <div id="left-content">
+              <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $left; ?>
           </div>
              <?php endif; ?> <!-- /sidebar-left -->
@@ -25,9 +28,7 @@
         
         <div id="content-inner" class="inner column center">
 		             
-		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+		
            
 
           <?php if ($mission || $messages || $help || $tabs): ?>

@@ -39,4 +39,3 @@ function Cyrano_PF_webform_view_messages($node, $teaser, $page, $submission_coun
   theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
 }
 ?>
-

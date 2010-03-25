@@ -208,6 +208,7 @@ h6 {
     width:340px;
     left:0px;
     padding:5px;
+    border-right: 1px solid #da5714;
 }
 #content-inner-pageLycee{
     float:left;
@@ -222,8 +223,22 @@ h6 {
     width:305px !important;
     width: 275px;
     padding:5px;
-    border-left: 1px solid #da5714;
+   
 }
+#middle-content-pageLycee h3{
+    font-size: 14px;
+    color:#AECA20;
+    padding: 2px 0;
+}
+#middle-content-pageLycee h4{
+    font-size: 13px;
+    color:#93117E;
+    padding: 2px 0;
+}
+#middle-content-pageLycee strong{
+    color:#606171;
+}
+
 #right-content-pageLycee{
     float:right;
     position:relative;
@@ -233,6 +248,14 @@ h6 {
     right:0px;
     padding:5px;
     }
+/*gmap*/
+#right-content-pageLycee small a{
+color : #01ABCF;
+text-decoration: none;
+}
+#right-content-pageLycee small a:hover {
+text-decoration: underline;
+}
 #tb-fiche-illus{
     margin:0 auto;
     width: 305px;
@@ -555,7 +578,7 @@ margin:0 auto;
 float:left;
 padding:5px;
 background-color:transparent;
-border-right: 1px solid #93117E;
+
 }
 #right-content-recrutement{
     float:right;
@@ -564,7 +587,16 @@ border-right: 1px solid #93117E;
     width: 400px; /*pour ie6*/
     left:0px;
     padding:25px 5px 5px;
+    border-left: 1px solid #93117E;
 }
+#right-content-recrutement #recaptcha_widget_div #recaptcha_table tbody{
+    width:405px !important;
+    width: 400px; /*pour ie6*/
+}
+/*#recaptcha_image img {
+    width: 200px;
+}*/
+
 #middle-content-recrutement{
     float:left;
     position:relative;

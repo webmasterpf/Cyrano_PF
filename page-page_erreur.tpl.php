@@ -7,9 +7,9 @@
       <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top-pageErreur">
-			<span id="ariane"> <?php print $breadcrumb; ?></span>
-
+	<span id="ariane"> <?php print $breadcrumb; ?></span>
               <?php print $content_top; ?>
+        
             </div> <!-- /#content-top -->
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
@@ -19,9 +19,7 @@
               
             <?php print $left; ?>
           </div>
-             <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
+            	<!--fin du contenu gauche -->
         
         <div id="content-inner-pageErreur">
 		
@@ -75,7 +73,7 @@
 		
 <!-- ______________________ CONTENU BAS _______________________ -->
      <br clear="all" />
-<?php if ($content_bottom): ?>
+          <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
@@ -85,5 +83,4 @@
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>
-         <?php endif; ?>
-     
+         <?php endif; ?>    

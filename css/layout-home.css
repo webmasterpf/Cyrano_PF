@@ -142,13 +142,13 @@ text-transform: uppercase;
 	background:none;
 	color:black;
 }
-#contentHome a{
+/*#contentHome a{
 color:black;
 text-decoration:none;
 }
 #contentHome a:hover{
 text-decoration:underline;
-}
+}*/
 #content-areaHaut{
 height: auto;
 width: 530px;

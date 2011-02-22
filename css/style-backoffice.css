@@ -49,3 +49,17 @@ padding:10px 0;
 .sticky-table a{
     color: red;
 }
+/***************/
+/**** BLOC ADMIN CUSTOM ******/
+#bloc_admin{
+    margin: 5px 0;
+    padding: 0;
+}
+#bloc_admin a{
+    text-decoration: none;
+    color: #E2017B;
+}
+#bloc_admin a:hover{
+    color: white;
+    background: #E2017B;
+}

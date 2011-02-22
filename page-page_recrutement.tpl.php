@@ -44,7 +44,9 @@
               <?php endif; ?>
 
             <?php print $content; ?>
-
+              <?php if ($centralBloc): ?>
+                <div class="recrutement"><?php print $centralBloc; ?></div>
+              <?php endif; ?>
            
 
               <?php print $feed_icons; ?>

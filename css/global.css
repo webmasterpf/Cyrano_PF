@@ -43,8 +43,9 @@ p{
     padding: 2px;
     text-indent: 3px;
 }
+/*TABLES STYLES DIVERS*/
 .table_generik{
-    border: 0px solid black;
+    border: 0;
     width: 95%;
 }
 .table_generik tr{
@@ -62,6 +63,132 @@ p{
     border: 0px solid black;
    
 }
+.table_generik tr.titre td{
+padding: 2px;
+}
+#table_frais{
+    border: 0;
+    width: 100%;
+}
+#table_frais tr.tf_line_1{
+    color: #606171;
+    background: #ACC624;
+}
+#table_frais tr.tf_line_2{
+    color: #E85231;
+    background: white;
+}
+/*Table resultats examens*/
+#table-resultats{
+    border: 0;
+    width: 100%;
+    text-align: center;
+}
+#table-resultats tr.line_1{
+     color: #606171;
+    background: #F19601;
+}
+#table-resultats tr.line_2{
+    color: #E85231;
+    background: white;
+}
+/*-------------------------------*/
+/*Table pour node annonce bts*/
+.table-poste-bts{
+    background:none;
+    border-right:1px solid #606171;
+    border-left: 1px solid #606171;
+    margin:0 auto;
+    text-align:center;
+    width:50%;
+    padding: 5px 0 10px 0;
+}
+.table-poste-bts tr.line1{
+    color: #950F7E;
+    background: white;
+}
+.table-poste-bts tr.line2{
+    background: #EFEFEF;
+    color: #E1017B;
+}
+.table-poste-bts td.etat{
+    font-weight: bold;
+}
+/*Vue liste des offres - style par taxoonmie*/
+.liste-offres-bts-pro ul {
+    list-style: none;
+}
+.liste-offres-bts-pro ul li a{
+    text-decoration: none;
+    color: #606171;
+}
+.liste-offres-bts-pro a:hover{
+    color: #E85231;
+}
+.offre-bts-titre{/*titre dans la liste*/
+    display:block;
+    float:left;
+    font-size:14px;
+    margin:0 10px 0 0;
+    text-transform:uppercase;
+}
+.offre-bts-date{
+    margin: 0;
+    padding:3px 0 0;
+}
+.offre-bts-teaser{
+    margin: 0;
+    padding: 0;
+}
+.ref-offre{
+    float: left;
+    font-weight: bold;
+    padding: 3px 55px 0px 0;
+    margin: 0;
+}
+.etat-76{/*a pourvoir*/
+         padding: 5px;
+         margin:0 0 5px;
+    border-left:3px solid #AEC81F;
+}
+.etat-77{/*en cours*/
+         padding: 5px;
+         margin:0 0 5px;
+   border-left:3px solid #F09500;
+}
+.etat-78{/*pourvu*/
+         padding: 5px;
+         margin:0 0 5px;
+   border-left:3px solid #E0001A;
+}
+#postule{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#postule a{
+    color: #00AAD5;
+    text-transform: uppercase;
+}
+/*style des boutons radios*/
+.bef-checkboxes,
+.bef-select-as-radios .form-radios {
+  /*
+   * Setting the height and overflow creates a scrollable <div> for the radio/checkbox elements.
+   * The border is just for looks -- adjust or remove as needed.
+   */
+  height: auto;
+  overflow: auto;
+  border: 0px solid #999;
+}
+
+/* Line up multi-line options nicely */
+.bef-group-items .form-item,
+.bef-select-as-radios .form-radios .form-item {
+  text-indent: -24px;
+  margin-left: 24px;
+  float:left;
+}
 /*style lien en savoir plus*/
 li.node_read_more a{
 color : red;
@@ -70,6 +197,41 @@ text-align:left;
 }
 li.node_read_more a:hover{
 text-decoration: underline;
+}
+/************************/
+/*-------- ANNONCE DEFILANTE ------*/
+.annonce{
+    color:#00ACD1;
+    font-size:16px;
+    font-weight:bold;
+    margin:11px 0 0;
+    padding:20px 15px 0 0;
+    text-align:center;
+     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
+     width: 505px;
+}
+.annonce h2 a{
+    color: #93117E;
+    text-decoration: none;
+}
+.annonce a{
+    color: #00ACD1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.annonce a:hover{
+    text-decoration: underline;
+}
+.savoir-plus a{
+    color: #E2007A;
+    text-decoration: none;
+    padding: 2px;
+    float: right;
+}
+.savoir-plus a:hover{
+    background: #E2007A;
+    color: #606171;
+    text-decoration: none;
 }
 /********JWRotator*******/
 .field-field-rotator{
@@ -117,16 +279,28 @@ text-decoration:underline;
 }
 /**----CONTENT BOTTOM---***/
 #content-top{}
-.taxonomy{
+/************************/
+/*** TAXONOMIE *****/
+#taxonomy{
 text-align:right;
 padding: 3px;
 margin: 0px;
+color:#606171;
 }
-.taxonomy a{
+#taxonomy ul{
+list-style: none;
+}
+#taxonomy li{
+    list-style: none;
+    text-transform: capitalize;
+    line-height:0.3;
+    font-size:0.8em;
+}
+#taxonomy a{
 color: #d63e2a;
 text-decoration:none;
 }
-.taxonomy a:hover{
+#taxonomy a:hover{
 text-decoration:underline;
 }
 /*----page login------*/
@@ -235,6 +409,13 @@ padding:10px 0;
 .views-field-table{
     color:black;
 }
+#right-content-pageFormation a{
+    color: #E10279;
+    text-decoration: none;
+}
+#right-content-pageFormation a:hover{
+    text-decoration: underline;
+}
 /*STYLE FICHE FORMATION*/
 .view-Fiche-formation-intro{
     margin: 15px 0 0 0;
@@ -280,13 +461,52 @@ span.field-content-savoir-plus{
      border-top: 1px solid #F09500;
     padding: 5px 0;
 }
-.table-actu-asso .views-field-teaser a{
+.table-actu-asso .views-field-teaser a, .table-revue-presse .views-field-teaser a{
     color: #606071;
     text-decoration: none;
 }
-.table-actu-asso .views-field-teaser a:hover{
+.table-actu-asso .views-field-teaser a:hover, .table-revue-presse .views-field-teaser a:hover{
     color: #93117E;
     text-decoration: underline;
+}
+/*Lien lire plus et archives pour les actus asso*/
+a.lire_plus{
+    text-decoration: none;
+    float:right;
+    text-align:right;
+    color: #E3001B;
+    padding: 1px;
+}
+a:hover.lire_plus{
+    background: #E3001B;
+    color: white;
+    
+}
+.lien_archive{
+	 float: right;
+	 color: #E2017B;
+	 text-decoration: underline;
+	 }
+.lien_archive a:hover{
+	  text-decoration: none;
+	 }
+#middle-content-detailActu-presse h3{
+    color: #931B7D;
+    font-size: 14px;
+    margin:5px;
+}
+#middle-content-detailActu-presse h4{
+    color: #01ABCF;
+    font-size: 12px;
+}
+#middle-content-detailActu-presse img{
+    padding: 0 10px;
+}
+.field-field-minipresse img{
+    float: right;
+    padding: 3px;
+    margin: 0;
+    line-height: 0;
 }
 /*BLOC FLUX RSS*/
 .block-aggregator a{
@@ -339,7 +559,49 @@ span.field-content-savoir-plus{
         margin: 0 auto;
         padding:5px 0;
 }
+#middle-content-partenaire img{
+    padding: 10px;
+}
+#middle-content-partenaire a{
+    color: #02A7D5;
+    text-decoration: none;
+}
+#middle-content-partenaire a:hover{
+    text-decoration: underline;
+}
+#middle-content-partenaire h2{
+   color: #94127F;
+}
+
 /*STYLE QUICKTABS*/
 .block-quicktabs{
     margin: 10px 0;
+}
+
+/*SPOT RADIO*/
+label.views-label-field-spot-radio-fid{
+    color:#02A7D5;
+    font-size:13px;
+    font-weight:bold;
+}
+/*RECRUTEMENT ANNONCES*/
+.table-recrutement{
+    width: 98%;
+    border: 0;
+}
+.ligne-annonce{
+    border-bottom: 1px solid #00ABD3;
+    }
+.ligne-detail{
+   padding:10px 0;
+}
+.ligne-detail .views-field-teaser a{
+    color: #606171;
+    text-decoration: none;
+}
+.ligne-detail .views-field-teaser a:hover{
+    text-decoration: underline;
+}
+.ligne-detail label{
+    color: #E85231;
 }

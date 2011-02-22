@@ -16,7 +16,10 @@
     </div>
 
     <?php if ($terms): ?>
-      <div class="taxonomy"><?php print $terms; ?></div>
+
+      <div id="taxonomy">
+<?php print Cyrano_PF_print_terms($node);?>
+      </div>
     <?php endif;?>
 
     <?php if ($links): ?> 

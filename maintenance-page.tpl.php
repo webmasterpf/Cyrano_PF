@@ -58,7 +58,7 @@
     </div> <!-- /header -->
 
  <div id="contentPage">
-
+		<!-- ______________________ PAGE THEME MAINTENANCE _______________________ -->
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">

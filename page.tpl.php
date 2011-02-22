@@ -15,14 +15,16 @@
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			  <?php if ($left): ?>
+			 
          <div id="left-content">
               <?php if ($title): ?>
                 <h1 class="title"><?php print $title; ?></h1>
               <?php endif; ?>
+                 <?php if ($left): ?>
             <?php print $left; ?>
+                 <?php endif; ?>
           </div>
-             <?php endif; ?> <!-- /sidebar-left -->
+             <!-- /sidebar-left -->
 		
 		<!--fin du contenu gauche -->
         
@@ -91,4 +93,3 @@
 	  
 	  <?php include "inc_footer.php";?>
          <?php endif; ?>
-     

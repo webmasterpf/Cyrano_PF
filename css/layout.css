@@ -21,7 +21,7 @@ body {
 	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	background-color: white;
-	color: grey;
+	color: gray;
 }
 ul,li,dl,dd,dt{
     list-style-position: inside;
@@ -71,8 +71,8 @@ height: 100%;
 #left-content{
 	float:left;
 	position:relative;
-	background-color:#00CC99;
-	width:200px;
+	background-color:transparent;
+	width:230px;
 	left:0px;
 }
 
@@ -81,7 +81,7 @@ height: 100%;
 	float:right;
 	position:relative;
 	background-color:#FF66CC;
-	width:200px;
+	width:170px;
 	right:0px;
 }
 /*inner content*/
@@ -96,11 +96,13 @@ background-color: white;
 #middle-content{
 	float:left;
 	position:relative;
-	background-color:#EFEFEF;
-	width:570px !important;
-        width: 560px;
+	background-color:transparent;
+	width:568px !important;
+        width: 558px;
 	padding:5px;
         margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #F8E91B;
  }
 .swftools-wrapper wijering-imagerotator{
 margin: 0 auto;
@@ -132,6 +134,10 @@ text-decoration:none;
 }
 #footer a:hover{
 color: #000000;
+}
+#bloc_stats{
+    margin: 0 auto;
+    width: auto;
 }
 /**----Fin FOOTER---***/
 #content-top, #content-top-pageLycee, #content-top-detailActu-presse{
@@ -426,6 +432,116 @@ background-color:#EFEFEF;
     right:0px;
     padding:5px;
     }
+ /*PAGE BTS*/
+#content-inner-bts{
+width:550px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+
+}
+#right-content-bts{
+    float:right;
+    position:relative;
+    width:405px !important;
+    width: 400px; /*pour ie6*/
+    left:0px;
+    padding:25px 5px 5px;
+    border-left: 1px solid #ADC91F;
+}
+#middle-content-bts{
+    float:left;
+    position:relative;
+    padding:5px;
+    width: 550px;
+
+}
+#middle-content-bts a, #right-content-bts a{
+    text-decoration: none;
+    color: #950F7E;
+}
+#middle-content-bts a:hover,#right-content-bts a:hover{
+    text-decoration: underline;
+}
+#middle-content-bts p{
+    padding: 2px 0;
+}
+#middle-content-bts h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*!!!! PAGE LISTE OFFRE CONTRAT PRO BTS !!!!*/
+#left-content-offre-ct-pro{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:225px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-offre-ct-pro {
+width:650px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+border-left: 1px solid #ADC91F;
+
+}
+#middle-content-offre-ct-pro {
+    float:left;
+    position:relative;
+    padding:5px;
+    width: 650px;
+
+}
+#right-content-offre-ct-pro {
+    float:right;
+    position:relative;
+    width:150px !important;
+    left:0px;
+    padding:25px 5px 5px;
+    border-left: 1px solid #ADC91F;
+}
+/*PAGE OFFRE BTS CONTRAT PRO DETAIL*/
+
+/*******************************/
+#left-content-pageOffreCtpro{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:175px;
+    left:0px;
+    padding:5px;
+    
+}
+#content-inner-pageOffreCtpro{
+background-color:white;
+float:left;
+padding:5px;
+position:relative;
+width:495px;
+border-left:1px solid #DA5714;
+border-right:1px solid #DA5714;
+}
+#middle-content-pageOffreCtpro{
+background-color:white;
+float:left;
+padding:5px;
+position:relative;
+width:490px;
+
+}
+#right-content-pageOffreCtpro{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width: 270px;
+    right:0px;
+    padding:5px;
+    }
 /*****************************/
 /* LAYOUT PAGE LOGIN*/
 #content-inner-pageLogin{
@@ -546,9 +662,16 @@ border-left: 1px solid #93117E;
 #left-content-bourses{
     float:left;
     position:relative;
-    width:340px;
+    width:325px;
     left:0px;
     padding:25px 5px 5px;
+}
+a.telechargement1{
+    color: #911381;
+    text-decoration: none;
+}
+a:hover.telechargement1{
+    text-decoration: underline;
 }
 #middle-content-bourses{
     float:left;
@@ -613,12 +736,27 @@ background-color:transparent;
     text-decoration: none;
     font-size: 16px;
 }
-#middle-content-recrutement a{
+/*#middle-content-recrutement a{
     text-decoration: none;
     color: #E2017B;
 }
 #middle-content-recrutement a:hover{
     text-decoration: underline;
+}*/
+#middle-content-annonce-detail{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:568px !important;
+        width: 558px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #94127F;
+ }
+
+#middle-content-annonce-detail .field-label-inline-first{
+    color: #01ABCF;
 }
 /*PAGE DETAIL ACTU PRESSE*/
 #content-inner-detailActu-presse{

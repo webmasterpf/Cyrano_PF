@@ -572,7 +572,24 @@ a:hover.lire_plus{
 #middle-content-partenaire h2{
    color: #94127F;
 }
-
+/*----- Liste partenaires associatifs vue ------*/
+#liste_part_asso{}
+#liste_part_asso ul{
+    list-style: none;
+}
+#liste_part_asso li{
+    margin: 3px 0;
+    padding: 5px;
+    background: #EFEFEF;
+}
+#liste_part_asso li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+#liste_part_asso li a:hover{
+    color: white;
+    background: #E85231;
+}
 /*STYLE QUICKTABS*/
 .block-quicktabs{
     margin: 10px 0;

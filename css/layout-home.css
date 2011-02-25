@@ -199,3 +199,10 @@ width:506px;
 margin: 0 auto;
 padding:0;
 }
+/*--------------------------------*/
+/*Zone admin pour page d'accueil*/
+#content-admin-homepage{
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+}

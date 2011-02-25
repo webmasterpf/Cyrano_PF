@@ -50,9 +50,29 @@
     <div id="content-bottom-home">
       <?php print $content_bottom_home; ?>
          <?php //print $feed_icons; ?>
-    </div><!-- /#content-bottom -->
-    <?php endif; ?>
-	
-	
+      <?php endif; ?>
+       </div> <!-- /content_bottom_home -->
+
+	<?php if ($content_bottom): ?>
+            <div id="content-bottom">
+              <?php print $content_bottom; ?>
+                <?php endif; ?>
+            </div><!-- /#content-bottom -->
+          <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-admin-homepage">
+
+              <?php if ($mission): ?>
+                <div id="mission"><?php print $mission; ?></div>
+              <?php endif; ?>
+
+              <?php print $messages; ?>
+
+              <?php print $help; ?>
+
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
+      <?php endif; ?>
+	</div><!-- /#content-admin-homepage -->
 	 </div> <!-- /mainPage -->
      <?php include "inc_footer.php";?>

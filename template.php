@@ -13,7 +13,8 @@ function phptemplate_preprocess(&$vars, $hook)
 
   }
 }
-
+?>
+<?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
 function phptemplate_preprocess_page(&$vars) {
   if (module_exists('path')) {
@@ -27,7 +28,8 @@ function phptemplate_preprocess_page(&$vars) {
     }
   }
 }
-
+?>
+<?php
 // permet le debugage de php avec drupal
 function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
@@ -36,7 +38,8 @@ function debug_print($var) {
 function Cyrano_PF_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles) {
   theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
 }
-
+?>
+<?php
 // permet de trier la taxonomie
 function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
      $vocabularies = taxonomy_get_vocabularies();
@@ -83,7 +86,8 @@ function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
      $output .= '</div>';
      return $output;
 }
-
+?>
+<?php
 /**
 * Imprimer des termes présent sur un noeud d'un vocabulaire
 * spécifique.
@@ -116,7 +120,8 @@ function Cyrano_PF_taxonomy_specifique($node, $vid) {
 
   return $output;
 }
-
+?>
+<?php
 //Pour afficher une seule taxonomie dans la fiche de poste bts alternance  - http://drupal.org/node/823918
 function Cyrano_PF_preprocess_node(&$vars) {
   $node = $vars['node'];
@@ -127,7 +132,8 @@ function Cyrano_PF_preprocess_node(&$vars) {
     }
   }
 }
-
+?>
+<?php
 /*_______________FONCTIONS POUR ACTION SUR AGGREGATOR____________*/
 /* modify link items in the aggregator to open in a new window and
 suppress the "blog it" icon & links should the module ever be enabled.
@@ -152,6 +158,43 @@ function Cyrano_PF_more_link ($url, $title) {
 }
 ?>
 <?php
+// permet d'ouvrir en blank les fichiers uploadés via filefield
+//NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
+function Cyrano_PF_filefield_file($file) {
+  // Views may call this function with a NULL value, return an empty string.
+  if (empty($file['fid'])) {
+    return '';
+  }
+
+  $path = $file['filepath'];
+  $url = file_create_url($path);
+  $icon = theme('filefield_icon', $file);
+
+  // Set options as per anchor format described at
+  // http://microformats.org/wiki/file-format-examples
+  // TODO: Possibly move to until I move to the more complex format described
+  // at http://darrelopry.com/story/microformats-and-media-rfc-if-you-js-or-css
+  $options = array(
+    'attributes' => array(
+      'type' => $file['filemime'] . '; length=' . $file['filesize'],
+    ),
+  );
+
+  // Use the description as the link text if available.
+  if (empty($file['data']['description'])) {
+    $link_text = $file['filename'];
+  }
+  else {
+    $link_text = $file['data']['description'];
+    $options['attributes']['title'] = $file['filename'];
+  }
+//open allfiles in new window
+$options['attributes']['target'] = '_blank';
+
+  return '<div class="filefield-file clear-block">'. $icon . l($link_text, $url, $options) .'</div>';
+}
+?>
+<?php
 // HTML format for the webform mail - envoi mail au format HTML
 function phptemplate_webform_mail_headers($form_values, $node, $sid, $cid) {
   $headers = array(
@@ -160,13 +203,4 @@ function phptemplate_webform_mail_headers($form_values, $node, $sid, $cid) {
   );
   return $headers;
 }
-?>
-<?php
-// permet d'ouvrir en blank les fichiers uploadés via filefield
-//NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
-function Cyrano_PF_filefield_file($file) {
-  // Views may call this function with a NULL value, return an empty string.
-  if (empty($file['fid'])) {
-    return '';
-  }
 ?>

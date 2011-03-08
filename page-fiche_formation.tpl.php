@@ -23,6 +23,11 @@
               <?php if ($title): ?>
                 <h1 class="title-fiche-formation"><?php print $title; ?></h1>
               <?php endif; ?>
+                <?php if ($node->field_complement_info_formation[0]['view']): ?>
+
+                <div class="complement_titre_fiche"><?php  (print $node->field_complement_info_formation[0]['view']); /*Info complementaire sur formation*/ ?></div>
+
+            <?php endif; ?>
             <?php print $left; ?>
           </div>
              <!-- /sidebar-left -->
@@ -53,7 +58,14 @@
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content-ficheFormation">
-            <?php print $content; ?>
+               <?php print $node->content['body']['#value'] ?>
+            <?php //print $content; ?>
+               <?php if ($terms): ?>
+
+      <div id="taxonomy">
+<?php print Cyrano_PF_print_terms($node);?>
+      </div>
+    <?php endif;?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 

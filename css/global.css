@@ -417,6 +417,11 @@ padding:10px 0;
     text-decoration: underline;
 }
 /*STYLE FICHE FORMATION*/
+.complement_titre_fiche h2{
+    font-size: 14px;
+    color: #E1017B;
+    text-align: right;
+}
 .view-Fiche-formation-intro{
     margin: 15px 0 0 0;
     padding: 0;

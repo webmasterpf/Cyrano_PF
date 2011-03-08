@@ -417,7 +417,7 @@ padding:10px 0;
     text-decoration: underline;
 }
 /*STYLE FICHE FORMATION*/
-.complement_titre_fiche h2{
+.complement_titre_fiche h3{
     font-size: 14px;
     color: #E1017B;
     text-align: right;

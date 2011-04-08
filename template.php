@@ -1,6 +1,6 @@
 <?php
 // permet template suggestions avec page-
-function phptemplate_preprocess(&$vars, $hook)
+function Cyrano_PF_preprocess(&$vars, $hook)
 {
   switch($hook)
   {
@@ -16,7 +16,7 @@ function phptemplate_preprocess(&$vars, $hook)
 ?>
 <?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
-function phptemplate_preprocess_page(&$vars) {
+function Cyrano_PF_preprocess_page(&$vars) {
   if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
     if ($alias != $_GET['q']) {
@@ -40,7 +40,11 @@ function Cyrano_PF_webform_view_messages($node, $teaser, $page, $submission_coun
 }
 ?>
 <?php
-// permet de trier la taxonomie
+/*
+// permet de trier la taxonomie - utilisé sur les fiches formations
+//pour afficher corrrectement la taxonomie en bas de page via "print Cyrano_PF_print_terms"
+//http://drupalfr.org/node/23218#comment-35519
+*/
 function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
      $vocabularies = taxonomy_get_vocabularies();
      if ($ordered_list) $output .= '<ul>'; //checks to see if you want an ordered list
@@ -140,7 +144,7 @@ suppress the "blog it" icon & links should the module ever be enabled.
 (Code removed--not commented out--from this copy of the original function.)
  * drupal.org/node/573054 */
 
-function phptemplate_aggregator_block_item($item, $feed = 0) {
+function Cyrano_PF_aggregator_block_item($item, $feed = 0) {
   global $user;
 
   $output = '';
@@ -196,11 +200,13 @@ $options['attributes']['target'] = '_blank';
 ?>
 <?php
 // HTML format for the webform mail - envoi mail au format HTML
-function phptemplate_webform_mail_headers($form_values, $node, $sid, $cid) {
+/*function phptemplate_webform_mail_headers($form_values, $node, $sid, $cid) {
   $headers = array(
     'Content-Type'  => 'text/html; charset=UTF-8; format=flowed; delsp=yes',
     'X-Mailer'      => 'Drupal Webform (PHP/'. phpversion() .')',
   );
   return $headers;
 }
+ * 
+ */
 ?>

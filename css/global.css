@@ -6,6 +6,18 @@
  *---  Provence Formation Janv. 2010 --*
  *------------------------------------------------*/
 
+/*-------------------------------------------------
+*********  COULEURS *****************
+gris anthracite #606070
+vert #ADC91F
+violet #911381
+orange #F29400
+bleu turquoise #01ABCF
+rouge #E3001C
+rose fushia #E3001C
+jaune #FAEB0C
+*/
+
 /**********STYLE POUR LES BLOCS*******************/
 
 /**----HEADER---***/
@@ -507,6 +519,9 @@ a:hover.lire_plus{
 #middle-content-detailActu-presse img{
     padding: 0 10px;
 }
+.actu-minipresse{
+    float: right;
+}
 .field-field-minipresse img{
     float: right;
     padding: 3px;
@@ -626,4 +641,61 @@ label.views-label-field-spot-radio-fid{
 }
 .ligne-detail label{
     color: #E85231;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+*/
+#info-plus-fiche-bts{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    top: 440px;
+}
+#info-plus-fiche-bts a{
+    color: #01ABCF;
+    text-decoration: none;
+}
+#info-plus-fiche-bts a:hover{
+    text-decoration: underline;
+}
+#info-plus-fiche-bts h3{
+    font-family: Arista,Trebuchet MS,sans serif;
+    color: #01ABCF;
+}
+#info-plus-fiche-bts{}
+#info-plus-fiche-bts{}
+#fiche-detaille-bts{
+    display: block;
+}
+#fiche-detaille-bts a{
+    color: #F29400;
+}
+strong#middle-content-fiche-bts {
+    color: #EA703F;
+  }
+#middle-content-fiche-bts p{
+    padding:5px 0;
+  }
+#middle-content-fiche-bts a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-fiche-bts a:hover{
+    text-decoration: underline;
+}
+#middle-content-fiche-bts h2, #left-content-fiche-bts h2{
+   font-size: 14px;
+   color: black;
+}
+#middle-content-fiche-bts h3{
+   font-size: 12px;
+   font-weight: bold;
+   color: #95107D;
+}
+#middle-content-fiche-bts h4{
+   font-size: 14px;
+   color: #EA703F;
 }

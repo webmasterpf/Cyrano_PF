@@ -7,7 +7,17 @@ Inclusion des polices en css3
     src: url(../typos/Arista2.0_light.eot); /* IE */
     src: local("Arista"), url(../typos/Arista2.0_light.ttf) format('truetype');/* non-IE */
 }
-
+/*-------------------------------------------------
+*********  COULEURS *****************
+gris anthracite #606070
+vert #ADC91F
+violet #911381
+orange #F29400
+bleu turquoise #01ABCF
+rouge #E3001C
+rose fushia #E3001C
+jaune #FAEB0C
+*/
 
 html {
  margin: 0;
@@ -400,6 +410,9 @@ background-color:#EFEFEF;
     padding:5px;
     border-left: 1px solid #CFD0D2;
 }
+strong#middle-content-ficheFormation {
+    color: #EA703F;
+  }
 #middle-content-ficheFormation p{
     padding:5px 0;
   }
@@ -852,3 +865,36 @@ background-color: white;
 	padding:5px;
         margin: 0 auto;
  }
+ /*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+*/
+#content-inner-fiche-bts{
+    width: 990px;
+    margin: 0 auto;
+    float: none;
+    background-color: white;
+}
+#left-content-fiche-bts{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:315px;
+    left:0px;
+}
+#middle-content-fiche-bts{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:650px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#right-content-fiche-bts{
+    float:right;
+    position:relative;
+    background-color:#FF66CC;
+    width:200px;
+    right:0px;
+}

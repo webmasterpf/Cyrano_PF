@@ -1,5 +1,5 @@
 <?php include "inc_header.php"; ?>
- <!-- ______________________ LAYOUT PAGE FICHE FORMATION _______________________ -->
+ <!-- ______________________ LAYOUT PAGE OFFLINE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -15,26 +15,20 @@
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			  
-         <div id="left-content-ficheFormation">
-             <?php if ($decoTitre): ?>
-                <div id="$decoTitreImg"><?php print $decoTitre; ?></div>
-              <?php endif; ?>
+			 
+         <div id="left-content">
               <?php if ($title): ?>
-                <h1 class="title-fiche-formation"><?php print $title; ?></h1>
+                <h1 class="title"><?php print $title; ?></h1>
               <?php endif; ?>
-                <?php if ($node->field_complement_info_formation[0]['view']): ?>
-
-                <div class="complement_titre_fiche"><?php  (print $node->field_complement_info_formation[0]['view']); /*Info complementaire sur formation*/ ?></div>
-
-            <?php endif; ?>
+                 <?php if ($left): ?>
             <?php print $left; ?>
+                 <?php endif; ?>
           </div>
              <!-- /sidebar-left -->
 		
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner-ficheFormation" class="inner column center">
+        <div id="content-inner" class="inner column center">
 		             
 		
            
@@ -57,30 +51,20 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-ficheFormation">
-               <?php print $node->content['body']['#value'] ?>
-            <?php //print $content; ?>
-<!-- <?php print_r($node->taxonomy)?> -->
- <?php if ($terms): ?>
-      <div id="taxonomy">
-<?php print Cyrano_PF_print_terms($node->taxonomy);?>
-      </div>
-<?php endif;?>
-
+          <div id="middle-content">
+             <?php
+// Main message.  Note HTML markup.
+$content ="<p>Le site est actuellement hors ligne et ne peut &ecirc;tre affich&eacute; correctement. Nous sommes en train d'intervenir pour r&eacute;soudre ce probl&egrave;me. </p>";
+    ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
         
 
-         
+          
+          
       </div> <!-- /content-inner /content -->
-  <br clear="all" />
-  <!-- ______________________ CONTENU BAS _______________________ -->
-<?php if ($content_bottom): ?>
-            <div id="content-bottom">
-              <?php print $content_bottom; ?>
-            </div><!-- /#content-bottom -->
-          <?php endif; ?>
+
             
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
@@ -93,7 +77,7 @@
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
         <?php if ($right): ?>
          <!--d�but du contenu droit -->
-		<div id="right-content-ficheFormation">
+		<div id="right-content">
 			
 				
             <?php print $right; ?>
@@ -101,9 +85,14 @@
         <?php endif; ?> <!-- /sidebar-right -->
 
    
-    	  <br clear="all" />
+    	 <br clear="all"/>
+         <!-- ______________________ CONTENU BAS _______________________ -->
+<?php if ($content_bottom): ?>
+            <div id="content-bottom">
+              <?php print $content_bottom; ?>
+            </div><!-- /#content-bottom -->
+          <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>
          <?php endif; ?>
-     

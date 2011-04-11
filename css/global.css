@@ -105,6 +105,11 @@ padding: 2px;
     background: white;
 }
 /*-------------------------------*/
+/***********************************
+----- PAGE.TPL ET NODE.TPL ---------
+--------- RUBRIQUE BTS -------------
+-----------------------------------
+*/
 /*Table pour node annonce bts*/
 .table-poste-bts{
     background:none;
@@ -210,7 +215,21 @@ text-align:left;
 li.node_read_more a:hover{
 text-decoration: underline;
 }
-/************************/
+/*************************************/
+/* POUR NODE.TPL PAGE BTS ACCUEIL */
+#vue-liste-bts{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    padding: 0;
+    margin: 0;
+}
+.vue-bloc-liste-bts{}
+.vue-bloc-liste-bts ul{}
+.vue-bloc-liste-bts li{}
+.vue-bloc-liste-bts li a{
+    font-weight: bold;
+}
+.vue-bloc-liste-bts li a:hover{}
+/*************************************/
 /*-------- ANNONCE DEFILANTE ------*/
 .annonce{
     color:#00ACD1;

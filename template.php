@@ -14,6 +14,7 @@ function Cyrano_PF_preprocess(&$vars, $hook)
   }
 }
 ?>
+
 <?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
 function Cyrano_PF_preprocess_page(&$vars) {
@@ -128,7 +129,17 @@ function Cyrano_PF_taxonomy_specifique($node, $vid) {
 <?php
 //Pour afficher une seule taxonomie dans la fiche de poste bts alternance  - http://drupal.org/node/823918
 function Cyrano_PF_preprocess_node(&$vars) {
+    /**
+* Override or insert variables into the node templates.
+*
+* @param $vars
+*   An array of variables to pass to the theme template.
+* @param $hook
+*   The name of the template being rendered ("node" in this case.)
+*/
+
   $node = $vars['node'];
+  $vars['template_file'] = 'node-'. $node->nid;
   $wanted_vid = 7;//Choisir ici le vid voulu,ici celui de l'etat de l'offre
   foreach($node->taxonomy as $term) {
     if ( $wanted_vid == $term->vid ) {

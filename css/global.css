@@ -215,21 +215,7 @@ text-align:left;
 li.node_read_more a:hover{
 text-decoration: underline;
 }
-/*************************************/
-/* POUR NODE.TPL PAGE BTS ACCUEIL */
-#vue-liste-bts{
-    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
-    padding: 0;
-    margin: 0;
-}
-.vue-bloc-liste-bts{}
-.vue-bloc-liste-bts ul{}
-.vue-bloc-liste-bts li{}
-.vue-bloc-liste-bts li a{
-    font-weight: bold;
-}
-.vue-bloc-liste-bts li a:hover{}
-/*************************************/
+
 /*-------- ANNONCE DEFILANTE ------*/
 .annonce{
     color:#00ACD1;
@@ -669,6 +655,38 @@ label.views-label-field-spot-radio-fid{
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 */
+/*************************************/
+/* POUR NODE.TPL PAGE BTS ACCUEIL */
+#vue-liste-bts{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    padding: 0;
+    margin: 0;
+}
+.vue-bloc-liste-bts{}
+.vue-bloc-liste-bts ul{
+    list-style: none;
+}
+.vue-bloc-liste-bts li{}
+.vue-bloc-liste-bts a{
+    font-weight: bold;
+    padding: 3px;
+    color: .911381;
+}
+.vue-bloc-liste-bts a:hover{
+    background: #911381;
+    color: white;
+}
+span#DossierBTS{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #01ABCF;
+}
+span#DossierBTS a{}
+span#DossierBTS a:hover{}
+span#DossierBTS{}
+/*************************************/
 #info-plus-fiche-bts{
     display: block;
     position: relative;

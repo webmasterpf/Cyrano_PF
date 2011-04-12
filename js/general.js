@@ -12,6 +12,7 @@ Drupal.behaviors.goTop = function(context) {
 
   link.click(function(e) {
     e.preventDefault; // Lors d'un click on empêche le navigateur de rafraichir
-    $.scrollTo(); // Et on va en haut de page.
+    //$.scrollTo(); // Et on va en haut de page.
+     $('html,body').animate({scrollTop:0},'slow');//smooth scroll
   });
 }

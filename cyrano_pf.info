@@ -1,5 +1,5 @@
-name = Cyrano pour PF
-description = Theme pour site Provence Formation - Design by Cyrano - Integration by Aiphes
+name = Provence Formation inspired by Cyrano
+description = Theme pour site Provence Formation - Design and Integration by Webmaster PF
 core = 6.x
 engine = phptemplate
 

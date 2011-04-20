@@ -60,10 +60,6 @@
 		  
 		</div><!-- /headBas -->
           
-        
-
-     
-      
       
 	  </div> <!-- /header-inner -->
    </div> <!-- /header -->

@@ -26,7 +26,23 @@
                  <div id="blocLycee"><?php print $blocLycee; ?></div>
               <?php endif; ?>
 
-         
+
+                   <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-admin-homepage">
+
+              <?php if ($mission): ?>
+                <div id="mission"><?php print $mission; ?></div>
+              <?php endif; ?>
+
+              <?php print $messages; ?>
+
+              <?php print $help; ?>
+
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
+      <?php endif; ?>
+         </div><!-- /#content-admin-homepage -->
 
           </div><!-- /contentHome -->
 		  
@@ -58,21 +74,7 @@
               <?php print $content_bottom; ?>
                 <?php endif; ?>
             </div><!-- /#content-bottom -->
-          <?php if ($mission || $messages || $help || $tabs): ?>
-            <div id="content-admin-homepage">
-
-              <?php if ($mission): ?>
-                <div id="mission"><?php print $mission; ?></div>
-              <?php endif; ?>
-
-              <?php print $messages; ?>
-
-              <?php print $help; ?>
-
-              <?php if ($tabs): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-              <?php endif; ?>
-      <?php endif; ?>
-	</div><!-- /#content-admin-homepage -->
+        
+	
 	 </div> <!-- /mainPage -->
      <?php include "inc_footer.php";?>

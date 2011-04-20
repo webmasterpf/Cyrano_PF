@@ -598,7 +598,7 @@ background-color:pink;
 
 /*LAYOUT PAGE ACTUALITES*/
 #content-inner-actualites{
-width:240px;
+width:370px;
 margin:0 auto;
 float:left;
 background-color:transparent;
@@ -609,7 +609,7 @@ border-right: 1px solid #02A7D5;
     float:left;
     position:relative;
     /*background:transparent url('../images/titre_revue_presse.gif') no-repeat top left;*/
-    width:430px;
+    width:300px;
     left:0px;
     padding:25px 5px 5px;
 }
@@ -849,10 +849,10 @@ background-color:#EFEFEF;
 }
 
 #content-inner-formulaire{
-width:570px;
-margin:0 auto;
-float:left;
-background-color: white;
+    width:570px;
+    margin:0 auto;
+    float:left;
+    background-color: white;
 
 }
 
@@ -865,11 +865,10 @@ background-color: white;
 	padding:5px;
         margin: 0 auto;
  }
- /*--------------------------------------------
+/*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
-¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
-*/
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
 #content-inner-fiche-bts{
     width: 990px;
     margin: 0 auto;

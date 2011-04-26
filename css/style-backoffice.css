@@ -54,10 +54,13 @@ padding:10px 0;
 #bloc_admin{
     margin: 5px 0;
     padding: 0;
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
 }
 #bloc_admin a{
     text-decoration: none;
     color: #E2017B;
+    background: white;
+    padding: 2px;
 }
 #bloc_admin a:hover{
     color: white;

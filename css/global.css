@@ -544,6 +544,40 @@ a:hover.lire_plus{
 .block-aggregator a:hover{
     text-decoration: underline;
 }
+#block-aggregator-category-1 h3, #block-aggregator-category-2 h3{
+     color: purple;
+}
+/*NODEQUEUE ACTUS BRULANTE*/
+#block-views-nodequeue_1-block {
+    margin: 0 auto;
+    width: 240px;
+}
+#block-views-nodequeue_1-block ul{
+    list-style: none;
+    display: block;
+    padding: 5px;
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#block-views-nodequeue_1-block li{
+    list-style: none;
+    margin: 10px 0;
+}
+#block-views-nodequeue_1-block h3{
+    color: #01ABCF;
+}
+#block-views-nodequeue_1-block a{
+    text-decoration: none;
+    background: white;
+    padding: 2px;
+    color: #606070;
+}
+#block-views-nodequeue_1-block a:hover{
+    color: white ;
+    background: #E85231;
+}
+
 /*BLOC BOUTONS PARTENAIRES*/
 #table-bouton-partenaire{
     width: 210px;

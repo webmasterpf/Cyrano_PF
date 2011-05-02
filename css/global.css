@@ -555,6 +555,7 @@ a:hover.lire_plus{
 #block-views-nodequeue_1-block {
     margin: 0 auto;
     width: 240px;
+    padding: 10px 0;
 }
 #block-views-nodequeue_1-block ul{
     list-style: none;
@@ -563,6 +564,11 @@ a:hover.lire_plus{
     background: transparent url(../images/zebra-gros-clair.gif) repeat ;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 10px #00abd1;
+    -moz-box-shadow: 1px 1px 10px #00abd1;
+    box-shadow: 1px 1px 10px #00abd1;
+    behavior: url(../site/sites/all/libraries/PIE/PIE.htc);
+}
 }
 #block-views-nodequeue_1-block li{
     list-style: none;
@@ -581,7 +587,10 @@ a:hover.lire_plus{
     color: white ;
     background: #E85231;
 }
-
+.view-nodequeue-1 li,.view-nodequeue-1 ul li,.view-nodequeue-1 ul{
+     list-style: none;
+      margin: 10px 0;
+}
 /*BLOC BOUTONS PARTENAIRES*/
 #table-bouton-partenaire{
     width: 210px;
@@ -698,7 +707,7 @@ label.views-label-field-spot-radio-fid{
 #vue-liste-bts{
     background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
 }
 .vue-bloc-liste-bts{}
 .vue-bloc-liste-bts ul{
@@ -708,9 +717,9 @@ label.views-label-field-spot-radio-fid{
 .vue-bloc-liste-bts a{
     font-weight: bold;
     padding: 3px;
-    color: .911381;
+    color: #911381;
 }
-.vue-bloc-liste-bts a:hover{
+#vue-liste-bts .vue-bloc-liste-bts a:hover{
     background: #911381;
     color: white;
 }

@@ -540,6 +540,41 @@ a:hover.lire_plus{
     -webkit-box-shadow: 3px 3px 5px #888;
     box-shadow: 3px 3px 5px #888;
 }
+/*-----------  REDESIGN ACTU GLOBALE
+---------------------------------------*/
+.table_actu_globale{
+    width: 375px;
+}
+.table_actu_globale tbody{}
+.table_actu_globale tr{}
+.table_actu_globale td{}
+.titre_actu{
+position:absolute;
+bottom: 30px;
+left: 10px;
+color: white;
+z-index:20;
+}
+.titre_actu a{
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+.titre_actu a:hover{
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+.texte_actu{}
+.image_actu{
+height:200px;
+position:relative;
+width:200px;
+z-index:15;
+border: 3px solid #E85231;
+/*left:0px;
+bottom:0px;*/
+}
 /*BLOC FLUX RSS*/
 .block-aggregator a{
     color: black;

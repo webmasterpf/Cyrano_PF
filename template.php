@@ -136,7 +136,12 @@ function Cyrano_PF_preprocess_node(&$vars) {
 * @param $hook
 *   The name of the template being rendered ("node" in this case.)
 */
-
+//Partie regions dans node.tpl- ajoute les regions utiles au node.tpl
+ 
+ $vars['col_G1'] = theme('blocks', 'col_G1');
+ $vars['col_G2'] = theme('blocks', 'col_G2');
+ $vars['col_G3'] = theme('blocks', 'col_G3');
+ ///////////////////////////////////////////////////////////
   $node = $vars['node'];
   $vars['template_file'] = 'node-'. $node->nid;
   $wanted_vid = 7;//Choisir ici le vid voulu,ici celui de l'etat de l'offre

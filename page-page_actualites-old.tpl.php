@@ -1,6 +1,5 @@
 <?php include "inc_header.php"; ?>
-<?php /*REDESIGN PAGE ACTU*/ ?>
- <!-- ______________________ LAYOUT PAGE ACTUS GLOBALE _______________________ -->
+ <!-- ______________________ LAYOUT PAGE ACTUS _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPageActu">
@@ -18,9 +17,17 @@
             </div> <!-- /#content-top -->
 	  
       
- 
+       <!-- ______________________ COLONNE GAUCHE _______________________ -->
+		
+	 <?php if ($revue_presse): ?>
+             <div id="left-content-actualites">
+         <?php print $revue_presse; ?>
+            </div>
+             <?php endif; ?> <!-- /colonne gauche revue de presse -->
+		
+		<!--fin du contenu gauche -->
         
-        <div id="content-inner" class="inner column center">
+        <div id="content-inner-actualites" class="inner column center">
 		             
 		
            
@@ -32,7 +39,7 @@
                     <?php print $actuAssociation; ?>
               </div><!-- /#actualite-association -->
                      <?php endif; ?>
-                  <div id="middle-content-actu-globale">
+                  <div id="middle-content-actualites">
           
                    
               <br clear="all"/>
@@ -74,7 +81,13 @@
         <?php endif; ?>
 
        
-		
+		  <!-- ______________________ COLONNE DROITE _______________________ -->
+        <?php if ($right): ?>
+         <!--debut du contenu droit -->
+		<div id="right-content-actualites">
+		<?php print $right; ?>
+        </div>
+        <?php endif; ?> <!-- /fin colonne de droite -->
 
    
     	 <br clear="all"/>

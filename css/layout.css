@@ -897,3 +897,26 @@ background-color:#EFEFEF;
     width:200px;
     right:0px;
 }
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE ACTU GLOBALE REDESIGN~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+#middle-content-actu-globale{
+    width: 990px;
+    margin: 0 auto;
+}
+.col_375{
+    width: 375px;
+}
+.col_220{
+    width: 220px;
+}
+#rp_actu_gloable{
+    float: left;
+}
+#actu_asso_actu_globale{
+    float: left;
+}
+#infos_fixes_actu_globale{
+    float: left;
+}

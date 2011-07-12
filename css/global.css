@@ -504,11 +504,26 @@ a:hover.lire_plus{
     color: white;
     
 }
+/*
 .lien_archive{
 	 float: right;
 	 color: #E2017B;
 	 text-decoration: underline;
+         margin: 0 10px 0 0;
 	 }
+ */
+ /*Redesign*/
+ .lien_archive {
+    background: none repeat scroll 0 0 AliceBlue;
+    color: #E2017B;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    text-decoration: underline;
+    width: 95%;
+}
 .lien_archive a:hover{
 	  text-decoration: none;
 	 }
@@ -536,45 +551,136 @@ a:hover.lire_plus{
     padding: 3px;
     margin: 0;
     line-height: 0;
-    -moz-box-shadow: 3px 3px 5px #888;
-    -webkit-box-shadow: 3px 3px 5px #888;
-    box-shadow: 3px 3px 5px #888;
+    -moz-box-shadow: 0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow: 0px 0px 5px #888;
 }
 /*-----------  REDESIGN ACTU GLOBALE
 ---------------------------------------*/
+/*TITRES*/
+.bloc_actus h3{
+ font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align:center;
+}
+#rp_actu_gloable .bloc_actus h3{
+    color: #E2017B;
+}
+#actu_asso_actu_globale .bloc_actus h3{
+    color: #E3001B;
+}
+/*CONTENU*/
 .table_actu_globale{
     width: 375px;
 }
 .table_actu_globale tbody{}
 .table_actu_globale tr{}
-.table_actu_globale td{}
+.table_actu_globale td{
+    vertical-align: top;
+}
 .titre_actu{
-position:absolute;
-bottom: 30px;
-left: 10px;
-color: white;
-z-index:20;
+    bottom: 70px;
+    color: white;
+    left: 3px;
+    position: relative;
+    width: 190px;
+    z-index: 20;
 }
 .titre_actu a{
     background: white;
     color: black;
     text-decoration: none;
+    padding: 2px;
 }
 .titre_actu a:hover{
-    background: black;
-    color: white;
+   background: #E85231;
+    color: black;
     text-decoration: none;
 }
-.texte_actu{}
+.texte_actu{
+    display: inline-block;
+    padding: 5px 10px;
+}
 .image_actu{
 height:200px;
 position:relative;
 width:200px;
 z-index:15;
-border: 3px solid #E85231;
+border: 3px solid #ADC91F;
 /*left:0px;
 bottom:0px;*/
 }
+.actu-globale-grand-actuasso .image_actu{
+height:200px;
+position:relative;
+width:200px;
+z-index:15;
+border: 3px solid #E3007A;
+}
+/*LISTE ACTU GLOBALE PETITE ILLUSTRATION*/
+.table_actu_globale_petit{
+    width: 375px;
+    display: block;
+}
+.table_actu_globale_petit tbody{
+    display: block;
+}
+.table_actu_globale_petit tr{
+    display: block;
+    height: 160px;
+    margin: 5px 0;
+    padding: 0;
+}
+.table_actu_globale_petit td{
+    vertical-align: top;
+}
+.titre_actu_petit{
+    bottom: 9em;
+    color: white;
+    left: 3px;
+    position: relative;
+    width: 140px;
+    z-index: 20;
+}
+.titre_actu_petit a{
+    background: white;
+    color: black;
+
+    text-decoration: none;
+    padding: 2px;
+}
+.titre_actu_petit a:hover{
+   background: #E85231;
+    color: black;
+    text-decoration: none;
+}
+.texte_actu_petit{
+    display: inline-block;
+    padding: 5px;
+}
+.image_actu_petit{
+    border: 3px solid #ADC91F;
+    height: 150px;
+    position: relative;
+    width: 150px;
+    z-index: 15;
+}
+.actu-globale-petit-actuasso .image_actu_petit{
+border: 3px solid #E3007A;
+}
+
+.contenu-actu-globale{}
+.contenu-actu-globale a{
+     color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenu-actu-globale a:hover{
+     text-decoration: underline;
+}
+.contenu-actu-globale{}
 /*BLOC FLUX RSS*/
 .block-aggregator a{
     color: black;
@@ -589,7 +695,7 @@ bottom:0px;*/
 /*NODEQUEUE ACTUS BRULANTE*/
 #block-views-nodequeue_1-block {
     margin: 0 auto;
-    width: 240px;
+    width: 240px;/*redesign : 210px*/
     padding: 10px 0;
 }
 #block-views-nodequeue_1-block ul{

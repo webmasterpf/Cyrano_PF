@@ -16,6 +16,12 @@
               global $theme_path;
               include ($theme_path.'/includes/inc_vue_actu_globale_rp.php');
               ?>
+    <br clear="all"/>
+    <?php
+ /* inclusion vue liste illustrée petit */
+              global $theme_path;
+              include ($theme_path.'/includes/inc_vue_actu_globale_rp_petit.php');
+              ?>
      <?php
  /* inclusion d'une region pour bloc */
               global $theme_path;
@@ -29,10 +35,16 @@
               global $theme_path;
               include ($theme_path.'/includes/inc_vue_actu_globale_actuasso.php');
               ?>
+     <br clear="all"/>
+       <?php
+ /* inclusion vue liste illustrée petit */
+              global $theme_path;
+              include ($theme_path.'/includes/inc_vue_actu_globale_actuasso_petit.php');
+              ?>
          <?php
  /* inclusion d'une region pour bloc */
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_G2.php');
               ?>
 </div>
 <!-- ______________________ COLONNE INFOS FIXES RSS _______________________ -->
@@ -40,10 +52,10 @@
      <?php
  /* inclusion d'une region pour bloc */
               global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/inc_region_col_G3.php');
               ?>
     
-        <div class="content">
+        <div class="content contenu-actu-globale">
       <?php print $content; ?>
     </div>
 

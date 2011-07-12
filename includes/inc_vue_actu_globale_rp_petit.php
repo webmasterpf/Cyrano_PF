@@ -7,9 +7,9 @@
 ?>
 
 <?php
-$viewname = 'Actu_globale_grand';
+$viewname = 'Actu_globale_petit';
 $view = views_get_view ($viewname);
-$view->set_display('block_1');
+$view->set_display('block_2');
 
 
 //Exécution de le vue
@@ -18,7 +18,7 @@ $view->execute();
 
 if ($view->result) {
   // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu
-  $output = '<div class="bloc_actus"><h3>'.$view->get_title().'</h3>' . $view->render().'</div>';
+  $output = '<div class="bloc_actus_petit"><h3>'.$view->get_title().'</h3>' . $view->render().'</div>';
 }
 
 //Affiche la Liste des dernieres RP

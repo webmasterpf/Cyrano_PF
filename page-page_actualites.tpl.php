@@ -54,7 +54,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
             <?php print $content; ?>
-              <?php print $feed_icons; ?>
+             
               
         
 
@@ -82,6 +82,7 @@
           <?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
+                 <?php print $feed_icons; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
             

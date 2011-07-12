@@ -918,5 +918,7 @@ background-color:#EFEFEF;
     float: left;
 }
 #infos_fixes_actu_globale{
+    border-left: 1px solid #01AAD3;
     float: left;
+    padding: 5px;
 }

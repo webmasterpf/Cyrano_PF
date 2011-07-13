@@ -225,3 +225,40 @@ $options['attributes']['target'] = '_blank';
  * 
  */
 ?>
+<?php
+/* Fonction pour splitter le contenu de $body en plusieurs colonnes
+ * S'utilise en insérant
+ * $output = Cyrano_PF_split_bodycontent ($content);
+    print $output;
+ * dans le node-custom.tpl et en ajoutant le tag <columns> dans le corps du node
+ */
+function Cyrano_PF_split_bodycontent ($colcontent) {
+    $coloutput =  "";
+    $string = "<columns>";
+    $columns = explode($string,$colcontent); // cut the text for splitting the body into columns
+
+    $i = 0;
+    foreach($columns as $cle=>$valeur) {   //go through the array and add div to contents when necessary
+
+        if ($i == 0) {
+
+            $coloutput .= $valeur;
+            $i ++;
+
+        }
+
+        else if ($i == 1) {
+            $coloutput .= "<div class=\"column_".$i."\">".$valeur."</div>";
+            $i = 2;
+        }
+
+        else {
+            $coloutput .= "<div class=\"column_".$i."\">".$valeur."</div>";
+            $i = 1;
+        }
+
+    }
+
+    return $coloutput;
+}
+?>

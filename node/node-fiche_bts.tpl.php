@@ -7,9 +7,22 @@
          <div id="left-content-fiche-bts">
             <?php if ($title): ?>
      <h1 class="titre-fiche-bts"><?php print $title; ?></h1>
-
-    <?php endif; ?>
+     <?php endif; ?>
+     
       <br clear="all"/>
+      
+      <?php if ($node->field_abreviation_bts[0]['view']): ?>
+                 <?php  print $node->field_abreviation_bts[0]['view'] ?>
+             <?php endif; ?>
+
+    
+      <br clear="all"/>
+
+      <?php if ($node->field_illus_fichebts[0]['view']): ?>
+                 <?php  print $node->field_illus_fichebts[0]['view'] ?>
+             <?php endif; ?>
+        <br clear="all"/>
+
              <?php if ($node->field_intro_fiche_bts[0]['view']): ?>
                  <?php  print $node->field_intro_fiche_bts[0]['view'] ?>
              <?php endif; ?>
@@ -44,8 +57,17 @@
     <?php endif; ?>
 
     <div class="content">
-      <?php   print $node->content['body']['#value'] ?>
+      <?php   //print $node->content['body']['#value'] ?>
+      <?php 
+      $output = Cyrano_PF_split_bodycontent ($node->content['body']['#value']);
+        print $output;?>
+
     </div>
+
+<?php 
+ global $theme_path;
+ include ($theme_path.'/includes/inc_fiche_bts_liste_liens.php');
+ ?>
 
     <?php if ($terms): ?>
 

@@ -695,7 +695,7 @@ border: 3px solid #E3007A;
 /*NODEQUEUE ACTUS BRULANTE*/
 #block-views-nodequeue_1-block {
     margin: 0 auto;
-    width: 240px;/*redesign : 210px*/
+    width: 210px;/*redesign : 210px - avant 240px*/
     padding: 10px 0;
 }
 #block-views-nodequeue_1-block ul{

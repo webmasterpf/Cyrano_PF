@@ -874,12 +874,96 @@ span#DossierBTS{
 span#DossierBTS a{}
 span#DossierBTS a:hover{}
 span#DossierBTS{}
-/*************************************/
-#info-plus-fiche-bts{
+/************** NODE.TPL FICHE BTS***********************/
+#abbreviation-bts{
+     color: #94127F;
+    float: right;
+    padding: 0 5px;
+    
+}
+#intro-fiche-bts{
+    background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
+    padding: 25px 7px;
+    width: 295px;
+    /*-moz-box-shadow: 0px 7px 8px #606171;
+    -webkit-box-shadow: 0px 7px 8px #606171;
+    box-shadow: 0px 7px 8px #606171;
+*/
+
+}
+#intro-fiche-bts img{
+}
+
+#illus-fiche-bts{
+   border: 3px solid #02A7D5;
+    box-shadow: 0 0 5px #888888;
     display: block;
-    position: relative;
-    bottom: 0px;
-    top: 440px;
+    height: 150px;
+    margin: 0 auto;
+    width: 290px;
+    
+
+}
+/*table infos pratiques*/
+table#infos-pratiques-bts{ 
+    border-top: 1px solid  #ACC624;
+    border-bottom: 2px solid #606171;
+    margin: 0 auto;
+    width: 99%;
+}
+table#infos-pratiques-bts tbody{
+ 
+    
+}
+table#infos-pratiques-bts tr{}
+table#infos-pratiques-bts td{
+    padding: 2px;
+    background:  #EFEFEF;
+}
+table#infos-pratiques-bts a{}
+table#infos-pratiques-bts a:hover{}
+table#infos-pratiques-bts td h4{
+    text-align: center;
+    color: white;
+   text-shadow: 0px 0px 5px #606171;
+filter: dropshadow(color=#606171, offx=0, offy=0);
+font-family: 'IM Fell English', serif;
+}
+td.col1{
+    background: none ;
+    width: 33%;
+}
+td.col2{
+    background: #D0D1D2;
+}
+td.col3{
+    background: none ;
+}
+td:hover.col1{
+    background: ;
+}
+td:hover.col2{
+    background: yellow;
+}
+td:hover.col3{
+    background: #F39300;
+}
+/*Partie liens*/
+#liens-fiche-bts{}
+#liens-fiche-bts tr{}
+#liens-fiche-bts td{}
+#liens-fiche-bts{}
+
+/*Bloc infos en plus */
+#info-plus-fiche-bts{
+    background-color: #EFEFEF;
+    bottom: 0;
+    display: block;
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; 
 }
 #info-plus-fiche-bts a{
     color: #01ABCF;
@@ -900,6 +984,20 @@ span#DossierBTS{}
 #fiche-detaille-bts a{
     color: #F29400;
 }
+/*bodyfield content*/
+#middle-content-fiche-bts h2{
+    color: #E3001C;
+    font-size: 1.5em;
+}
+#middle-content-fiche-bts h3{
+    font-size: 1.2em;
+    color: #91127D;
+}
+
+#middle-content-fiche-bts h4{
+   font-size: 14px;
+   color: #606171;
+}
 strong#middle-content-fiche-bts {
     color: #EA703F;
   }
@@ -913,17 +1011,4 @@ strong#middle-content-fiche-bts {
 }
 #middle-content-fiche-bts a:hover{
     text-decoration: underline;
-}
-#middle-content-fiche-bts h2, #left-content-fiche-bts h2{
-   font-size: 14px;
-   color: black;
-}
-#middle-content-fiche-bts h3{
-   font-size: 12px;
-   font-weight: bold;
-   color: #95107D;
-}
-#middle-content-fiche-bts h4{
-   font-size: 14px;
-   color: #EA703F;
 }

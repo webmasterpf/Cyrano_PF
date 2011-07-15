@@ -227,7 +227,7 @@ $options['attributes']['target'] = '_blank';
 ?>
 <?php
 /* Fonction pour splitter le contenu de $body en plusieurs colonnes
- * S'utilise en insérant
+ * S'utilise en insérant dans le node.tpl
  * $output = Cyrano_PF_split_bodycontent ($content);
     print $output;
  * dans le node-custom.tpl et en ajoutant le tag <columns> dans le corps du node

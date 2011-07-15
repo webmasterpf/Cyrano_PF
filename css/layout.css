@@ -869,6 +869,18 @@ background-color:#EFEFEF;
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+/*SPLIT BODY FIELD CONTENT*/
+.column_1{
+    float: left;
+    width: 320px;
+    padding: 1px;
+}
+.column_2{
+    float: left;
+    width: 320px;
+    padding: 1px;
+    background: none repeat scroll 0 0 WhiteSmoke;
+}
 #content-inner-fiche-bts{
     width: 990px;
     margin: 0 auto;
@@ -878,9 +890,8 @@ background-color:#EFEFEF;
 #left-content-fiche-bts{
     float:left;
     position:relative;
-    background-color:white;
     width:315px;
-    left:0px;
+    border-right: 1px solid #606171;
 }
 #middle-content-fiche-bts{
     float:left;
@@ -888,14 +899,10 @@ background-color:#EFEFEF;
     background-color:white;
     width:650px;
     padding:5px;
-    border-left: 1px solid #CFD0D2;
+    border-left: 0px solid #CFD0D2;
 }
-#right-content-fiche-bts{
-    float:right;
-    position:relative;
-    background-color:#FF66CC;
-    width:200px;
-    right:0px;
+.bodyfield-content-bts{
+    float: left;
 }
 /*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE ACTU GLOBALE REDESIGN~~~~~~~

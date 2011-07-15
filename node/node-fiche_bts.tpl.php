@@ -12,37 +12,38 @@
       <br clear="all"/>
       
       <?php if ($node->field_abreviation_bts[0]['view']): ?>
+      <span id="abbreviation-bts">
                  <?php  print $node->field_abreviation_bts[0]['view'] ?>
+      </span>
              <?php endif; ?>
 
     
       <br clear="all"/>
 
-      <?php if ($node->field_illus_fichebts[0]['view']): ?>
-                 <?php  print $node->field_illus_fichebts[0]['view'] ?>
-             <?php endif; ?>
-        <br clear="all"/>
+      
+       
 
              <?php if ($node->field_intro_fiche_bts[0]['view']): ?>
+        <div id="intro-fiche-bts">
+          
+           <?php if ($node->field_illus_fichebts[0]['view']): ?>
+      <div id="illus-fiche-bts">
+                 <?php  print $node->field_illus_fichebts[0]['view'] ?>
+      </div>
+             <?php endif; ?>
                  <?php  print $node->field_intro_fiche_bts[0]['view'] ?>
+             
+         
+        </div>
              <?php endif; ?>
         <br clear="all"/>
-        <?php if ($node->field_fiche_bts[0]['view']): ?>
-        <div id="fiche-detaille-bts">
-                <?php  print $node->field_fiche_bts[0]['view'] ?>
-        </div>
-   <?php endif; ?>
+  
       
                  <?php if ($left): ?>
             <?php print $left; ?>
                  <?php endif; ?>
   <br clear="all"/>
-     <?php if ($node->field_info_plus_bts[0]['view']): ?>
-  <div id="info-plus-fiche-bts">
-      <h3>En savoir plus...</h3>
-  <?php  print $node->field_info_plus_bts[0]['view'] ?>
-  </div>
-        <?php endif; ?> 
+    
 
           </div>
              <!-- /sidebar-left -->
@@ -55,39 +56,62 @@
     <?php if ($submitted): ?>
       <span class="submitted"><?php print $submitted; ?></span>
     <?php endif; ?>
-
-    <div class="content">
-      <?php   //print $node->content['body']['#value'] ?>
-      <?php 
-      $output = Cyrano_PF_split_bodycontent ($node->content['body']['#value']);
-        print $output;?>
-
-    </div>
-
-<?php 
+      <table id="infos-pratiques-bts">
+          <tbody>
+              <tr>
+                  <td class="col1">
+                      <h4>Des liens...</h4>
+                      <?php
  global $theme_path;
  include ($theme_path.'/includes/inc_fiche_bts_liste_liens.php');
  ?>
-
-    <?php if ($terms): ?>
+                  </td>
+                  <td class="col2">
+         <h4>En détail...</h4>
+         <?php if ($node->field_fiche_bts[0]['view']): ?>
+        <div id="fiche-detaille-bts">
+                <?php  print $node->field_fiche_bts[0]['view'] ?>
+        </div>
+   <?php endif; ?>
+                  </td>
+                  <td class="col3">
+                      <h4>Utile...</h4>
+                      <?php if ($terms): ?>
 
       <div id="taxonomy">
 <?php print Cyrano_PF_print_terms($node);?>
       </div>
     <?php endif;?>
+                  </td>
+              </tr>
+
+          </tbody>
+
+      </table>
+
+
+    
+      
+    <div class="bodyfield-content-bts">
+     
+      <?php
+      
+      $output = Cyrano_PF_split_bodycontent ($node->content['body']['#value']);
+        print $output;?>
+
+    </div>
+ <br clear="all"/>
+ <?php if ($node->field_info_plus_bts[0]['view']): ?>
+  <div id="info-plus-fiche-bts">
+      <h3>En savoir plus...</h3>
+  <?php  print $node->field_info_plus_bts[0]['view'] ?>
+  </div>
+        <?php endif; ?> 
 
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
       </div>
-<!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content-fiche-bts">
 
-
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

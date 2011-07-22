@@ -46,7 +46,7 @@ ul.nice-menu-downdown li li.over {
   background: none;
 }
 /*Pour les rubriques avec sous rubriques*/
-ul.nice-menu-downdown li a {
+ul.nice-menu-downdown li a,ul.nice-menu .menu-item-container  {
  	text-decoration: none;
 	background: none;
 	color:#606070;

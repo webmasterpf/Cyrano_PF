@@ -891,7 +891,9 @@ span#DossierBTS{}
 */
 
 }
-#intro-fiche-bts img{
+#intro-fiche-bts h2,#middle-content-fiche-bts h2{
+    color: #ADC821;
+    font-size: 1.5em;
 }
 
 #illus-fiche-bts{
@@ -985,10 +987,7 @@ border-radius: 5px;
     color: #F29400;
 }
 /*bodyfield content*/
-#middle-content-fiche-bts h2{
-    color: #E3001C;
-    font-size: 1.5em;
-}
+
 #middle-content-fiche-bts h3{
     font-size: 1.2em;
     color: #91127D;

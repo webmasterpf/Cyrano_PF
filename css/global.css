@@ -879,7 +879,7 @@ span#DossierBTS{}
      color: #94127F;
     float: right;
     padding: 0 5px;
-    
+    font-style: italic;
 }
 #intro-fiche-bts{
     background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
@@ -894,6 +894,8 @@ span#DossierBTS{}
 #intro-fiche-bts h2,#middle-content-fiche-bts h2{
     color: #ADC821;
     font-size: 1.5em;
+    /*google font*/
+    font-family: 'Ubuntu',sans-serif;
 }
 
 #illus-fiche-bts{

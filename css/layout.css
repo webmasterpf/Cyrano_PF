@@ -892,7 +892,7 @@ background-color:#EFEFEF;
     float:left;
     position:relative;
     width:315px;
-    border-right: 1px solid #606171;
+    border-right: 0px solid #606171;
 }
 #middle-content-fiche-bts{
     float:left;
@@ -900,7 +900,7 @@ background-color:#EFEFEF;
     background-color:white;
     width:650px;
     padding:5px;
-    border-left: 0px solid #CFD0D2;
+    border-left: 1px solid #606171;
 }
 .bodyfield-content-bts{
     float: left;

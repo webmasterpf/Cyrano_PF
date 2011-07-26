@@ -5,11 +5,7 @@
     <title><?php print $head_title; ?></title>
     <?php print $head; ?>
     <?php print $styles; ?>
-    <?php print $scripts; ?>
-       <?php
-global $theme_path;
-include ($theme_path.'/js/google_font.php');
-?>
+   
     <!--<script src="<?php //print $base_path . path_to_theme() ?>/js/typos.js" type="text/javascript" charset="utf-8"></script>-->
       
   </head>

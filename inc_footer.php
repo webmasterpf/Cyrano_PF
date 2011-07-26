@@ -8,7 +8,12 @@
         <div id="bloc_stats"><?php include "js/code_stats.php";?></div>
         
     </div> <!-- /general OR /page -->
-    
+    <!-- ajout des scripts utiles pour drupal -->
+     <?php print $scripts; ?>
+       <?php
+global $theme_path;
+include ($theme_path.'/js/google_font.php');
+?>
 	<?php print $closure ?>
   </body>
 </html>

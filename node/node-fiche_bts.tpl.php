@@ -107,7 +107,8 @@
   <?php  print $node->field_info_plus_bts[0]['view'] ?>
   </div>
         <?php endif; ?> 
-
+<!-- retour haut selon resolution de l'ecran -->
+          <a href="#general" id="retour_haut">Haut de page</a>
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>

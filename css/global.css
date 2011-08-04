@@ -871,9 +871,43 @@ span#DossierBTS{
     padding: 15px;
     border: 2px solid #01ABCF;
 }
-span#DossierBTS a{}
+span#DossierBTS a{
+    font-size: 14px;
+    font-weight: bold;
+}
 span#DossierBTS a:hover{}
 span#DossierBTS{}
+
+#txt-dossier-bts{}
+#txt-dossier-bts p{}
+#txt-dossier-bts{}
+#centres-bts a{
+    font-size: 12px;
+    margin: 5px 0;
+}
+#dossier-bts, #centres-bts{
+     text-align: center;
+}
+#dossier-bts .filefield-icon, #centres-bts .filefield-icon{
+     display: none;
+}
+
+#block-webform-client-block-109{}
+#block-webform-client-block-109 table{}
+#block-webform-client-block-109 tbody{}
+#block-webform-client-block-109 tr{}
+#block-webform-client-block-109 td{
+    display: block;
+}
+/*______Pour le node/111 BTS et entreprise______*/
+#docs-alternance-bts{
+    text-align: left;
+   
+}
+#docs-alternance-bts li{
+     list-style-position: outside;
+     list-style-type: circle;
+}
 /************** NODE.TPL FICHE BTS***********************/
 #abbreviation-bts{
      color: #94127F;

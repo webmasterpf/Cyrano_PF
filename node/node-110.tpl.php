@@ -14,6 +14,31 @@
 
     <div class="content">
       <?php  print $node->content['body']['#value']; ?>
+
+         <?php if ($node->field_centres_bts[0]['view']): ?>
+        <div id="centres-bts">
+                <?php  print $node->field_centres_bts[0]['view'] ?>
+        </div>
+   <?php endif; ?>
+
+         <?php if ($node->field_txt_dossier[0]['view']): ?>
+        <div id="txt-dossier-bts">
+                <?php  print $node->field_txt_dossier[0]['view'] ?>
+        </div>
+   <?php endif; ?>
+
+
+         <?php if ($node->field_dossier_bts[0]['view']): ?>
+        <div id="dossier-bts">
+            <span id="DossierBTS">
+<?php  print $node->field_dossier_bts[0]['view'] ?>
+</span>
+               
+        </div>
+   <?php endif; ?>
+
+
+
         <br clear="all"/>
         <?php
 $viewname = 'liste_bts_fiches';

@@ -843,6 +843,23 @@ label.views-label-field-spot-radio-fid{
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 */
+
+/*___ STYLE GLOBAL PAGE BTS V2 ______*/
+.page-bts a{
+    text-decoration: none;
+    color: #950F7E;
+}
+.page-bts a:hover{
+    text-decoration: underline;
+}
+.page-bts p{
+    padding: 2px 0;
+}
+.page-bts h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
 /*************************************/
 /* POUR NODE.TPL PAGE BTS ACCUEIL */
 #vue-liste-bts{
@@ -908,6 +925,22 @@ span#DossierBTS{}
      list-style-position: outside;
      list-style-type: circle;
 }
+#objectif-bts table{}
+#objectif-bts tbody{
+    display: block;
+    margin: 0 auto;
+    
+    width: 400px;
+}
+#objectif-bts tr{
+    background: GhostWhite;
+    margin: 2px 0;
+    display: block;
+}
+#objectif-bts td{}
+#objectif-bts {}
+
+
 /************** NODE.TPL FICHE BTS***********************/
 #abbreviation-bts{
      color: #94127F;

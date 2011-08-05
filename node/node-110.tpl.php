@@ -1,6 +1,8 @@
 <!-- ******* TEMPLATE DE NODE POUR PAGE BTS *********************** -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
+<!--_______________________ COLONNE 1 __________________ -->
+<div id="colonne-1" class="col-1-btsentrepise">
 
     <?php if (!$page): ?>
       <h2 class="title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -72,6 +74,14 @@ print $output;
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
-
+</div>
+<!--_______________________ COLONNE 2 __________________ -->
+<div id="colonne-2" class="col-2-btsentrepise">
+         <?php
+ /* inclusion d'une region pour bloc */
+              global $theme_path;
+              include ($theme_path.'/includes/inc_region_col_G3.php');
+              ?>
+</div>
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

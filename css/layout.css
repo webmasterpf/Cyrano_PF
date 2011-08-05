@@ -447,9 +447,8 @@ strong#middle-content-ficheFormation {
     }
  /*PAGE BTS*/
 #content-inner-bts{
-width:550px;
-margin:0 auto;
-float:left;
+/*width:auto;*/
+/*float:left;*/
 padding:5px;
 background-color:transparent;
 
@@ -865,11 +864,21 @@ background-color:#EFEFEF;
 	padding:5px;
         margin: 0 auto;
  }
+ /*_________ COLONNES DE BASE POUR NODE.TPL _____*/
+ #colonne-1{
+     padding: 3px;
+}
+#colonne-2{
+    padding: 3px;
+}
+#colonne-3{
+    padding: 3px;
+}
 /*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
-/*SPLIT BODY FIELD CONTENT*/
+/*SPLIT BODY FIELD CONTENT FICHE BTS*/
 .column_1{
     float: left;
     width: 320px;
@@ -905,6 +914,29 @@ background-color:#EFEFEF;
 .bodyfield-content-bts{
     float: left;
 }
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  NODE.TPL BTS ENTREPRISE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+.page-bts{
+    width: 990px;
+    margin: 0 auto;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  NODE.TPL BTS ENTREPRISE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+.col-1-btsentrepise{
+    width: 550px;
+    float: left;
+    border-right: 1px solid #ADC91F;
+}
+.col-2-btsentrepise{
+    width: 405px;
+    float: right;
+}
+
+
 /*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE ACTU GLOBALE REDESIGN~~~~~~~
 ¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤

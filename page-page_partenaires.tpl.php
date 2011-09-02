@@ -56,7 +56,11 @@
               <?php print $formulaire; ?>
             </div><!-- /#formulaire_partenaire -->
               <?php endif; ?>
-
+<?php if ($centre_partenaire): ?>
+         <div id="centre-partenaire">
+            <?php print $centre_partenaire; ?>
+          </div>
+             <?php endif; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 

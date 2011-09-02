@@ -27,6 +27,7 @@ regions[content_top] = Content top
 regions[revue_presse] = Revue de presse Colonne Gauche - Bloc
 regions[actuAssociation] = Zone Actualité de l'association - Bloc
 regions[formulaire] = Zone formulaire bloc
+regions[centre_partenaire] = Zone centrale page partenaire
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations
 regions[right] = Colonne Droite

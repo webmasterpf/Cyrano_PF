@@ -779,7 +779,7 @@ border: 3px solid #E3007A;
     padding: 10px;
 }
 #middle-content-partenaire a{
-    color: #02A7D5;
+    /*color: #02A7D5;*/
     text-decoration: none;
 }
 #middle-content-partenaire a:hover{
@@ -788,6 +788,24 @@ border: 3px solid #E3007A;
 #middle-content-partenaire h2{
    color: #94127F;
 }
+/*Contenu du QT pour afficher temoignage partenaires*/
+#centre-partenaire{}
+#centre-partenaire h3{
+    color: #E2017B;
+    margin: 5px;
+}
+#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
+    border: 2px solid #AEC81F;
+    padding: 5px;
+}
+.cartouche{
+    padding: 3px;
+    background: #EFEFEF;
+    margin: 3px 0;
+    font-size: 10px;
+    color: #606171;
+}
+#centre-partenaire{}
 /*----- Liste partenaires associatifs vue ------*/
 #liste_part_asso{}
 #liste_part_asso ul{

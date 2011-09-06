@@ -52,6 +52,12 @@
              <?php if ($centralBloc): ?>
                 <div id="middleGalerie"><?php print $centralBloc; ?></div>
               <?php endif; ?>
+
+                <?php if ($centre_partenaire): ?>
+         <div id="centre-asso">
+            <?php print $centre_partenaire; ?>
+          </div>
+             <?php endif; ?>
                    <!-- retour haut selon resolution de l'ecran -->
           <a href="#general" id="retour_haut">Haut de page</a>
      

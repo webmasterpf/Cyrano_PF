@@ -689,7 +689,7 @@ border: 3px solid #E3007A;
 .block-aggregator a:hover{
     text-decoration: underline;
 }
-#block-aggregator-category-1 h3, #block-aggregator-category-2 h3{
+#block-aggregator-category-1 h3, #block-aggregator-category-2 h3,#block-aggregator-category-3 h3,#block-aggregator-category-4 h3,#block-aggregator-category-5 h3{
      color: purple;
 }
 /*NODEQUEUE ACTUS BRULANTE*/
@@ -806,6 +806,18 @@ border: 3px solid #E3007A;
     color: #606171;
 }
 #centre-partenaire{}
+/*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
+#centre-asso h2{
+    text-align: left;
+}
+#centre-asso h3{
+    color: #E2017B;
+}
+#centre-asso li.active a {
+    color: white;
+}
+#centre-asso a:hover{}
+#centre-asso img{}
 /*----- Liste partenaires associatifs vue ------*/
 #liste_part_asso{}
 #liste_part_asso ul{

@@ -433,6 +433,10 @@ padding:10px 0;
 #right-content-pageFormation a:hover{
     text-decoration: underline;
 }
+span.complement {
+    color: #911381;
+    font-size: 10px;
+}
 /*STYLE FICHE FORMATION*/
 .complement_titre_fiche h3{
     font-size: 14px;

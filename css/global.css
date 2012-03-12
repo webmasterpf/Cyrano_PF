@@ -279,11 +279,11 @@ padding: 5px;
 color:#d63e2a;
 text-decoration:none;
 }
-##ariane{
+/*#ariane{
     display: block;
     width: auto;
 background: white;
-}
+}*/
 
 .breadcrumb a{
 color:#4e4d5e;
@@ -714,7 +714,7 @@ border: 3px solid #E3007A;
     box-shadow: 1px 1px 10px #00abd1;
     behavior: url(../site/sites/all/libraries/PIE/PIE.htc);
 }
-}
+
 #block-views-nodequeue_1-block li{
     list-style: none;
     margin: 10px 0;
@@ -1113,4 +1113,60 @@ strong#middle-content-fiche-bts {
 }
 #middle-content-fiche-bts a:hover{
     text-decoration: underline;
+}
+/*********************************
+----------------------------------
+---- RESEAUX SOCIAUX Service links
+---------------------------------*/
+.service-links, #content-bottom-home .service-links{
+    background: none repeat scroll 0 0 #EFEFEF;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    width: 850px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   /*behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;*/
+}
+.service-links a{
+    margin: 0 5px;
+    color: #F29400;
+}
+.service-links a:hover{
+    text-decoration: none;
+}
+.service-links iframe{
+    height: 20px;
+    overflow: hidden;
+    width: auto;
+}
+/*---------------------------------------*/
+/*------ PAGE PORTAIL ---------*/
+.portail-title{
+    text-align: center;
+}
+#table-portail{}
+#table-portail{
+    width :900px;
+    border:0;
+}
+#table-portail tr{}
+#table-portail td{
+    padding: 5px;
+    text-align: center;
+    color: #606070;
+    font-size: 16px;
+}
+#table-portail a{}
+#table-portail a:hover{
+
+}
+#table-portail img:hover{
+    box-shadow: 0px 0px 3px #F39300;
+}
+#table-portail img{
+    box-shadow: 0px 0px 5px #606070;
 }

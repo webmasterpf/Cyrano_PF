@@ -34,8 +34,10 @@ function Cyrano_PF_preprocess_page(&$vars) {
 function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
 }
-//Webform "You have already submitted this form." message off - http://drupal.org/node/1096226
-function cyrano_ce_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles, $closed, $cached) {
+?>
+<?php
+// Webform "You have already submitted this form." message off.
+function theme_name_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles, $closed, $cached) {
   return theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles, $closed, $cached);
 }
 ?>
@@ -106,7 +108,6 @@ function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
 */
 function Cyrano_PF_taxonomy_specifique($node, $vid) {
   $output = '';
-
   if (count($node->taxonomy)) {
     $taxonomys = array();
     foreach ($node->taxonomy as $taxo) {
@@ -114,14 +115,12 @@ function Cyrano_PF_taxonomy_specifique($node, $vid) {
         $taxonomys[] = array('title' => $taxo->name, 'href' => taxonomy_term_path($taxo));
       }
     }
-
     if ($taxonomys) {
       foreach ($taxonomys as $taxonomy) {
         $output .= l($taxonomys['title'], $taxonomys['href']);
       }
     }
   }
-
   return $output;
 }
 ?>

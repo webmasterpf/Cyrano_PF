@@ -159,8 +159,11 @@ padding:0;
 width: auto;
 height: auto;
 padding:10px 0 0;
-
 }
+#annonceImg map{
+height: 1px;
+}
+
 #annonceTb{
 width:506px;
 margin: 0 auto;

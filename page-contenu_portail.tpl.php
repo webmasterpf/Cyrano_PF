@@ -1,20 +1,5 @@
 <?php
-// $Id: maintenance-page.tpl.php,v 1.2.2.1 2009/04/30 00:13:31 goba Exp $
-
-/**
- * @file maintenance-page.tpl.php
- *
- * Theme implementation to display a single Drupal page while off-line.
- *
- * All the available variables are mirrored in page.tpl.php. Some may be left
- * blank but they are provided for consistency.
- *
- *
- * @see template_preprocess()
- * @see template_preprocess_maintenance_page()
- *
- * Penser à modifier le fichier settings.php pour indiquer le theme de maintenance,ajouter aussi la css de maintenance.
- * Utiliser le meme nom que pour le .info du theme; ex: cyrano_ce.info; donc cyrano_ce comme maintenance_theme.
+/* Permet de faire une page portail sans le header classique
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -29,7 +14,7 @@
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 <body class="<?php print $body_classes; ?>">
-    <!-- TEMPLATE PAGE MAINTENANCE DE BASE  -->
+    <!-- TEMPLATE PAGE PORTAIL DE BASE  -->
   <div id="page">
     <div id="header">
       <div id="logo-title">
@@ -40,15 +25,15 @@
           </a>
         <?php endif; ?>
 
-        <div id="name-and-slogan-maintenance">
+        <div id="name-and-slogan-portail">
           <?php /*if (!empty($site_name)): ?>
-            <h1 id="site-name-maintenance">
+            <h1 id="site-name-portail">
               <a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
           <?php endif; */?>
 
           <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan-maintenance"><?php print $site_slogan; ?></div>
+            <div id="site-slogan-portail"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div> <!-- /name-and-slogan -->
       </div> <!-- /logo-title -->
@@ -61,21 +46,38 @@
 
     </div> <!-- /header -->
 
-    <div id="contentPage-maintenance" class="clear-block">
+    <div id="contentPage-portail" class="clear-block">
 
-     
-        <div id="left-content" class="column sidebar">
-             <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-          <?php print $left; ?>
-        </div> <!-- /sidebar-left -->
-   
-
+       <?php if ($content_top): ?>
+            <div id="content-top">
+              <?php print $content_top; ?>
+            </div> <!-- /#content-top -->
+          <?php endif; ?>
+      
       <div id="main" class="column"><div id="main-squeeze">
 
         <div id="content">
          
-          <?php if (!empty($messages)): print $messages; endif; ?>
-          <div id="middle-content" class="clear-block">
+           <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-header">              
+
+              <?php if ($mission): ?>
+                <div id="mission"><?php print $mission; ?></div>
+              <?php endif; ?>
+
+              <?php print $messages; ?>
+
+              <?php print $help; ?> 
+
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
+
+            </div> <!-- /#content-header -->
+          <?php endif; ?>
+          <div id="middle-content-portail" class="clear-block">
+               <?php if (!empty($title)): ?><h1 class="portail-title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+               
             <?php print $content; ?>
           </div> <!-- /content-content -->
         </div> <!-- /content -->
@@ -83,15 +85,12 @@
       </div></div> <!-- /main-squeeze /main -->
 
   
-        <div id="left-content" class="column sidebar">
-          <?php print $right; ?>
-        </div> <!-- /sidebar-right -->
    
 
     </div> <!-- /container -->
 
     <div id="footer-wrapper">
-      <div id="footer-maintenance">
+      <div id="footer-portail">
         <?php print $footer_message; ?>
         <?php if (!empty($footer)): print $footer; endif; ?>
       </div> <!-- /footer -->

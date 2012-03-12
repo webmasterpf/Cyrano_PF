@@ -962,3 +962,46 @@ background-color:#EFEFEF;
     float: left;
     padding: 5px;
 }
+/*--------------------------------
+        PAGE PORTAIL
+*/
+#name-and-slogan-portail, #site-slogan-portail{
+    background: #606070;
+    color: white;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+}
+#site-name-portail{
+    margin: 0;
+    padding: 15px;
+}
+#contentPage-portail{
+
+	margin:0 auto;
+	padding:20px 0;
+	width: 990px;
+	background-color:white;
+
+}
+#middle-content-portail{
+    width: auto;
+}
+#footer-portail{
+    margin:0 auto;
+	padding:5px 0;
+	width:980px;
+	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+	text-align: left;
+	color: #9898a6;
+        height:50px;
+        font-size: 11px;
+}
+#footer-portail a{
+    color: #606070;
+    text-decoration: none;
+}
+#footer-portail a:hover{
+    text-decoration: underline;
+}

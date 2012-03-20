@@ -250,6 +250,33 @@ text-decoration: underline;
     color: #606171;
     text-decoration: none;
 }
+/* Défilant Actus brulante - Breaking news*/
+#block-views-annonce_accueil-block_2{
+    text-align: center;
+}
+#block-views-annonce_accueil-block_2 h3{
+    font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align:center;
+    color: #E3001B;
+    text-decoration: blink;
+}
+.breaking-news{
+    background: #E2007A;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.breaking-news a{
+    text-align: center;
+    color: white;
+}
+.breaking-news a:hover{
+    text-decoration: none;
+}
+.breaking-news{}
 /********JWRotator*******/
 .field-field-rotator{
 margin: auto;
@@ -541,7 +568,7 @@ a:hover.lire_plus{
     font-size: 12px;
 }
 #middle-content-detailActu-presse img{
-    padding: 0 10px;
+    padding: 0;
 }
 .actu-minipresse{
     float: right;

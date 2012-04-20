@@ -346,7 +346,7 @@ ul#nice-menu-2 li{
         height: 40px;
 }
 
-ul#nice-menu-2 li a{
+ul#nice-menu-2 li a, ul#nice-menu-2 .menu-item-container{
 	padding:10px 3px;
 	font-size:11px;
 	display:block;
@@ -356,14 +356,16 @@ ul#nice-menu-2 li a{
         text-align: center;
         background: url("../images/bg_bt_menu_part.jpg") repeat-x top left;
         border: 1px solid #7ca800;
+        cursor: pointer;
 
 }
-ul#nice-menu-2 li a:hover{
+ul#nice-menu-2 li a:hover,ul#nice-menu-2 span.menu-item-container :hover{
      background: url("../images/bg_bt_menu_part_hover.jpg") repeat-x top left;
      color: #91127D;
-     
-
 }
+ul#nice-menu-2 li.active-trail a,ul#nice-menu-2 li.active-trail span.menu-item-container{
+	color: #93117E;
+}     
 
 /*Style sous rubriques menu 2*/
 ul#nice-menu-2 li.menuparent ul {

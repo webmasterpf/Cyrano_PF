@@ -721,6 +721,13 @@ border: 3px solid #E3007A;
     text-decoration: underline;
 }
 #block-aggregator-category-1 h3, #block-aggregator-category-2 h3,#block-aggregator-category-3 h3,#block-aggregator-category-4 h3,#block-aggregator-category-5 h3{
+    }
+#infos_fixes_actu_globale h3.block-title{
+     font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align:center;
      color: purple;
 }
 /*NODEQUEUE ACTUS BRULANTE*/
@@ -746,7 +753,7 @@ border: 3px solid #E3007A;
     list-style: none;
     margin: 10px 0;
 }
-#block-views-nodequeue_1-block h3{
+#block-views-nodequeue_1-block h3.block-title{
     color: #01ABCF;
 }
 #block-views-nodequeue_1-block a{
@@ -810,8 +817,11 @@ border: 3px solid #E3007A;
     padding: 10px;
 }
 #middle-content-partenaire a{
-    /*color: #02A7D5;*/
     text-decoration: none;
+}
+.body-partenaire a{
+    color: #02A7D5;
+    
 }
 #middle-content-partenaire a:hover{
     text-decoration: underline;
@@ -836,7 +846,9 @@ border: 3px solid #E3007A;
     font-size: 10px;
     color: #606171;
 }
-#centre-partenaire{}
+#centre-partenaire{
+    
+}
 /*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
 #centre-asso h2{
     text-align: left;

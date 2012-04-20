@@ -49,14 +49,15 @@
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content-partenaire">
-            <?php print $content; ?>
+          <div class="body-partenaire"  <?php print $content; ?>
 
               <?php if ($formulaire): ?>
             <div id="formulaire_partenaire">
               <?php print $formulaire; ?>
             </div><!-- /#formulaire_partenaire -->
               <?php endif; ?>
-<?php if ($centre_partenaire): ?>
+            
+                  <?php if ($centre_partenaire): ?>
          <div id="centre-partenaire">
             <?php print $centre_partenaire; ?>
           </div>

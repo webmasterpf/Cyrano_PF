@@ -1,0 +1,1007 @@
+/**
+Layout de positionnement des blocs
+Inclusion des polices en css3
+ */
+@font-face {
+    font-family : "Arista";
+    src: url(../typos/Arista2.0_light.eot); /* IE */
+    src: local("Arista"), url(../typos/Arista2.0_light.ttf) format('truetype');/* non-IE */
+}
+/*-------------------------------------------------
+*********  COULEURS *****************
+gris anthracite #606070
+vert #ADC91F
+violet #911381
+orange #F29400
+bleu turquoise #01ABCF
+rouge #E3001C
+rose fushia #E3001C
+jaune #FAEB0C
+*/
+
+html {
+ margin: 0;
+ padding: 0;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: white;
+	color: gray;
+}
+ul,li,dl,dd,dt{
+    list-style-position: inside;
+}
+ /*------------------------------------------------------*
+  *--------    CSS BLOCS     						 ----*
+  *------------------------------------------------------*/
+
+
+#general{
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+
+/*Haut de page  HEADER*/
+
+#header{
+	margin:0 auto;
+	padding:0;
+	width:980px;
+	height:auto;
+	background-color:transparent;
+}
+
+/*Contenu de page  CONTENT */
+
+#contentPage, #contentPageActu {
+	margin:0 auto;
+	padding:0;
+	width: 980px;
+	background: white;/*couleur fond de page content*/
+}
+#content-inner,#left-content,#right-content{
+height: 100%;
+}
+/*//////SOUS ENTETE/////*/
+/*#content-top{
+	margin:0 auto;
+	padding:5px;
+	width:500px;
+	height:auto;
+	background-color: red;
+	}
+*/
+/*/// debut des colonnes ///*/
+#left-content{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:230px;
+	left:0px;
+}
+
+/*/// partie de droite ///*/
+#right-content{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:170px;
+	right:0px;
+}
+/*inner content*/
+#content-inner{
+width:570px;
+margin:0 auto;
+float:left;
+background-color: white;
+
+}
+/*///    partie du centre   ///*/
+#middle-content{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:568px !important;
+        width: 558px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #F8E91B;
+ }
+.swftools-wrapper wijering-imagerotator{
+margin: 0 auto;
+width: auto;
+border: 1px solid #000;
+}
+/*PIED DE CONTENU*/
+#content-bottom{
+background:transparent;
+width:990px;
+margin: 0 auto;
+}
+
+/*Bas de page  FOOTER*/
+
+#footer{
+	margin:0 auto;
+	padding:5px 0;
+	width:980px;
+	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+	text-align: left;
+	color: #9898a6;
+        height:75px;
+}
+
+#footer a{
+color: #9898a6;
+text-decoration:none;
+}
+#footer a:hover{
+color: #000000;
+}
+#bloc_stats{
+    margin: 0 auto;
+    width: auto;
+}
+/**----Fin FOOTER---***/
+#content-top, #content-top-pageLycee, #content-top-detailActu-presse{
+    margin:0 auto;
+    padding:5px;
+    width:970px;
+    height:auto;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
+   }
+  /*------------------------------------------------------*
+  *------------ CSS H  ----*
+  *------------------------------------------------------*/
+
+h1 {
+	margin: 0;
+	padding: 5px 0;
+	color:#E85231;
+	font-size: 24px;
+        line-height:1em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title{
+	margin: 5px;
+	padding: 0;
+	color:#000;
+	font-size: 18px;
+}
+h2.title a{
+	color:#EA5132;
+        text-decoration: none;
+}
+h2.title a:hover{
+	text-decoration: underline;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 16px;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 14px;
+}
+h5 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 12px;
+}
+h6 {
+	margin: 0;
+	padding: 0;
+	color:#000;
+	font-size: 10px;
+}
+/*-----FIN LAYOUT DE BASE-----------*/
+/***************************************/
+
+/* LAYOUT PAGE LYCEE*/
+
+#left-content-pageLycee{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:340px;
+    left:0px;
+    padding:5px;
+    border-right: 1px solid #da5714;
+}
+#content-inner-pageLycee{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:275px;
+}
+#middle-content-pageLycee{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:305px !important;
+    width: 275px;
+    padding:5px;
+   
+}
+#middle-content-pageLycee h3{
+    font-size: 14px;
+    color:#AECA20;
+    padding: 2px 0;
+}
+#middle-content-pageLycee h4{
+    font-size: 13px;
+    color:#93117E;
+    padding: 2px 0;
+}
+#middle-content-pageLycee strong{
+    color:#606171;
+}
+
+#right-content-pageLycee{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:300px !important;
+    width: 290px;
+    right:0px;
+    padding:5px;
+    }
+/*gmap*/
+#right-content-pageLycee small a{
+color : #01ABCF;
+text-decoration: none;
+}
+#right-content-pageLycee small a:hover {
+text-decoration: underline;
+}
+#tb-fiche-illus{
+    margin:0 auto;
+    width: 305px;
+    padding: 5px;
+}
+#tb-fiche-illus img{
+    margin: 5px;
+
+}
+/*LAYOUT PAGE PARTENAIRE*/
+#left-content-partenaire{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:210px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-partenaire{
+    float:left;
+    position:relative;
+    background-color:transparent;
+    width:515px;
+    padding:5px;
+    border-left: 1px solid #da5714;
+    border-right: 1px solid #da5714;
+}
+#middle-content-partenaire{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:515px !important;
+    width: 515px;
+    padding:0;
+    
+}
+#right-content-partenaire{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:220px !important;
+    right:0px;
+    padding:5px;
+    }
+
+ /* LAYOUT PAGE FORMATION*/
+ #middle-content-pageFormation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:645px;
+    padding:5px;
+    border-right: 1px solid #da5714;
+}
+
+#right-content-pageFormation{
+    float:right;
+    position:relative;
+    background-color:white;
+    color: grey;
+    width:314px;
+    right:0px;
+    padding:5px;
+}
+/* LAYOUT PAGE ASSOCIATION ET ERREUR*/
+#content-inner-pageErreur, #content-inner-ficheFormation{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:#EFEFEF;
+}
+#left-content-pageAssociation, #left-content-pageErreur{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:185px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-pageAssociation{
+     width:560px;
+     float:left;
+    position:relative;
+    background-color:white;
+    border-left: 1px solid #02A7D5;
+}
+#middle-content-pageAssociation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+}
+#middleGalerie{
+    width:560px;
+    padding:5px;
+}
+#middle-content-pageErreur{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-pageAssociation a, #middle-content-pageErreur a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-pageAssociation a:hover, #middle-content-pageErreur a:hover{
+    text-decoration: underline;
+}
+#right-content-pageAssociation, #right-content-pageErreur{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:200px;
+    right:0px;
+    padding:5px;
+    }
+/****LAYOUT FICHE FORMATION********/
+#left-content-ficheFormation{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:305px;
+    left:0px;
+    padding:5px;
+}
+#middle-content-ficheFormation{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:650px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+strong#middle-content-ficheFormation {
+    color: #EA703F;
+  }
+#middle-content-ficheFormation p{
+    padding:5px 0;
+  }
+#middle-content-ficheFormation a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-ficheFormation a:hover{
+    text-decoration: underline;
+}
+#middle-content-ficheFormation h2, #left-content-ficheFormation h2{
+   font-size: 14px;
+   color: black;
+}
+#middle-content-ficheFormation h3{
+   font-size: 12px;
+   font-weight: bold;
+   color: #95107D;
+}
+#middle-content-ficheFormation h4{
+   font-size: 14px;
+   color: #EA703F;
+}
+#right-content-ficheFormation{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:auto;
+    right:0px;
+    padding:5px;
+    }
+ /*PAGE BTS*/
+#content-inner-bts{
+/*width:auto;*/
+/*float:left;*/
+padding:5px;
+background-color:transparent;
+
+}
+#right-content-bts{
+    float:right;
+    position:relative;
+    width:405px !important;
+    width: 400px; /*pour ie6*/
+    left:0px;
+    padding:25px 5px 5px;
+    border-left: 1px solid #ADC91F;
+}
+#middle-content-bts{
+    float:left;
+    position:relative;
+    padding:5px;
+    width: 550px;
+
+}
+#middle-content-bts a, #right-content-bts a{
+    text-decoration: none;
+    color: #950F7E;
+}
+#middle-content-bts a:hover,#right-content-bts a:hover{
+    text-decoration: underline;
+}
+#middle-content-bts p{
+    padding: 2px 0;
+}
+#middle-content-bts h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*!!!! PAGE LISTE OFFRE CONTRAT PRO BTS !!!!*/
+#left-content-offre-ct-pro{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:225px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-offre-ct-pro {
+width:650px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+border-left: 1px solid #ADC91F;
+
+}
+#middle-content-offre-ct-pro {
+    float:left;
+    position:relative;
+    padding:5px;
+    width: 650px;
+
+}
+#right-content-offre-ct-pro {
+    float:right;
+    position:relative;
+    width:150px !important;
+    left:0px;
+    padding:25px 5px 5px;
+    border-left: 1px solid #ADC91F;
+}
+/*PAGE OFFRE BTS CONTRAT PRO DETAIL*/
+
+/*******************************/
+#left-content-pageOffreCtpro{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:175px;
+    left:0px;
+    padding:5px;
+    
+}
+#content-inner-pageOffreCtpro{
+background-color:white;
+float:left;
+padding:5px;
+position:relative;
+width:495px;
+border-left:1px solid #DA5714;
+border-right:1px solid #DA5714;
+}
+#middle-content-pageOffreCtpro{
+background-color:white;
+float:left;
+padding:5px;
+position:relative;
+width:490px;
+
+}
+#right-content-pageOffreCtpro{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width: 270px;
+    right:0px;
+    padding:5px;
+    }
+/*****************************/
+/* LAYOUT PAGE LOGIN*/
+#content-inner-pageLogin{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:pink;
+}
+#left-content-pageLogin{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:280px;
+    left:0px;
+    padding:5px;
+}
+#middle-content-pageLogin{
+    float:left;
+    position:relative;
+    background-color: green;
+    width:420px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-pageLogin a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-pageLogin a:hover{
+    text-decoration: underline;
+}
+#right-content-pageLogin{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:240px;
+    right:0px;
+    padding:5px;
+    }
+
+/*LAYOUT PAGE ACTUALITES*/
+#content-inner-actualites{
+width:370px;
+margin:0 auto;
+float:left;
+background-color:transparent;
+border-left: 1px solid #AFC824;
+border-right: 1px solid #02A7D5;
+}
+#left-content-actualites{
+    float:left;
+    position:relative;
+    /*background:transparent url('../images/titre_revue_presse.gif') no-repeat top left;*/
+    width:300px;
+    left:0px;
+    padding:25px 5px 5px;
+}
+#middle-content-actualites{
+    float:left;
+    position:relative;
+    /*background: transparent url('../images/titre_texte_reference.gif') no-repeat left top;*/
+    width:auto;
+    padding:5px;
+    
+}
+#middle-content-actualites a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-actualites a:hover{
+    text-decoration: underline;
+}
+#actualite-association{
+     width:auto;
+     height: auto;
+     display: block;
+     padding: 25px 5px 0;
+     margin: 0 0 15px 0;
+     background: #EFEFEF /*url('../images/titre_actu_association.gif') no-repeat top left*/;
+}
+#right-content-actualites{
+    float:right;
+    position:relative;
+    /*background:#FFF url('../images/titre_actu_lycees.gif') no-repeat top left;*/
+    width:285px;
+    right:0px;
+    padding:25px 5px 5px;
+    }
+    /*CSS pour les titres avec typo perso*/
+#contentPageActu h3.block-title{
+    font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align:center;
+}
+#right-content-actualites h3.block-title {
+   
+}
+#left-content-actualites h3.block-title{
+    color: #E2017B;
+}
+#actualite-association h3.block-title{
+    color: #E3001B;
+}
+
+/*PAGE BOURSES*/
+#content-inner-bourses{
+width:610px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+border-left: 1px solid #93117E;
+}
+#left-content-bourses{
+    float:left;
+    position:relative;
+    width:325px;
+    left:0px;
+    padding:25px 5px 5px;
+}
+a.telechargement1{
+    color: #911381;
+    text-decoration: none;
+}
+a:hover.telechargement1{
+    text-decoration: underline;
+}
+#middle-content-bourses{
+    float:left;
+    position:relative;
+    width:auto;
+    padding:5px;
+    width: 620px;
+
+}
+
+#middle-content-bourses h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+#middle-content-bourses a{
+    text-decoration: none;
+    color: #E2017B;
+}
+#middle-content-bourses a:hover{
+    text-decoration: underline;
+}
+/*PAGE RECRUTEMENT*/
+#content-inner-recrutement{
+width:550px;
+margin:0 auto;
+float:left;
+padding:5px;
+background-color:transparent;
+
+}
+#right-content-recrutement{
+    float:right;
+    position:relative;
+    width:405px !important;
+    width: 400px; /*pour ie6*/
+    left:0px;
+    padding:25px 5px 5px;
+    border-left: 1px solid #93117E;
+}
+#right-content-recrutement #recaptcha_widget_div #recaptcha_table tbody{
+    width:405px !important;
+    width: 400px; /*pour ie6*/
+}
+/*#recaptcha_image img {
+    width: 200px;
+}*/
+
+#middle-content-recrutement{
+    float:left;
+    position:relative;
+    width:auto;
+    padding:5px;
+    width: 550px;
+
+}
+#middle-content-recrutement p{
+    padding: 2px 0;
+}
+#middle-content-recrutement h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*#middle-content-recrutement a{
+    text-decoration: none;
+    color: #E2017B;
+}
+#middle-content-recrutement a:hover{
+    text-decoration: underline;
+}*/
+#middle-content-annonce-detail{
+	float:left;
+	position:relative;
+	background-color:transparent;
+	width:568px !important;
+        width: 558px;
+	padding:5px;
+        margin: 0 auto;
+        border-left: 1px solid #ACC624;
+        border-right: 1px solid #94127F;
+ }
+
+#middle-content-annonce-detail .field-label-inline-first{
+    color: #01ABCF;
+}
+/*PAGE DETAIL ACTU PRESSE*/
+#content-inner-detailActu-presse{
+width:auto;
+margin:0 auto;
+float:left;
+background-color:#EFEFEF;
+}
+#left-content-detailActu-presse{
+    float:left;
+    position:relative;
+    background-color:#FFF;
+    width:185px;
+    left:0px;
+    padding:5px;
+}
+#content-inner-detailActu-presse{
+     width:560px;
+     float:left;
+    position:relative;
+    background-color:white;
+    border-left: 1px solid #02A7D5;
+}
+#middle-content-detailActu-presse{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+}
+#middle-content-pageErreur{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:560px;
+    padding:5px;
+    border-left: 1px solid #CFD0D2;
+}
+#middle-content-detailActu-presse a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-detailActu-presse a:hover{
+    text-decoration: underline;
+}
+#right-content-detailActu-presse{
+    float:right;
+    position:relative;
+    background-color:#FFF;
+    width:200px;
+    right:0px;
+    padding:5px;
+    }
+#middle-content-detailActu-presse li{
+    padding:0;
+    margin: 0;
+    list-style: inside;
+}
+
+/*PAGE WEBFORM*/
+#left-content-formulaire{
+	float:left;
+	position:relative;
+	background-color:#00CC99;
+	width:200px;
+	left:0px;
+}
+
+
+#right-content-formulaire{
+	float:right;
+	position:relative;
+	background-color:#FF66CC;
+	width:200px;
+	right:0px;
+}
+
+#content-inner-formulaire{
+    width:570px;
+    margin:0 auto;
+    float:left;
+    background-color: white;
+
+}
+
+#middle-content-formulaire{
+	float:left;
+	position:relative;
+	background-color:#EFEFEF;
+	width:570px !important;
+        width: 560px;
+	padding:5px;
+        margin: 0 auto;
+ }
+ /*_________ COLONNES DE BASE POUR NODE.TPL _____*/
+ #colonne-1{
+     padding: 3px;
+}
+#colonne-2{
+    padding: 3px;
+}
+#colonne-3{
+    padding: 3px;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+/*SPLIT BODY FIELD CONTENT FICHE BTS*/
+.column_1{
+    float: left;
+    width: 320px;
+    padding: 1px;
+}
+.column_2{
+     background: none repeat scroll 0 0 transparent;
+    border-left: 1px dotted;
+    float: left;
+    padding: 3px;
+    width: 320px;
+}
+#content-inner-fiche-bts{
+    width: 990px;
+    margin: 0 auto;
+    float: none;
+    background-color: white;
+}
+#left-content-fiche-bts{
+    float:left;
+    position:relative;
+    width:315px;
+    border-right: 0px solid #606171;
+}
+#middle-content-fiche-bts{
+    float:left;
+    position:relative;
+    background-color:white;
+    width:650px;
+    padding:5px;
+    border-left: 1px solid #606171;
+}
+.bodyfield-content-bts{
+    float: left;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  NODE.TPL BTS ENTREPRISE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+.page-bts{
+    width: 990px;
+    margin: 0 auto;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  NODE.TPL BTS ENTREPRISE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+.col-1-btsentrepise{
+    width: 550px;
+    float: left;
+    border-right: 1px solid #ADC91F;
+}
+.col-2-btsentrepise{
+    width: 405px;
+    float: right;
+}
+
+
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE ACTU GLOBALE REDESIGN~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+#middle-content-actu-globale{
+    width: 990px;
+    margin: 0 auto;
+}
+.col_375{
+    width: 375px;
+}
+.col_220{
+    width: 220px;
+}
+#rp_actu_gloable{
+    float: left;
+}
+#actu_asso_actu_globale{
+    float: left;
+}
+#infos_fixes_actu_globale{
+    border-left: 1px solid #01AAD3;
+    float: left;
+    padding: 5px;
+}
+/*--------------------------------
+        PAGE PORTAIL
+*/
+#name-and-slogan-portail, #site-slogan-portail{
+    background: #606070;
+    color: white;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius: 5px;
+}
+#site-name-portail{
+    margin: 0;
+    padding: 15px;
+}
+#contentPage-portail{
+
+	margin:0 auto;
+	padding:20px 0;
+	width: 990px;
+	background-color:white;
+
+}
+#middle-content-portail{
+    width: auto;
+}
+#footer-portail{
+    margin:0 auto;
+	padding:5px 0;
+	width:980px;
+	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+	text-align: left;
+	color: #9898a6;
+        height:50px;
+        font-size: 11px;
+}
+#footer-portail a{
+    color: #606070;
+    text-decoration: none;
+}
+#footer-portail a:hover{
+    text-decoration: underline;
+}

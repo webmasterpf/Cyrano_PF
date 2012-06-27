@@ -97,6 +97,6 @@
     </div> <!-- /footer-wrapper -->
 
   </div> <!-- /page -->
-
+<div id="bloc_stats"><?php include "js/code_stats.php";?></div>
 </body>
 </html>

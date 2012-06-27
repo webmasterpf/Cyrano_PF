@@ -10,6 +10,8 @@
 	<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
+      <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->   
+       <?php print_r(arg(0)); ?>
             </div> <!-- /#content-top -->
 	  
       

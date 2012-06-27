@@ -460,6 +460,9 @@ padding:10px 0;
 #right-content-pageFormation a:hover{
     text-decoration: underline;
 }
+#right-content-pageFormation h2{}
+#right-content-pageFormation h3{color: #94127F;margin: 2px;}
+#right-content-pageFormation h5{color: #888888;}
 span.complement {
     color: #911381;
     font-size: 10px;
@@ -1209,3 +1212,16 @@ strong#middle-content-fiche-bts {
 #table-portail img{
     box-shadow: 0px 0px 5px #606070;
 }
+/*********************************
+----------------------------------
+---- POLES METIERS --------------
+---------------------------------*/
+.titre-pole{color:#E85231;}
+#table-pole-inscription .views-field-title a{color: #01ABCF;text-decoration: none;padding: 5px 0;}
+#table-pole-inscription .views-field-title{}
+#table-pole-inscription .views-field-name a{color: #91127D;text-decoration: none;}
+#table-pole-inscription .views-field-name a:hover{text-decoration: underline;}
+#table-pole-inscription .views-field-title{}
+.item-pole-inscription span a{color: #91127D;text-decoration: none;}
+.item-pole-inscription span a:hover{text-decoration: underline;}
+.views-field-field-complement-info-formation-value h3{color: #E2017B;font-size:10px;text-indent: 15px;}

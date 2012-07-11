@@ -1224,4 +1224,8 @@ strong#middle-content-fiche-bts {
 #table-pole-inscription .views-field-title{}
 .item-pole-inscription span a{color: #91127D;text-decoration: none;}
 .item-pole-inscription span a:hover{text-decoration: underline;}
-.views-field-field-complement-info-formation-value h3{color: #E2017B;font-size:10px;text-indent: 15px;}
+.views-field-field-complement-info-formation-value h3{color: #E2017B;font-size:10px;text-indent: 15px;width: 100%;}
+/*Infos header vue display page*/
+h2.page-liste-metiers{margin: 5px auto; width: 100%; color: #d63e2a;}
+h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
+.page-liste-metiers{margin: 5px auto; width: 100%;}

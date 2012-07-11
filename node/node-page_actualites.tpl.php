@@ -13,46 +13,38 @@
 <div class="col_375" id="rp_actu_gloable">
          <?php
  /* inclusion vue liste illustrée */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_vue_actu_globale_rp.php');
+    include (drupal_get_path('theme','cyrano_pf').'/includes/inc_vue_actu_globale_rp.php');
               ?>
     <br clear="all"/>
-    <?php
- /* inclusion vue liste illustrée petit */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_vue_actu_globale_rp_petit.php');
-              ?>
+   <?php
+   include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_rp_petit.php');
+   ?>
      <?php
  /* inclusion d'une region pour bloc */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G1.php');
               ?>
 </div>
 <!-- ______________________ COLONNE ACTUS ASSO _______________________ -->
 <div class="col_375" id="actu_asso_actu_globale">
      <?php
  /* inclusion vue liste illustrée */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_vue_actu_globale_actuasso.php');
+              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_actuasso.php');
               ?>
      <br clear="all"/>
        <?php
  /* inclusion vue liste illustrée petit */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_vue_actu_globale_actuasso_petit.php');
+              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_actuasso_petit.php');
               ?>
          <?php
  /* inclusion d'une region pour bloc */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G2.php');
+              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G2.php');
               ?>
 </div>
 <!-- ______________________ COLONNE INFOS FIXES RSS _______________________ -->
 <div class="col_220" id="infos_fixes_actu_globale">
      <?php
  /* inclusion d'une region pour bloc */
-              global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G3.php');
+              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G3.php');
               ?>
     
         <div class="content contenu-actu-globale">

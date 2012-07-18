@@ -41,7 +41,9 @@ span#custom-list-01{border:#6633CC 1px solid;margin:2px;display:block;padding:2p
 #table-nl a:hover{text-decoration: none;}
 #table-nl strong{color: #E7512F;}
 tr.table-tr-content{border-bottom-color: #d6d6d6; border-bottom-width: 1px; border-bottom-style: solid;}
-.bloc_actus{display:block;}
+.liste-views{display:block;}
+.liste-views a{color:#333333;}
+.liste-views h3{color:#E94F2B;font-size:14px;text-align: center;}
 #custom-list-01{border:#6633CC 1px solid;margin:2px;padding:1px;}
 #custom-list-01 h3{text-align:center;}
 #txt-footer{color: #911381;}
@@ -61,7 +63,7 @@ tr.table-tr-content{border-bottom-color: #d6d6d6; border-bottom-width: 1px; bord
 <td colspan="3"  style="color: #911381"> 
   <p>
   <?php if ($format == 'html'): ?><a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a>
-  <?php else: ?>-- <?php print $unsubscribe_text : [simplenews-unsubscribe-url]?><?php endif ?> 
+  <?php else: ?>-- <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a><?php endif ?> 
 </p></td></tr>
    <tr><td colspan="3" height="150">
      <div align="center"><img src="http://www.provence-formation.fr/sites/all/themes/Cyrano_PF/images/newsletter/header-newsletter-2012.jpg" alt="El&egrave;ves devant le Lyc&eacute;e" width="695" height="145"/>        </div></td>
@@ -80,22 +82,23 @@ tr.table-tr-content{border-bottom-color: #d6d6d6; border-bottom-width: 1px; bord
 <td style="bordercolor:#FF3399; vertical-align:top" class="colonne-1-nl">
        
            <!-- table colonne Gauche-->
-          <table width="210" align="center"><tr><td> <div class="bloc_actus" style="background:url(http://www.lycee-charlotte-grawitz.com/sites/all/themes/Cyrano_CG/images/newsletter/bg-actus-nl.png);margin:5px;color: #911381;display:block;">
-    <?php  print $node->field_nl_lastnews[0]['view']  ?></div> 
+          <table width="210" align="center">
+          <tr><td> <div class="liste-views" style="background:0;margin:5px;color: #911381;display:block;border: 1px solid #950F7E;padding: 3px;"><?php  print $node->field_nl_listeperso_01[0]['view']?></div> </td></tr>          
+     
+          <tr><td> <div class="liste-views" style="background:0;margin:5px;color: #911381;display:block;border: 1px solid #950F7E;padding: 3px;"><?php  print $node->field_nl_lastnews[0]['view']  ?></div> 
           <!-- liste actus -->   </td></tr>
     
-    <tr><td> <div class="bloc_actus"  style="background:url(http://www.lycee-charlotte-grawitz.com/sites/all/themes/Cyrano_CG/images/newsletter/bg-actus-nl.png);margin:5px;color: #911381;display:block;">
-    <?php  print $node->field_nl_revuepresse[0]['view']  ?></div> 
+    <tr><td> <div class="liste-views"  style="background:0;margin:5px;color: #911381;display:block;border: 1px solid #950F7E;padding: 3px;"><?php  print $node->field_nl_revuepresse[0]['view']  ?></div> 
     <!-- liste rp -->   </td></tr>
     
     </table>  
     
     <!-- table colonne Droite-->
      <table width="210" align="center" id="col-3">
-     <tr><td height="170"> <span id="illustration-nl" style="border:1px solid #F29400;display:block;padding:2px;background:#FFCC66;"><?php  print $node->field_nl_illustration[0]['view']?> </span> </td>
+     <tr><td height="170"> <span id="illustration-nl" style="border:1px solid #F29400;display:block;padding:2px;background:#FFCC66;"><?php  print $node->field_nl_deco[0]['view'] ?> </span> </td>
      </tr><!-- illustration -->
      <tr><td height="48">
-     <span id="custom-list-01" style="border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;"><?php  print $node->field_nl_listeperso_01[0]['view']?> </span></td>
+     <span id="custom-list-01" style="border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;"><?php  print $node->field_nl_docs[0]['view']  ?></span></td>
      </tr><!-- liste custom -->
      </table>          </td>
     <td  colspan="2" class="colonne-2-nl" style="background:#ebebeb;vertical-align:top;padding:4px; border:2px solid #999999"><!-- Corps -->

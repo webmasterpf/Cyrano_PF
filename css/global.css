@@ -1229,3 +1229,15 @@ strong#middle-content-fiche-bts {
 h2.page-liste-metiers{margin: 5px auto; width: 100%; color: #d63e2a;}
 h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
 .page-liste-metiers{margin: 5px auto; width: 100%;}
+/*********************************
+----------------------------------
+---- TPL NEWSLETTER CONTENT -------
+---------------------------------*/
+#illustration-newsletter{display:block;padding:2px;margin:2px;border:1px solid #F29400;background:#FFCC66;}
+#docs-newsletter{}
+#fichiers-newsletter{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
+#actus_pf{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
+
+#illustration-newsletter a,#docs-newsletter a,#actus_pf a,#fichiers-newsletter a{text-align: center;color: #4e4d5e;text-decoration: none;}
+#illustration-newsletter a:hover,#docs-newsletter a:hover,#actus_pf a:hover,#fichiers-newsletter a:hover{color: #E85231;}
+#illustration-newsletter h3,#docs-newsletter h3,#actus_pf h3,#fichiers-newsletter h3{text-align: center;color: #94127F;}

@@ -214,7 +214,52 @@ h6 {
 }
 /*-----FIN LAYOUT DE BASE-----------*/
 /***************************************/
+ /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** LAYOUT NODE.TPL OVERRIDE **********
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+/*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
+#colonne-1{
+    
+   
+}
+.col1_layout_200_570_200{
+    width: 200px;
+    float: left;
+}
+.col1_layout_330_all{}
+.col1_layout_18_56_25{}
+.col1_layout_225_735{width: 225px;}
+.col1_layout_250_700{width: 250px; float: left;}
+.col1_layout_305_660{width: 305px;float: left;}
+/*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
+#colonne-2, #middle-content-override{
+    padding: 5px;
 
+}
+.col2_layout_200_570_200{width: 570px;float: left;
+}
+.col2_layout_330_all{}
+.col2_layout_18_56_25{}
+.col2_layout_225_735{width: 735px;}
+.col2_layout_250_700{width: 700px; float: left;}
+.col2_layout_305_660{width: 660px;float: right;}
+
+/*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
+.col3_layout_200_570_200{width: 200px;float: left;}
+.col3_layout_330_all{}
+.col3_layout_18_56_25{}
+
+#colonne-unik{padding: 3px;width: 990px;}
+/*//////////////// BORDER COLONNE 1 \\\\\\\\\\\\\\\\*/
+
+/*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
+.rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
+.rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}
+.noir-vert { border-left: 1px solid #606171; border-right: 1px solid #C8D215;}
+.bleu-violet { border-left: 1px solid #00AAD2; border-right: 1px solid #93117E;}
+.vert-violet { border-left: 1px solid #C8D215; border-right: 1px solid #93117E;}
+.anthracite-orange{border-left: 1px solid #606070;border-right: 1px solid #E75130;}
+/*//////////////// BORDER COLONNE 3 \\\\\\\\\\\\\\\\*/
 /* LAYOUT PAGE LYCEE*/
 
 #left-content-pageLycee{
@@ -1005,3 +1050,7 @@ background-color:#EFEFEF;
 #footer-portail a:hover{
     text-decoration: underline;
 }
+/*_______________________________
+----- TPL NEWSLETTER ----------*/
+#middle-content-simplenews{width: 100%;}
+#content-inner-simplenews{float:left;position:relative;background-color:white;}

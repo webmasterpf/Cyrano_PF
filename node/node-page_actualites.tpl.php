@@ -3,7 +3,6 @@
  * Start Juillet 2011
  */?>
 <!-- ************ NODE TEMPLATE PAGE ACTU REDESIGN ****************** -->
-<h1> PAGE ACTU REDESIGN DEV</h1>
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
       <?php if (!$page): ?>

@@ -13,6 +13,12 @@
  <body class="<?php print $body_classes; ?>">
  
 	<div id="general">
+ <!-- ______________________ PAGE TOP BANDEAU _______________________ -->
+<?php if (!empty($bandeau1)): ?>
+<div id="bandeau-pagetop">
+          <?php print $bandeau1; ?>
+         </div>
+<?php endif; ?>
  
     <!-- ______________________ HEADER _______________________ -->
 	 <div id="header">

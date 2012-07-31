@@ -21,7 +21,7 @@ stylesheets[all][] = css/search.css
 stylesheets[all][] = css/maintenance.css
 
 
-
+regions[bandeau1] = Bandeau haut de page
 regions[header] = Header
 regions[menuDyn] = Menu Header - Nice Menu
 regions[navStatic] = Navigation par icones - Bloc

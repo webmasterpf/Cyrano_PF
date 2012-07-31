@@ -21,8 +21,33 @@ jaune #FAEB0C
 /**********STYLE POUR LES BLOCS*******************/
 
 /**----HEADER---***/
+#bandeau-pagetop table{width: 970px;margin: 3px auto;}
+#bandeau-pagetop tbody{}
+#bandeau-pagetop tr{}
+#bandeau-pagetop td{color: #606171;text-align: center;}
+#bandeau-pagetop td a{color: #606171;text-decoration: none;padding: 2px;}
+#bandeau-pagetop td a:hover{color: #FBFBFB;}
 
+#bandeau-pagetop a.site_er{color: #E2001A;}
+#bandeau-pagetop a:hover.site_er{background: #E2001A;}
 
+#bandeau-pagetop a.site_cg{color: #F29400;}
+#bandeau-pagetop a:hover.site_cg{background: #F29400;}
+
+#bandeau-pagetop a.site_mg{color: #E10279;}
+#bandeau-pagetop a:hover.site_mg{background: #E10279;}
+
+#bandeau-pagetop a.site_bl{color: #00AAD2;}
+#bandeau-pagetop a:hover.site_bl{background: #00AAD2;}
+
+#bandeau-pagetop a.site_lr{color: #970F7D;}
+#bandeau-pagetop a:hover.site_lr{background: #970F7D;}
+
+#bandeau-pagetop a.site_ca{color: #9B9C9E;}
+#bandeau-pagetop a:hover.site_ca{background: #9B9C9E;}
+
+#bandeau-pagetop a.site_ce{color: #C8D215;}
+#bandeau-pagetop a:hover.site_ce{background:#C8D215;}
 /**----MIDDLE---***/
 a#retour_haut{
     display: none;
@@ -227,10 +252,7 @@ text-decoration: underline;
      background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
      width: 505px;
 }
-.annonce h2 a{
-    color: #93117E;
-    text-decoration: none;
-}
+.annonce h2 a,.annonce h1 a{color: #93117E;text-decoration: none;font-size: 18px;}
 .annonce a{
     color: #00ACD1;
     text-decoration: none;
@@ -1241,3 +1263,87 @@ h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
 #illustration-newsletter a,#docs-newsletter a,#actus_pf a,#fichiers-newsletter a{text-align: center;color: #4e4d5e;text-decoration: none;}
 #illustration-newsletter a:hover,#docs-newsletter a:hover,#actus_pf a:hover,#fichiers-newsletter a:hover{color: #E85231;}
 #illustration-newsletter h3,#docs-newsletter h3,#actus_pf h3,#fichiers-newsletter h3{text-align: center;color: #94127F;}
+/*********************************
+----------------------------------
+---- NEWSLETTER BLOC.TPL ---------
+---------------------------------*/
+#bloc-newsletter{
+     margin: 0 auto;
+    width: 250px;
+}
+#bloc-newsletter p{
+    /*float: left;*/
+    width: auto;
+}
+#bloc-newsletter form{
+    
+    margin: 0;
+}
+
+
+#bloc-newsletter .form-item label {
+    float: left;
+    margin: 0 5px;
+}
+#bloc-newsletter .form-submit input{
+     float: right;
+}
+#bloc-newsletter{}
+
+#bloc-newsletter .simplenews-subscription-filter .form-item {
+  clear: both;
+  line-height: 1.75em;
+  margin: 0pt 1em 0pt 0pt;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .form-item label {
+  float: left;
+  width: 12em;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .spacer {
+  margin-left: 12em;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .form-select,
+#bloc-newsletter .simplenews-subscription-filter .form-text {
+  width: 14em;
+}
+/* BLOC NL MULTI SOUSCRIPTION
+------------------------------*/
+.block-simplenews{
+    background: #FDE910;
+    margin: 10px auto;
+    width: 410px;
+    padding: 5px;
+     border: 5px solid #fff;
+    -moz-box-shadow: #AAAAAA 0px 0px 5px ;
+    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+    box-shadow: #AAAAAA 0px 0px 5px;
+}
+.block-simplenews h3{color: #4e4d5e;text-align: center;}
+.block-simplenews .form-item,.block-simplenews .form-submit{text-align: center;}
+.block-simplenews .form-submit{margin: 0 0 0 15px;}
+#bloc-newsletter-multi{margin: 0 auto;width: inherit;}
+#bloc-newsletter-multi p{/*float: left;*/width: auto;}
+#bloc-newsletter-multi form{margin: 0;}
+#bloc-newsletter-multi .form-item label {margin: 0 5px;}
+#bloc-newsletter-multi .form-submit input{float: right;}
+#bloc-newsletter-multi{}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-item {clear: both;line-height: 1.75em;  margin: 0pt 1em 0pt 0pt;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-item label {float: left;width: 12em;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .spacer {margin-left: 12em;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-select,
+#bloc-newsletter-multi .simplenews-subscription-filter .form-text {width: 14em;}
+/*********************************
+----------------------------------
+---- SIMPLENEWS MAIL CONFIRMATION ---------
+---------------------------------*/
+.mail-confirmation{width: 550px;}
+.mail-confirmation a{color: #E7512F;text-decoration: none;}
+.mail-confirmation a:hover{background: #E7512F;color: #EFEFEF;}
+.mail-confirmation strong{color: #00ACD1;}

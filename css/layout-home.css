@@ -1,7 +1,10 @@
 /**
 Template page d'accueil custom
  */
-#header-inner{
+/*Bandeau haut de page*/
+#bandeau-pagetop{width: 100%;background: #FBFBFB;padding: 5px 0;}
+ 
+ #header-inner{
 	margin:auto;
 	height:auto;
 	width:980px;

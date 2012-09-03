@@ -1073,6 +1073,8 @@ span#DossierBTS{}
     
 
 }
+#complement-bts h3{color: #00AAD2;}
+#abreviation-bts{text-align: right;display: block;margin: 5px;}
 /*table infos pratiques*/
 table#infos-pratiques-bts{ 
     border-top: 1px solid  #ACC624;
@@ -1091,12 +1093,12 @@ table#infos-pratiques-bts td{
 }
 table#infos-pratiques-bts a{}
 table#infos-pratiques-bts a:hover{}
-table#infos-pratiques-bts td h4{
-    text-align: center;
-    color: white;
+table#infos-pratiques-bts td h4{text-align: center;color: white;
    text-shadow: 0px 0px 5px #606171;
-filter: dropshadow(color=#606171, offx=0, offy=0);
-font-family: 'IM Fell English', serif;
+   filter: dropshadow(color=#606171, offx=0, offy=0);
+   font-family: 'IM Fell English', serif;
+   behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
 }
 td.col1{
     background: none ;
@@ -1109,7 +1111,7 @@ td.col3{
     background: none ;
 }
 td:hover.col1{
-    background: ;
+    background: blue ;
 }
 td:hover.col2{
     background: yellow;

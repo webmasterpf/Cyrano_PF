@@ -12,11 +12,18 @@
       <br clear="all"/>
       
       <?php if ($node->field_abreviation_bts[0]['view']): ?>
-      <span id="abbreviation-bts">
+      <span id="abreviation-bts">
                  <?php  print $node->field_abreviation_bts[0]['view'] ?>
       </span>
              <?php endif; ?>
 
+       <br clear="all"/>
+      
+      <?php if ($node->field_complement_fiche_bts[0]['view']): ?>
+      <span id="complement-bts">
+                 <?php  print $node->field_complement_fiche_bts[0]['view'] ?>
+      </span>
+             <?php endif; ?>
     
       <br clear="all"/>
 
@@ -26,9 +33,9 @@
              <?php if ($node->field_intro_fiche_bts[0]['view']): ?>
         <div id="intro-fiche-bts">
           
-           <?php if ($node->field_illus_fichebts[0]['view']): ?>
+           <?php if ($node->field_illus_fiche_bts[0]['view']): ?>
       <div id="illus-fiche-bts">
-                 <?php  print $node->field_illus_fichebts[0]['view'] ?>
+                 <?php  print $node->field_illus_fiche_bts[0]['view'] ?>
       </div>
              <?php endif; ?>
                  <?php  print $node->field_intro_fiche_bts[0]['view'] ?>
@@ -68,9 +75,9 @@
                   </td>
                   <td class="col2">
          <h4>En détail...</h4>
-         <?php if ($node->field_fiche_bts[0]['view']): ?>
+         <?php if ($node->field_detail_fiche_bts[0]['view']): ?>
         <div id="fiche-detaille-bts">
-                <?php  print $node->field_fiche_bts[0]['view'] ?>
+                <?php  print $node->field_detail_fiche_bts[0]['view'] ?>
         </div>
    <?php endif; ?>
                   </td>

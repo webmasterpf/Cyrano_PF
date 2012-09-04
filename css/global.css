@@ -771,7 +771,7 @@ border: 3px solid #E3007A;
     -webkit-box-shadow: 1px 1px 10px #00abd1;
     -moz-box-shadow: 1px 1px 10px #00abd1;
     box-shadow: 1px 1px 10px #00abd1;
-    behavior: url(../site/sites/all/libraries/PIE/PIE.htc);
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
 }
 
 #block-views-nodequeue_1-block li{
@@ -1040,7 +1040,7 @@ span#DossierBTS{}
 
 
 /************** NODE.TPL FICHE BTS***********************/
-#abbreviation-bts{
+#abreviation-bts{
      color: #94127F;
     float: right;
     padding: 0 5px;
@@ -1093,7 +1093,7 @@ table#infos-pratiques-bts td{
 }
 table#infos-pratiques-bts a{}
 table#infos-pratiques-bts a:hover{}
-table#infos-pratiques-bts td h4{text-align: center;color: white;
+table#infos-pratiques-bts td h4{text-align: center;color: #E10279;
    text-shadow: 0px 0px 5px #606171;
    filter: dropshadow(color=#606171, offx=0, offy=0);
    font-family: 'IM Fell English', serif;

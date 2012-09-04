@@ -16,11 +16,11 @@
               ?>
     <br clear="all"/>
    <?php
-   include (drupal_get_path('theme',cyrano_pf).'/includes/inc_vue_actu_globale_rp_petit.php');
+   include (drupal_get_path('theme','cyrano_pf').'/includes/inc_vue_actu_globale_rp_petit.php');
    ?>
      <?php
  /* inclusion d'une region pour bloc */
-              include (drupal_get_path('theme',cyrano_pf).'/includes/inc_region_col_G1.php');
+              include (drupal_get_path('theme','cyrano_pf').'/includes/inc_region_col_G1.php');
               ?>
 </div>
 <!-- ______________________ COLONNE ACTUS ASSO _______________________ -->

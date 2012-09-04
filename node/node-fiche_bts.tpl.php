@@ -69,7 +69,7 @@
                   <td class="col1">
                       <h4>Des liens...</h4>
                       <?php
- global $theme_path;
+ $theme_path = drupal_get_path('theme', 'cyrano_pf');
  include ($theme_path.'/includes/inc_fiche_bts_liste_liens.php');
  ?>
                   </td>

@@ -956,13 +956,11 @@ background-color:#EFEFEF;
     padding:5px;
     border-left: 1px solid #606171;
 }
-.bodyfield-content-bts{
-    float: left;
-}
+.bodyfield-content-bts{float: left;margin: 5px;}
 /*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤  NODE.TPL BTS ENTREPRISE Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤
-Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤*/
+Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤*/
 .page-bts{
     width: 990px;
     margin: 0 auto;

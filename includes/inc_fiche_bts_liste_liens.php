@@ -16,7 +16,7 @@
 $viewname_fl3 = 'Fiche_bts';
 $view = views_get_view ($viewname_fl3);
 $viewdisplay_fl3 = $view->set_display('block_1');
-//$args_fl3 = $view->set_arguments(array($node->nid));
+$args_fl3 = $view->set_arguments(array($node->nid));
 
 $emptyTextVue = $view->set_display('block_1')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Aucun lien à vous proposer.</div>');
@@ -34,7 +34,7 @@ $view->execute();
 
 if (!empty($view->result)) {
   // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu)
-  $output = '<div id="liens-fiche-bts"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_fl3).'</div>';
+  $output = '<div id="liens-fiche-bts"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_fl3,$args_fl3).'</div>';
 
   //Affiche la vue si contenu
 print $output;

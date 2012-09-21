@@ -69,8 +69,8 @@ tr.table-tr-content{border-bottom-color: #d6d6d6; border-bottom-width: 1px; bord
      <div align="center"><img src="http://www.provence-formation.fr/sites/all/themes/Cyrano_PF/images/newsletter/header-newsletter-2012.jpg" alt="El&egrave;ves devant le Lyc&eacute;e" width="695" height="145"/>        </div></td>
    </tr></thead>   
 <tbody>
-<tr><td colspan="3" style="text-align:center"> <a href="<?php print $front_page; ?>" title="Accueil du site" rel="home" id="logo" style="color: #E7512F;">
-            Aller sur le site</a> - <a href="<?php print $front_page; ?>/node/<?php print $node->nid ?>" target="_blank" style="color: #E7512F;">Voir la newsletter sur le site</a></td></tr>
+<tr><td colspan="3" style="text-align:center"> <a href="<?php print $base_url; ?>" title="Accueil du site" rel="home" id="logo" style="color: #E7512F;">
+            Aller sur le site</a> - <a href="<?php print $base_url.'/node/'.$node->nid ?>" target="_blank" style="color: #E7512F;">Voir la newsletter sur le site</a></td></tr>
     <tr border="0">
        
       <td width="210"><h2 style="text-align: center;color: #E7512F; margin: 5px;"><?php print $title; ?></h2></td>

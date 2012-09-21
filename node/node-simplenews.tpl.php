@@ -36,17 +36,17 @@
             </div>
             <?php endif;?>
             
-               <?php if ($node->field_fichier_joint[0]['view']): ?>
-            <div id="fichiers-newsletter">
-                    <?php  print $node->field_fichier_joint[0]['view']  ?>
-            </div>
-            <?php endif;?>     
+               <?php //if ($node->field_fichier_joint[0]['view']): ?>
+<!--            <div id="fichiers-newsletter">-->
+                    <?php // print $node->field_fichier_joint[0]['view']  ?>
+<!--            </div>-->
+            <?php // endif;?>     
       
 
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="col2_layout_305_660">
+        <div id="colonne-2" class="col2_layout_305_660 nl-body">
         
 
             <?php print $picture; ?>

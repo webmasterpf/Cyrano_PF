@@ -31,7 +31,7 @@ body {
 	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	background-color: white;
-	color: #606171;
+	color: #33343D;
 }
 ul,li,dl,dd,dt{
     list-style-position: inside;
@@ -262,7 +262,7 @@ h6 {
 /*//////////////// BORDER COLONNE 3 \\\\\\\\\\\\\\\\*/
 /* LAYOUT PAGE LYCEE*/
 
-#left-content-pageLycee{
+#left-content-pageLycee,#left-content-page-lycee{
     float:left;
     position:relative;
     background-color:#FFF;
@@ -275,9 +275,9 @@ h6 {
     float:left;
     position:relative;
     background-color:white;
-    width:275px;
+    width:990px;
 }
-#middle-content-pageLycee{
+#middle-content-page-lycee{
     float:left;
     position:relative;
     background-color:white;
@@ -286,21 +286,21 @@ h6 {
     padding:5px;
    
 }
-#middle-content-pageLycee h3{
+#middle-content-page-lycee h3{
     font-size: 14px;
     color:#AECA20;
     padding: 2px 0;
 }
-#middle-content-pageLycee h4{
+#middle-content-page-lycee h4{
     font-size: 13px;
     color:#93117E;
     padding: 2px 0;
 }
-#middle-content-pageLycee strong{
+#middle-content-page-lycee strong{
     color:#606171;
 }
 
-#right-content-pageLycee{
+#right-content-pageLycee,#right-content-page-lycee{
     float:right;
     position:relative;
     background-color:#FFF;
@@ -310,11 +310,11 @@ h6 {
     padding:5px;
     }
 /*gmap*/
-#right-content-pageLycee small a{
+#right-content-page-lycee small a{
 color : #01ABCF;
 text-decoration: none;
 }
-#right-content-pageLycee small a:hover {
+#right-content-page-lycee small a:hover {
 text-decoration: underline;
 }
 #tb-fiche-illus{

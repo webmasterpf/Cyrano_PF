@@ -432,6 +432,8 @@ padding:10px 0;
 .views-field-diplome a:hover{
    text-decoration: underline;
 }
+#diapo-lycee img{border: 2px solid #E85231;padding: 1px;}
+#gmap-lycee iframe{border: 2px solid #00AAD2;padding: 1px;}
 /*STYLE PAGE FORMATIONS INITIALES*/
 .title-formation, .title-association, .title-fiche-formation{
     text-align: center;
@@ -504,11 +506,11 @@ span.complement {
     margin: 50% 0 0 0;
     padding: 0;
 }
-.view-Fiche-formation-savoir-plus a, .view-Logo-coordonnees-lycees a{
+.view-Fiche-formation-savoir-plus a, #lycee-coordlogo a{
 color: #d63e2a;
 text-decoration:none;
 }
-.view-Fiche-formation-savoir-plus a:hover, .view-Logo-coordonnees-lycees a:hover{
+.view-Fiche-formation-savoir-plus a:hover, #lycee-coordlogo a:hover{
 text-decoration:underline;
 }
 
@@ -1258,13 +1260,16 @@ h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
 ---- TPL NEWSLETTER CONTENT -------
 ---------------------------------*/
 #illustration-newsletter{display:block;padding:2px;margin:2px;border:1px solid #F29400;background:#FFCC66;}
-#docs-newsletter{}
+#illustration-newsletter img{display: block;margin: 0 auto;}
+#docs-newsletter{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#C2E1E8;}
 #fichiers-newsletter{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
 #actus_pf{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
+.nl-body a{color: #E7512F;}
 
 #illustration-newsletter a,#docs-newsletter a,#actus_pf a,#fichiers-newsletter a{text-align: center;color: #4e4d5e;text-decoration: none;}
 #illustration-newsletter a:hover,#docs-newsletter a:hover,#actus_pf a:hover,#fichiers-newsletter a:hover{color: #E85231;}
-#illustration-newsletter h3,#docs-newsletter h3,#actus_pf h3,#fichiers-newsletter h3{text-align: center;color: #94127F;}
+#illustration-newsletter h3,#actus_pf h3,#fichiers-newsletter h3{text-align: center;color: #94127F;}
+#docs-newsletter h3{color: #00ACD1;text-align: center;}
 /*********************************
 ----------------------------------
 ---- NEWSLETTER BLOC.TPL ---------

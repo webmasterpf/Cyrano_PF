@@ -12,7 +12,16 @@
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
       
-          <!-- ______________________ CONTENU NODE _______________________ -->
+       <!-- ______________________ COLONNE GAUCHE _______________________ -->
+		
+			<?php if ($left): ?>
+         <div id="left-content-pageLycee">
+            <?php print $left; ?>
+          </div>
+             <?php endif; ?> <!-- /sidebar-left -->
+
+		<!--fin du contenu gauche -->
+        
         <div id="content-inner-pageLycee">
 		
 			
@@ -33,12 +42,14 @@
 
             </div> <!-- /#content-header -->
           <?php endif; ?>
-		
-          
-               
+		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
+          <div id="middle-content-pageLycee">
+               <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $content; ?>
               <?php print $feed_icons; ?>
-         
+          </div> <!-- /#content-area -->
 
         
 		
@@ -53,6 +64,15 @@
           </div> <!-- /navigation -->
         <?php endif; ?>
 
+       
+		  <!-- ______________________ COLONNE DROITE _______________________ -->
+
+                   <!-- colonne droite pageLycee -->
+          <?php if ($right): ?>
+            <div id="right-content-pageLycee">
+              <?php print $right; ?>
+            </div>
+        <?php endif; ?> <!-- /colonne droite pageLycee -->
 		<!-- ______________________ CONTENU BAS _______________________ -->
  <br clear="all" />
 <?php if ($content_bottom): ?>

@@ -66,7 +66,7 @@ padding:5px;
 /************PARTIE BASSE**************/
 #headBas{
 	width:980px;
-	height:115px;
+	height:130px;/*hauteur du bloc : superfish = 130px nice menu=115px*/
 	float:none;
 	display:block;
 	margin:5px 0 0 0;
@@ -173,12 +173,11 @@ margin: 0 auto;
 padding:0;
 
 }
+
 #blocLycee{
 width:506px;
 margin: 0 auto;
-padding:0;
-
-}
+padding:20px 0 10px;}
 
 #contentAnim{
     /*

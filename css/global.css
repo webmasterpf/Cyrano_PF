@@ -432,7 +432,9 @@ padding:10px 0;
 .views-field-diplome a:hover{
    text-decoration: underline;
 }
+#diapo-lycee {margin:0;display: block;}
 #diapo-lycee img{border: 2px solid #E85231;padding: 1px;}
+#gmap-lycee {height: 200px;width: 300px;display: block;margin: 20px 0;}
 #gmap-lycee iframe{border: 2px solid #00AAD2;padding: 1px;}
 /*STYLE PAGE FORMATIONS INITIALES*/
 .title-formation, .title-association, .title-fiche-formation{
@@ -582,9 +584,8 @@ a:hover.lire_plus{
     text-decoration: underline;
     width: 95%;
 }
-.lien_archive a:hover{
-	  text-decoration: none;
-	 }
+.lien_archive a:hover{text-decoration: none;}
+.pager li.pager-current{color:#EFEFEF;padding: 2px;background: #4e4d5e; }
 #middle-content-detailActu-presse h3{
     color: #931B7D;
     font-size: 14px;

@@ -66,7 +66,7 @@ VIEWS SLIDESHOW SINGLEFRAME ====================
 /*
 VIEWS SLIDESHOW SLIDER ===================================
 */
-.views_slideshow_slider_controls{height: 20px;margin: 0 auto;width: 400px;}
+.views_slideshow_slider_controls{height: 20px;margin: 0 auto;width: 200px;float: right;}
 .views_slideshow_slider_previous, .views_slideshow_slider_next, .views_slideshow_slider_pause{
   width:18px;
   height:0px;
@@ -78,3 +78,20 @@ VIEWS SLIDESHOW SLIDER ===================================
 .views_slideshow_slider_pause{}
 .views_slideshow_slider_next{background:url('../css_galeries/images/button_nav.png') 18px 0;}
 .views_slideshow_slider_next a:hover{background:url('../css_galeries/images/button_nav.png') 18px 18px;}
+
+/*
+VIEWS 3 CYCLE ===================================
+*/
+/*Place le bloc du pager*/
+.views-slideshow-controls-bottom{float: right;margin: 0 0 10px 0;}
+#widget_pager_bottom_annonce_accueil-block_1 {margin: 2px 0 0 280px !important;margin: 2px 0 0 80px;}
+/*Style */
+.widget_pager .views_slideshow_pager_field_item{  background-color: #CFD0D2;
+  border-radius: 6px 6px 6px 6px;
+  float: left;
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  text-indent: -9999px;
+  cursor: pointer;}
+.widget_pager .active,.widget_pager :hover{background-color: #606171;border-radius: 6px 6px 6px 6px;}

@@ -299,7 +299,8 @@ h6 {
 #middle-content-page-lycee strong{
     color:#606171;
 }
-
+#middle-content-page-lycee a{color: #93117E;text-decoration: none;}
+#middle-content-page-lycee a:hover{text-decoration: underline;}
 #right-content-pageLycee,#right-content-page-lycee{
     float:right;
     position:relative;

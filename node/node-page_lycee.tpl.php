@@ -69,7 +69,7 @@
       </span>
              <?php endif; ?>      
              
-             
+       <br clear="all"/>         
              
       <?php if ($node->field_lycee_gmap[0]['view']): ?>
       <span id="gmap-lycee">
@@ -83,7 +83,7 @@
        
 
           
-        <br clear="all"/>
+     
   
       
                  <?php if ($right): ?>

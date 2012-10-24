@@ -119,7 +119,8 @@ ul.nice-menu-right ul ul {
 
 ul.nice-menu-right li.menuparent,
 ul.nice-menu-right li li.menuparent {
-  background:  url(../images/arrow-right.png) right center no-repeat;
+/*  background:  url(../images/arrow-right.png) right center no-repeat;*/
+background: none;
 }
 
 ul.nice-menu-right li.menuparent:hover,
@@ -344,6 +345,7 @@ ul#nice-menu-2 li{
 	margin:0 0 1px 0;
         padding: 0;
         height: 40px;
+        border: 0;
 }
 
 ul#nice-menu-2 li a, ul#nice-menu-2 .menu-item-container{

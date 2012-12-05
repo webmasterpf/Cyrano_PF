@@ -51,14 +51,15 @@
     <div id="content-bottom-home">
       <?php print $content_bottom_home; ?>
          <?php //print $feed_icons; ?>
-      <?php endif; ?>
-       </div> <!-- /content_bottom_home -->
-
+      </div> <!-- /content_bottom_home -->
+       <?php endif; ?>
+      
+      
 	<?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
+             </div><!-- /#content-bottom -->
                 <?php endif; ?>
-            </div><!-- /#content-bottom -->
         
 	
 	 </div> <!-- /mainPage -->

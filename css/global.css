@@ -273,9 +273,9 @@ text-decoration: underline;
     text-decoration: none;
 }
 /* Défilant Actus brulante - Breaking news*/
-#block-views-annonce_accueil-block_2{
-    text-align: center;
-}
+#block-views-annonce_accueil-block_2
+{margin: 5px auto;text-align: center;width: 375px;}
+
 #block-views-annonce_accueil-block_2 h3{
     font-family: Arista,Trebuchet MS,sans serif;
     font-size: 18px;
@@ -1239,6 +1239,13 @@ strong#middle-content-fiche-bts {
 #table-portail img{
     box-shadow: 0px 0px 5px #606070;
 }
+/*=
+== WEBFORM - FORMULAIRES =====
+*/
+fieldset .webform-component-fieldset a,fieldset #webform-component-le-site-internet-de-votre-lycee legend
+{color: #E7512F;}
+
+#protected-node-enterpassword fieldset a{color: #02A7D5;}
 /*********************************
 ----------------------------------
 ---- POLES METIERS --------------
@@ -1279,23 +1286,15 @@ h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
      margin: 0 auto;
     width: 250px;
 }
-#bloc-newsletter p{
-    /*float: left;*/
-    width: auto;
-}
-#bloc-newsletter form{
-    
-    margin: 0;
-}
+#bloc-newsletter p{/*float: left;*/width: auto;}
+#bloc-newsletter form{margin: 0;}
 
 
 #bloc-newsletter .form-item label {
     float: left;
     margin: 0 5px;
 }
-#bloc-newsletter .form-submit input{
-     float: right;
-}
+#bloc-newsletter .form-submit input{float: right;}
 #bloc-newsletter{}
 
 #bloc-newsletter .simplenews-subscription-filter .form-item {

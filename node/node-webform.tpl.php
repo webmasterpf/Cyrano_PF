@@ -19,8 +19,8 @@
     <table>
     <tr>
     <td><?php print $node->content['body']['#value']; ?></td>
-    <td><?php print $node->content['webform']['#value']; ?></td>
     </tr>
+    <tr><td><?php print $node->content['webform']['#value']; ?></td></tr>
     </table>
   </div>
 

@@ -1,5 +1,6 @@
 name = Provence Formation inspired by Cyrano
 description = Theme pour site Provence Formation - Design and Integration by Webmaster PF
+version = VERSION
 core = 6.x
 engine = phptemplate
 

@@ -1,5 +1,5 @@
 <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
- <!-- ______________________ LAYOUT PAGE BASIQUE _______________________ -->
+ <!-- ______________________ LAYOUT WEBFORM GENERIK OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
@@ -13,22 +13,9 @@
             </div> <!-- /#content-top -->
 	  
       
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			 
-         <div id="left-content">
-              <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-                 <?php if ($left): ?>
-            <?php print $left; ?>
-                 <?php endif; ?>
-          </div>
-             <!-- /sidebar-left -->
-		
-		<!--fin du contenu gauche -->
+
         
-        <div id="content-inner" class="inner column center">
+        <div id="content-inner-webform">
 		             
 		
            
@@ -51,7 +38,8 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content">
+          <div id="middle-content-webform">
+          
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -71,16 +59,7 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content">
-			
-				
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
-
+		
    
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
@@ -90,6 +69,5 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
-	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
+        <?php endif; ?>

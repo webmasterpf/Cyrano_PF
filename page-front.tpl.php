@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ CONTENU _______________________ -->
     
 	<div id="mainPage">
@@ -63,4 +63,4 @@
         
 	
 	 </div> <!-- /mainPage -->
-     <?php include "inc_footer.php";?>
+     <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>

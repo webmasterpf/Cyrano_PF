@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>  
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>  
  <!-- ______________________ LAYOUT PAGE ACTU REVUE DE PRESSE _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
@@ -12,20 +12,9 @@
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
       
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			
-         <div id="left-content-detailActu-presse">
-              <?php if ($title): ?>
-                <h1 class="title-association"><?php print $title; ?></h1>
-              <?php endif; ?>
-            <?php print $left; ?>
-          </div>
-             <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
-        
-        <div id="content-inner-detailActu-presse">
+      
+       <!-- ______________________ CONTENT INNER _______________________ --> 
+        <div id="content-inner-bts">
 		
 			
           <?php if ($mission || $messages || $help || $tabs): ?>
@@ -46,7 +35,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-detailActu-presse">
+          <div id="middle-content-override" class="actu-presse">
               
             <?php print $content; ?>
               <?php print $feed_icons; ?>
@@ -66,14 +55,7 @@
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-
-                   <!-- colonne droite detailActu-presse -->
-          <?php if ($right): ?>
-            <div id="right-content-detailActu-presse">
-              <?php print $right; ?>
-            </div>
-        <?php endif; ?> <!-- /colonne droite detailActu-presse -->
+		
 		
 <br clear="all" />
 <!-- ______________________ CONTENU BAS _______________________ -->
@@ -87,6 +69,6 @@
 		  
 	 </div> <!-- /contentPage -->
 	  
-	  <?php include "inc_footer.php";?>
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>
      

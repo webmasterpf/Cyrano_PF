@@ -228,7 +228,7 @@ h6 {
 }
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
-.col1_layout_225_735{width: 225px;}
+.col1_layout_225_720{width: 225px;float: left;}
 .col1_layout_250_700{width: 250px; float: left;}
 .col1_layout_305_660{width: 305px;float: left;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
@@ -240,7 +240,7 @@ h6 {
 }
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
-.col2_layout_225_735{width: 735px;}
+.col2_layout_225_720{width: 720px;float: left;}
 .col2_layout_250_700{width: 700px; float: left;}
 .col2_layout_305_660{width: 660px;float: right;}
 
@@ -297,7 +297,7 @@ h6 {
     padding: 2px 0;
 }
 #middle-content-page-lycee strong{
-    color:#606171;
+    color:#E85231;
 }
 #middle-content-page-lycee a{color: #93117E;text-decoration: none;}
 #middle-content-page-lycee a:hover{text-decoration: underline;}

@@ -5,8 +5,14 @@
     <title><?php print $head_title; ?></title>
     <?php print $head; ?>
     <?php print $styles; ?>
-   
-    <!--<script src="<?php //print $base_path . path_to_theme() ?>/js/typos.js" type="text/javascript" charset="utf-8"></script>-->
+    <meta name="detectify-verification" content="8497102470e46552eeca2eb8a07b7910" />
+    
+    <!-- Meta pour tuile Windows 8 -->
+    <meta name="msapplication-TileColor" content="white"/>
+    <meta name="msapplication-TileImage" content="<?php Global $base_url;$theme_path = drupal_get_path('theme','cyrano_pf');print $base_url.$base_path.$theme_path.'/pinned-favicon.png'?>"/>
+    <meta name="application-name" content="Provence Formation"/>
+
+    <!--<script src="<?php print $base_path . path_to_theme() ?>/js/typos.js" type="text/javascript" charset="utf-8"></script>-->
       
   </head>
 

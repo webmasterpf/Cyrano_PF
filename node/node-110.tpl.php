@@ -1,4 +1,4 @@
-<!-- ******* TEMPLATE DE NODE POUR PAGE BTS *********************** -->
+    <!-- ******* TEMPLATE DE NODE POUR PAGE BTS *********************** -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
   <div class="node-inner">
 <!--_______________________ COLONNE 1 __________________ -->
@@ -17,13 +17,7 @@
     <div class="content">
       <?php  print $node->content['body']['#value']; ?>
 
-         <?php if ($node->field_centres_bts[0]['view']): ?>
-        <div id="centres-bts">
-                <?php  print $node->field_centres_bts[0]['view'] ?>
-        </div>
-   <?php endif; ?>
-
-         <?php if ($node->field_txt_dossier[0]['view']): ?>
+           <?php if ($node->field_txt_dossier[0]['view']): ?>
         <div id="txt-dossier-bts">
                 <?php  print $node->field_txt_dossier[0]['view'] ?>
         </div>
@@ -35,32 +29,27 @@
             <span id="DossierBTS">
 <?php  print $node->field_dossier_bts[0]['view'] ?>
 </span>
-               
-        </div>
+                  </div>
    <?php endif; ?>
-
-
+        
+         <?php if ($node->field_centres_bts[0]['view']): ?>
+        <div id="centres-bts">
+                <?php  print $node->field_centres_bts[0]['view'] ?>
+        </div>
+   <?php endif; ?>    
+            
+       <?php
+ $theme_path = drupal_get_path('theme', 'cyrano_pf');
+ include ($theme_path.'/includes/inc_liste_bts.php');
+ ?> 
+ <?php if ($node->field_corps2_page_bts[0]['view']): ?>
+        <div id="content2-bts">
+                <?php  print $node->field_corps2_page_bts[0]['view'] ?>
+        </div>
+   <?php endif; ?>        
 
         <br clear="all"/>
-        <?php
-$viewname = 'liste_bts_fiches';
-$view = views_get_view ($viewname);
-$view->set_display('block_1');
-
-
-//Exécution de le vue
-$view->pre_execute();
-$view->execute();
-
-if ($view->result) {
-  // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu)
-  $output = '<div id="vue-liste-bts"><h3>'.$view->get_title().'</h3>' . $view->render().'</div>';
-}
-
-//Affiche la vue.Voir le template de view pour le theming de cette sortie .
-print $output;
-
-?>
+      
       
     </div>
 
@@ -74,12 +63,15 @@ print $output;
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
+      
+       <!-- retour haut selon resolution de l'ecran -->
+          <a href="#general" id="retour_haut">Haut de page</a>
 </div>
 <!--_______________________ COLONNE 2 __________________ -->
 <div id="colonne-2" class="col-2-btsentrepise">
          <?php
  /* inclusion d'une region pour bloc */
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_pf');
               include ($theme_path.'/includes/inc_region_col_G3.php');
               ?>
 </div>

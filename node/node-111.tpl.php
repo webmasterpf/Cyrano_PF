@@ -57,40 +57,24 @@
     <?php if ($links): ?> 
       <div class="links"> <?php print $links; ?></div>
     <?php endif; ?>
+       <!-- retour haut selon resolution de l'ecran -->
+          <a href="#general" id="retour_haut">Haut de page</a>
       </div>
 
 <!--_______________________ COLONNE 2 __________________ -->
       <div id="colonne-2" class="col-2-btsentrepise">
-          <?php
-foreach($node->field_objectif_bts as $file) {
-  if ($file['view']) {
-      print $file['view'];
-  }
-}
-?>
-
-          <table id="objectif-bts">
-    <?php
-foreach($node->field_objectif_bts as $file) {
-    ?>
-<tr>
-    <?php
-  if ($file['view']) {
-      ?>
-  <td>
-      <?php
-      print $file['view'];
-      ?>
-</td>
+         
 <?php
-  }
-  ?>
-</tr>
+ $theme_path = drupal_get_path('theme', 'cyrano_pf');
+ include ($theme_path.'/includes/inc_objectif_bts.php');
+ ?>
+
+          
+
   <?php
-}?>
-</table>
-
-
+ $theme_path = drupal_get_path('theme', 'cyrano_pf');
+ include ($theme_path.'/includes/inc_region_col_G3.php');
+ ?>
 
 
       </div>

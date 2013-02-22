@@ -18,21 +18,20 @@
  * - $form['details']: Internal information stored by Webform.
  */
 ?>
-<?php include "inc_header.php";?>
-<?php echo
-'<!-- ______________________ LAYOUT PAGE WEBFORM TEST  _______________________ -->
+ <!-- ______________________ LAYOUT PAGE WEBFORM OFFRE CT PRO _______________________ -->
+ <?php //template spécifique pour formulaire contact selon l'ID du formulaire ?>
   <!-- ______________________ CONTENU _______________________ -->
 
       <div id="contentPage">
 
-          <!-- ______________________ CONTENT TOP _______________________ -->';
+          <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
 	<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-		<?php endif; ?> 
+
 
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 
@@ -52,7 +51,10 @@
             	  <!-- ______________________ CONTENU CENTRAL _______________________ -->
           <div id="middle-content">
             <?php print $content; ?>
- <?php
+
+
+
+<?php
   // If editing or viewing submissions, display the navigation at the top.
   if (isset($form['submission_info']) || isset($form['navigation'])) {
     print drupal_render($form['navigation']);
@@ -72,19 +74,8 @@
     unset($form['navigation']['#printed']);
     print drupal_render($form['navigation']);
   }
- ?>
-
-
-
-<table border="1">
-<tr>
-<td><?php print drupal_render($form['submitted']['first_name']); ?></td>
-<td><?php print drupal_render($form['submitted']['middle_initial']); ?></td>
-<td><?php print drupal_render($form['submitted']['last_name']); ?></td>
-<td><?php print drupal_render($form['submitted']['address']); ?></td>
-</tr>
-</table>
-        </div>
+  ?>
+     <?php endif; ?>
           </div> <!-- /#content-area -->
 
 
@@ -109,4 +100,4 @@
 	 </div> <!-- /contentPage -->
 
  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
+       

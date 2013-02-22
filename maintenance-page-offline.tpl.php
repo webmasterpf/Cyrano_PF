@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE OFFLINE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
@@ -94,5 +94,5 @@ $content ="<p>Le site est actuellement hors ligne et ne peut &ecirc;tre affich&e
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
-	  <?php include "inc_footer.php";?>
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>

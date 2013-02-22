@@ -36,10 +36,9 @@ function debug_print($var) {
 }
 ?>
 <?php
-// Webform "You have already submitted this form." message off.
+// Webform "You have already submitted this form." message off. 9 arguments
 function theme_name_webform_view_messages($node, $teaser, $page, $submission_count,$user_limit_exceeded,$total_limit_exceeded, $allowed_roles,$closed,$cached) {
-  theme_webform_view_messages($node, $teaser, $page, 0, $user_limit_exceeded,$total_limit_exceeded, $allowed_roles,$closed,$cached);
-}
+  theme_webform_view_messages($node, $teaser, $page, 0, $user_limit_exceeded,$total_limit_exceeded, $allowed_roles,$closed,$cached);}
 ?>
 <?php
 /*

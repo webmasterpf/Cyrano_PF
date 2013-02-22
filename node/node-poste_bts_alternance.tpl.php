@@ -40,6 +40,12 @@
                <td class="etat">  <?php  print $my_terms; ?></td>
 
            </tr>
+            <tr class="line2">
+               <td> Postuler à l'offre</td>
+               <td> <?php print '<a href=/node/184?destinataire='.$node->field_centre_bts[0]['value'].'&ref_offre='.$node->field_reference_pbts[0]['value'].'>ICI</a>';?></td>
+
+           </tr>
+          
        </table>
 
     <div class="content">

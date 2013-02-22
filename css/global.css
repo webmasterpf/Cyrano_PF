@@ -48,6 +48,17 @@ jaune #FAEB0C
 
 #bandeau-pagetop a.site_ce{color: #C8D215;}
 #bandeau-pagetop a:hover.site_ce{background:#C8D215;}
+/*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+== STYLE SPAN LYCEE CONTENU (reprise code visuel lycée) ==
+*/
+span.celony{color: black;background: #c8d215;padding: 0pt 2px;}
+span.caucadis{color: black;background: #9c9e9f;padding: 0pt 2px;}
+span.brise-lames{color: black;background: #00ACD1;padding: 0pt 2px;}
+span.le-rocher{color: black;background: #970F7D;padding: 0pt 2px;}
+span.gasquet{color: black;background: #E2017B;padding: 0pt 2px;}
+span.grawitz{color: black;background: #F09500;padding: 0pt 2px;}
+span.rostand{color: black;background: #E3001C;padding: 0pt 2px;}
+span.pf{color: black;background: #E85231;padding: 0pt 2px;}
 /**----MIDDLE---***/
 a#retour_haut{
     display: none;
@@ -156,7 +167,9 @@ padding: 2px;
 .table-poste-bts td.etat{
     font-weight: bold;
 }
-/*Vue liste des offres - style par taxoonmie*/
+.table-poste-bts a{color: #E7512F;text-decoration: none;font-weight: bold;}
+.table-poste-bts a:hover{text-decoration: underline;}
+/*Vue liste des offres - style par taxonomie*/
 .liste-offres-bts-pro ul {
     list-style: none;
 }
@@ -212,6 +225,16 @@ padding: 2px;
     color: #00AAD5;
     text-transform: uppercase;
 }
+/*Table autres offres à pourvoir*/
+#block-views-postes_bts_alternance-block_1 h3{font-size: 14px;color: #D63E2A;text-align: center;margin: 5px;}
+.table-autre-offres {width: 95%;margin: 0 auto;}
+.table-autre-offres tbody{background: #EFEFEF;}
+.table-autre-offres tr{}
+.table-autre-offres td{}
+.table-autre-offres a{text-decoration: none;float: left;color: #94127F;padding: 3px;}
+.table-autre-offres a:hover{text-decoration: underline;}
+.table-autre-offres h4{font-size: 12px;}
+.table-autre-offres .ref-offre-autre{float: right;}
 /*style des boutons radios*/
 .bef-checkboxes,
 .bef-select-as-radios .form-radios {
@@ -586,21 +609,22 @@ a:hover.lire_plus{
 }
 .lien_archive a:hover{text-decoration: none;}
 .pager li.pager-current{color:#EFEFEF;padding: 2px;background: #4e4d5e; }
-#middle-content-detailActu-presse h3{
+/*
+== CONTENU ACTU-PRESSE Redesign ===
+*/
+.actu-presse h3{
     color: #931B7D;
     font-size: 14px;
     margin:5px;
 }
-#middle-content-detailActu-presse h4{
+.actu-presse h4{
     color: #01ABCF;
     font-size: 12px;
 }
-#middle-content-detailActu-presse img{
-    padding: 0;
-}
-.actu-minipresse{
-    float: right;
-}
+.actu-presse img{padding: 0;}
+.actu-presse a{  color: #D63E2A;font-weight: bold;text-decoration: none;}
+.actu-presse  a:hover{text-decoration: underline;}
+.actu-minipresse{float: right;}
 .actu-minipresse img{
     border: 2px solid #ADC91F;
     margin: 2px;
@@ -956,11 +980,16 @@ label.views-label-field-spot-radio-fid{
 .page-bts p{
     padding: 2px 0;
 }
-.page-bts h3{
-    color: #AEC81F;
-    text-decoration: none;
-    font-size: 16px;
-}
+.page-bts h3{color: #AEC81F;text-decoration: none;font-size: 16px;}
+.page-bts h4{text-decoration: none;font-size: 14px;color: #950F7E}
+#content2-bts{}
+#content2-bts a{}
+#content2-bts a:hover{text-decoration: none;}
+.table-bts-coord{width: 97%;border: 0;}
+.table-bts-coord tbody{height: 45px;margin: 0;padding: 0;}
+.table-bts-coord tr{}
+.table-bts-coord td{vertical-align: middle;}
+.table-bts-coord{}
 /*************************************/
 /* POUR NODE.TPL PAGE BTS ACCUEIL */
 #vue-liste-bts{
@@ -968,7 +997,7 @@ label.views-label-field-spot-radio-fid{
     padding: 0;
     margin: 10px 0;
 }
-.vue-bloc-liste-bts{}
+.vue-bloc-liste-bts{text-align: left;text-indent: 15px;}
 .vue-bloc-liste-bts ul{
     list-style: none;
 }
@@ -982,6 +1011,7 @@ label.views-label-field-spot-radio-fid{
     background: #911381;
     color: white;
 }
+#vue-liste-bts h3,#vue-liste-bts .view-header{text-align: center;}
 span#DossierBTS{
     display: block;
     width: 90%;
@@ -1019,27 +1049,24 @@ span#DossierBTS{}
 }
 /*______Pour le node/111 BTS et entreprise______*/
 #docs-alternance-bts{
-    text-align: left;
-   
+    margin: 0 auto;text-align: left;width: 90%;   
 }
 #docs-alternance-bts li{
      list-style-position: outside;
      list-style-type: circle;
 }
-#objectif-bts table{}
-#objectif-bts tbody{
-    display: block;
-    margin: 0 auto;
-    
-    width: 400px;
-}
+#objectif-bts table,#objectif-bts tbody{border: 0;width: 300px;margin: 0 auto;display: block;}
+
 #objectif-bts tr{
     background: GhostWhite;
     margin: 2px 0;
     display: block;
 }
-#objectif-bts td{}
-#objectif-bts {}
+#objectif-bts td,#objectif-bts tr{border: 0;}
+#objectif-bts thead{text-align: center;background: none;}
+#objectif-bts th{border: 0;font-size: 18px;color: #00AACE;padding: 3px;}
+#objectif-bts a{color: #91127D;}
+#objectif-bts a:hover{text-decoration: underline;}
 
 
 /************** NODE.TPL FICHE BTS***********************/
@@ -1242,10 +1269,13 @@ strong#middle-content-fiche-bts {
 /*=
 == WEBFORM - FORMULAIRES =====
 */
-fieldset .webform-component-fieldset a,fieldset #webform-component-le-site-internet-de-votre-lycee legend
-{color: #E7512F;}
+.webform fieldset .collapsible legend {margin: 0;color: #E7512F;}
+.webform  a,.webform fieldset .collapsible legend a{color: #E7512F;}
+.webform .fieldset-wrapper {padding: 5px 0 0 25px;}
+.webform .webform-client-form {background: #EFEFEF;padding: 2px;}
 
 #protected-node-enterpassword fieldset a{color: #02A7D5;}
+
 /*********************************
 ----------------------------------
 ---- POLES METIERS --------------

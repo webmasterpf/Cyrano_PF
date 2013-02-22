@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE BTS OVERRIDE BY NODE.TPL _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
 
@@ -44,12 +44,17 @@
               <?php endif; ?>
 
             <?php print $content; ?>
+                
+                    
+          
               <?php if ($centralBloc): ?>
                 <div class="bts"><?php print $centralBloc; ?></div>
               <?php endif; ?>
            
 
               <?php print $feed_icons; ?>
+                
+        
           </div> <!-- /#content-area -->
 
 
@@ -78,5 +83,5 @@
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 
-	  <?php include "inc_footer.php";?>
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>

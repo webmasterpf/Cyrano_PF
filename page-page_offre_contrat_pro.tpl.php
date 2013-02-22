@@ -1,4 +1,4 @@
-<?php include "inc_header.php"; ?>
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE LISTE CONTRAT PRO BTS _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
@@ -90,5 +90,5 @@
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  <br clear="all"/>
-	  <?php include "inc_footer.php";?>
+	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
          <?php endif; ?>

@@ -16,3 +16,53 @@ Drupal.behaviors.goTop = function(context) {
      $('html,body').animate({scrollTop:0},'slow');//smooth scroll
   });
 }
+//Suivre les soumissions des webform
+jQuery(document).ready(function($) {
+// Track submission events for all forms with class="webform-client-form".
+  $('.webform-client-form').submit(function() {
+_gaq.push(['_trackEvent', 'Webform global', 'Form submission']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 65 Contact
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-65').submit(function() {
+      // Action de l'évènement - Catégorie de l'évènement
+_gaq.push(['_trackEvent', 'Contact Webform-65', 'Contact Form submission-65']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 67 Offre de stage
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-67').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-67 Offre de stage', 'Form submission-67']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 68 Candidature
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-68').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-68 Candidature', 'Form submission-68']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 184 Postuler Ct Pro
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-184').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-184 Postuler Ct Pro', 'Form submission-184']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 226 Avis anciens
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-226').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-226 Avis anciens', 'Form submission-226']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 389 BTS(choix)
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-389').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-389 BTS(choix)', 'Form submission-389']);
+  });
+});

@@ -1,4 +1,4 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>  
+<?php $theme_path = drupal_get_path('theme','cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>  
  <!-- ______________________ LAYOUT PAGE ACTU REVUE DE PRESSE _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
@@ -64,11 +64,7 @@
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-   
-    	
-		  
 	 </div> <!-- /contentPage -->
 	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
-     
+<?php $theme_path = drupal_get_path('theme','cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
+<?php endif; ?>    

@@ -315,10 +315,14 @@ li.sfHover > a > .sf-sub-indicator {
   text-transform:uppercase;
   font-weight: bold;
   color: #606070;/*couleur des a *//*violet : #95107D vert :#AEC721 rose :#E1017B anthracite : #606070*/
+  transition: background .5s ease,color .4 ease;/*transition CSS3*/
+  -webkit-transition: background .5s ease,color .4 ease;
 }
 .sf-navbar a:hover{
     color: #E55137;/*couleur des a:hover */
     background: #D0D1D2; /*couleur ar plan au rollover sur un item*/
+    transition: background .1s ease,color .1 ease;/*transition CSS3*/
+    -webkit-transition: background .1s ease,color .1 ease;
    
 }
 .sf-navbar a.active{

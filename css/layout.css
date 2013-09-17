@@ -218,22 +218,18 @@ h6 {
 ********** LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
 /*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
-#colonne-1{
-    
-   
-}
+#colonne-1{float: left; }
 .col1_layout_200_570_200{
     width: 200px;
-    float: left;
 }
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
-.col1_layout_225_720{width: 225px;float: left;}
-.col1_layout_250_700{width: 250px; float: left;}
-.col1_layout_305_660{width: 305px;float: left;}
+.col1_layout_225_720{width: 225px;}
+.col1_layout_250_700{width: 250px;}
+.col1_layout_305_660{width: 305px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
-    padding: 5px;
+    padding: 5px;float: left;
 
 }
 .col2_layout_200_570_200{width: 570px;float: left;
@@ -242,7 +238,7 @@ h6 {
 .col2_layout_18_56_25{}
 .col2_layout_225_720{width: 720px;float: left;}
 .col2_layout_250_700{width: 700px; float: left;}
-.col2_layout_305_660{width: 660px;float: right;}
+.col2_layout_305_660{width: 660px;}
 
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 .col3_layout_200_570_200{width: 200px;float: left;}
@@ -250,8 +246,26 @@ h6 {
 .col3_layout_18_56_25{}
 
 #colonne-unik{padding: 3px;width: 990px;}
-/*//////////////// BORDER COLONNE 1 \\\\\\\\\\\\\\\\*/
+/*//////////////// BORDER RIGHT \\\\\\\\\\\\\\\\*/
+.border-R-orangePF{border-right: 1px solid #DA5714;}
+.border-R-anthracite{border-right: 1px solid #606171;}
+.border-R-vert{border-right: 1px solid #ADC91F;}
+.border-R-rose{ border-right: 1px solid #E2007A;}
+/*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
+.border-rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
+.border-rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}
+.border-noir-vert { border-left: 1px solid #606171; border-right: 1px solid #C8D215;}
+.border-bleu-violet { border-left: 1px solid #00AAD2; border-right: 1px solid #93117E;}
+.border-vert-violet { border-left: 1px solid #ADC91F; border-right: 1px solid #93117E;}
+.border-anthracite-orangePF{border-left: 1px solid #606071;border-right: 1px solid #DA5714;}
 
+/*//////////////// BORDER LEFT \\\\\\\\\\\\\\\\*/
+.border-L-bleu{border-left: 1px solid #02A7D5;}
+.border-L-grisclair{border-left: 1px solid #CFD0D2;}
+.border-L-vert{border-left: 1px solid #ADC91F;}
+.border-L-violet{border-left: 1px solid #93117E;}
+.border-L-anthracite{border-left: 1px solid #606171;}
+.border-L-rose { border-left: 1px solid #E2007A;}
 /*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
 .rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
 .rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}
@@ -552,7 +566,7 @@ border-left: 1px solid #ADC91F;
     float:left;
     position:relative;
     padding:5px;
-    width: 650px;
+    width: 725px;/*650 px avant modif*/
 
 }
 #right-content-offre-ct-pro {
@@ -1048,6 +1062,14 @@ background-color:#EFEFEF;
 }
 #footer-portail a:hover{
     text-decoration: underline;
+}
+/*--------------------------------
+        PAGE PORTAIL
+----------------------------------*/
+.squeeze-gauche{float: left;}
+a.popups-processed {
+    background: none;/*retrait de l'icone de popups API*/
+ 
 }
 /*_______________________________
 ----- TPL NEWSLETTER ----------*/

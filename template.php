@@ -212,6 +212,14 @@ $options['attributes']['target'] = '_blank';
 }
 ?>
 <?php
+//Pour utiliser popups API et afficher du contenu dans une fenetre modale
+popups_add_popups(array(
+    '#webform-popup'=>array(
+        'hijackDestination' => FALSE, // If TRUE, the popup incorrectly reloads the current page after you submit.
+    ),
+));
+?>
+<?php
 // HTML format for the webform mail - envoi mail au format HTML
 /*function phptemplate_webform_mail_headers($form_values, $node, $sid, $cid) {
   $headers = array(

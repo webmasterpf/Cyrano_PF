@@ -214,3 +214,8 @@ padding:0;
     padding: 0;
     width: 990px;
 }
+/*-------------------------------
+-----  DIAPO HP ---------------*/
+#diapo-HP{margin: 0 auto;width: 95%;}
+#diapo-HP img{border: 2px solid #91127D;padding: 1px;}
+#diapo-HP{}

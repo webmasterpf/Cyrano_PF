@@ -30,7 +30,7 @@
   </thead>
   <tbody>
     <?php foreach ($rows as $count => $row): ?>
-      <tr class="diplome-domaine"">
+      <tr class="diplome-domaine">
         <?php foreach ($row as $field => $content): ?>
           <td class="views-field views-field-diplome">
             <?php print $content; ?>

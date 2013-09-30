@@ -150,13 +150,7 @@ color: #000000;
     width: auto;
 }
 /**----Fin FOOTER---***/
-#content-top, #content-top-pageLycee, #content-top-detailActu-presse{
-    margin:0 auto;
-    padding:5px;
-    width:970px;
-    height:auto;
-    background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
-   }
+
   /*------------------------------------------------------*
   *------------ CSS H  ----*
   *------------------------------------------------------*/
@@ -217,8 +211,25 @@ h6 {
  /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
 ********** LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+ #content-top, #content-top-pageLycee, #content-top-detailActu-presse{
+    margin:0 auto;
+    padding:5px;
+    width:95%;
+    height:auto;
+    background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
+   }
+    /*_________ COLONNES DE BASE POUR NODE.TPL _____*/
+ #colonne-1{
+     padding: 3px;
+}
+#colonne-2{
+    padding: 3px;
+}
+#colonne-3{
+    padding: 3px;
+}
+
 /*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
-#colonne-1{float: left; }
 .col1_layout_200_570_200{
     width: 200px;
 }
@@ -227,11 +238,22 @@ h6 {
 .col1_layout_225_720{width: 225px;}
 .col1_layout_250_700{width: 250px;}
 .col1_layout_305_660{width: 305px;}
-/*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
-#colonne-2, #middle-content-override{
-    padding: 5px;float: left;
+@media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
+  #colonne-1,#colonne-2, #middle-content-override{float: left;}
+#colonne-3{float: right;}
+    
+  .col1_form_squeeze{width: 15%;margin: 0;}
+  .col2_form_squeeze{width: 66%;margin: 0;}
+  .col3_form_squeeze{width: 15%;margin: 0;}
+  }
+@media screen and (max-width : 1023px) { /* appliqué uniquement sur petits écrans */
+ #colonne-1,#colonne-2,#colonne-3, #middle-content-override{float: none;padding: 0 1em;}
 
-}
+.col1_form_squeeze,.col2_form_squeeze,.col3_form_squeeze{width: 95%;margin: 0;}
+  }
+
+/*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
+
 .col2_layout_200_570_200{width: 570px;float: left;
 }
 .col2_layout_330_all{}
@@ -924,16 +946,7 @@ background-color:#EFEFEF;
 	padding:5px;
         margin: 0 auto;
  }
- /*_________ COLONNES DE BASE POUR NODE.TPL _____*/
- #colonne-1{
-     padding: 3px;
-}
-#colonne-2{
-    padding: 3px;
-}
-#colonne-3{
-    padding: 3px;
-}
+
 /*--------------------------------------------
 ~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
 Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤  PAGE.TPL ET NODE.TPL Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤Â¤
@@ -1023,6 +1036,7 @@ background-color:#EFEFEF;
 /*--------------------------------
         PAGE PORTAIL
 */
+#header-rwd{width: 60%;margin: 0 auto;padding: 0;}
 #name-and-slogan-portail, #site-slogan-portail{
     background: #606070;
     color: white;
@@ -1039,17 +1053,21 @@ background-color:#EFEFEF;
 
 	margin:0 auto;
 	padding:20px 0;
-	width: 990px;
+	width: 60%;
 	background-color:white;
 
 }
 #middle-content-portail{
     width: auto;
 }
+#table-portail{
+    width :100%;
+    border:0;
+}
 #footer-portail{
     margin:0 auto;
 	padding:5px 0;
-	width:980px;
+	width:60%;
 	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
 	text-align: left;
 	color: #9898a6;
@@ -1064,13 +1082,33 @@ background-color:#EFEFEF;
     text-decoration: underline;
 }
 /*--------------------------------
-        PAGE PORTAIL
+        PAGE SQUEEZE
 ----------------------------------*/
+#contentPage-squeeze{margin: 0 auto;padding: 20px 0;
+width: 60%;background-color: transparent;}
 .squeeze-gauche{float: left;}
+.squeeze-droite{float: right;}
+h2.promesse{color: #911381; font-size: 2.5em;text-align: center;
+ animation: h2promesse 4s ease 1.5s infinite;
+-webkit-animation:h2promesse 4s ease 1.5s infinite;}
 a.popups-processed {
     background: none;/*retrait de l'icone de popups API*/
+ }
  
+@media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
+  .text-vertical{margin: 0;}
+  .text-vertical h3{animation: h3decoforms 2s ease 0.5s infinite;
+-webkit-animation:h3decoforms 2s ease 0.5s infinite;
+display: table-caption;
+width: 30em;
+line-height: 1em;
 }
+
+
+/*automodal style popup*/
+.modalframe {border: 2px solid #E2017B;}
+.modalframe .ui-dialog-titlebar {background-color: #606070;}
+.ui-widget-overlay{background: #606070;opacity: 0.6;}
 /*_______________________________
 ----- TPL NEWSLETTER ----------*/
 #middle-content-simplenews{width: 100%;}

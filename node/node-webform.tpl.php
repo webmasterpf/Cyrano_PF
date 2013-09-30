@@ -5,7 +5,7 @@
  */
 
 ?>
-<!-- NODE-WEBFORM.TPL GENERIK -->
+<!-- NODE-WEBFORM.TPL GENERIK -- STANDARD -->
 <div class="node<?php if ($sticky) { print " sticky"; } ?><?php if (!$status) { print " node-unpublished"; } ?>">
    
       <!--______________COLONNE 1________________ -->

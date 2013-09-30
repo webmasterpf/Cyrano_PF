@@ -1276,10 +1276,7 @@ strong#middle-content-fiche-bts {
     text-align: center;
 }
 #table-portail{}
-#table-portail{
-    width :900px;
-    border:0;
-}
+
 #table-portail tr{}
 #table-portail td{
     padding: 5px;

@@ -1,0 +1,51 @@
+/* 
+    Document   : css3effects
+    Created on : 30 sept. 2013, 12:36:09
+    Responsive WD avec Media Queries
+   */
+/*-----------------------------
+-----  SQUEEZE FORMS -----------*/
+/*---¤¤ GLOBAL ¤¤*/
+/*Anim CSS3 pour H2*/
+@keyframes h2promesse{
+     from { color:#E2007A; }
+/*     35%  { color:#E30119; }*/
+     to   { color:#911381; }
+}
+@-webkit-keyframes h2promesse{
+     from { color:#E2007A; }
+/*     35%  { color:#E30119; }*/
+     to   { color:#911381; }
+}
+@keyframes imageclic{
+    from{grayscale(0.6);}
+to  {}
+}
+@-webkit-keyframes imageclic{
+    from{grayscale(0.6);}
+}
+
+@keyframes h3decoforms{
+    from{ color:#C8D20F;}
+    to {color:#F39501;}
+}
+@-webkit-keyframes h3decoforms{
+    from{ color:#C8D20F;}
+    to {color:#F39501;}
+}
+/*-----$$ RWD $$----*/
+@media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
+  .text-vertical h3{
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);}
+  }
+@media screen and (max-width : 1023px) { /* appliqué uniquement sur petits écrans */
+ .text-vertical h3{
+    animation: h3decoforms 2s ease 0.5s infinite;
+-webkit-animation:h3decoforms 2s ease 0.5s infinite;
+
+}
+}
+
+

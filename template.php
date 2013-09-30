@@ -1,22 +1,27 @@
 <?php
 // permet template suggestions avec page-
-function Cyrano_PF_preprocess(&$vars, $hook)
+function cyrano_pf_preprocess(&$vars, $hook)
 {
-  switch($hook)
+//     debug(array_keys($vars), 'Vars keys');
+//   debug($hook, 'HOOK'); debug($vars, 'VARS');
+   switch($hook)
   {
       case 'page' :
       if (arg(0) == 'node')
       {
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
+        $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
+        
       }
       break;
 
   }
+   
 }
 ?>
 <?php
 // fonction pour avoir la possibilité de faire un template pour page recherche
-function Cyrano_PF_preprocess_page(&$vars) {
+function cyrano_pf_preprocess_page(&$vars) {
   if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
     if ($alias != $_GET['q']) {
@@ -43,10 +48,10 @@ function theme_name_webform_view_messages($node, $teaser, $page, $submission_cou
 <?php
 /*
 // permet de trier la taxonomie - utilisé sur les fiches formations
-//pour afficher corrrectement la taxonomie en bas de page via "print Cyrano_PF_print_terms"
+//pour afficher corrrectement la taxonomie en bas de page via "print cyrano_pf_print_terms"
 //http://drupalfr.org/node/23218#comment-35519
 */
-function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
+function cyrano_pf_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
      $vocabularies = taxonomy_get_vocabularies();
      if ($ordered_list) $output .= '<ul>'; //checks to see if you want an ordered list
      if ($vid) { //checks to see if you've passed a number with vid, prints just that vid
@@ -105,7 +110,7 @@ function Cyrano_PF_print_terms($node, $vid = NULL, $ordered_list = TRUE) {
 * @return string $output
 *   La taxonomy présente sur le noeud correspondant à ce vocabulaire.
 */
-function Cyrano_PF_taxonomy_specifique($node, $vid) {
+function cyrano_pf_taxonomy_specifique($node, $vid) {
   $output = '';
   if (count($node->taxonomy)) {
     $taxonomys = array();
@@ -125,7 +130,7 @@ function Cyrano_PF_taxonomy_specifique($node, $vid) {
 ?>
 <?php
 //Pour afficher une seule taxonomie dans la fiche de poste bts alternance  - http://drupal.org/node/823918
-function Cyrano_PF_preprocess_node(&$vars) {
+function cyrano_pf_preprocess_node(&$vars) {
     /**
 * Override or insert variables into the node templates.
 *
@@ -157,7 +162,7 @@ suppress the "blog it" icon & links should the module ever be enabled.
 (Code removed--not commented out--from this copy of the original function.)
  * drupal.org/node/573054 */
 
-function Cyrano_PF_aggregator_block_item($item, $feed = 0) {
+function cyrano_pf_aggregator_block_item($item, $feed = 0) {
   global $user;
 
   $output = '';
@@ -168,7 +173,7 @@ function Cyrano_PF_aggregator_block_item($item, $feed = 0) {
   return $output;
 }
 /**Enleve le lien en savoir plus - NE PAS OUBLIER DE CHANGER LE NOM DU THEME !!!___*/
-function Cyrano_PF_more_link ($url, $title) {
+function cyrano_pf_more_link ($url, $title) {
   if (stristr( $url, 'aggregator')) {
     return "";
   }
@@ -177,7 +182,7 @@ function Cyrano_PF_more_link ($url, $title) {
 <?php
 // permet d'ouvrir en blank les fichiers uploadés via filefield
 //NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
-function Cyrano_PF_filefield_file($file) {
+function cyrano_pf_filefield_file($file) {
   // Views may call this function with a NULL value, return an empty string.
   if (empty($file['fid'])) {
     return '';
@@ -213,11 +218,11 @@ $options['attributes']['target'] = '_blank';
 ?>
 <?php
 //Pour utiliser popups API et afficher du contenu dans une fenetre modale
-popups_add_popups(array(
-    '#webform-popup'=>array(
-        'hijackDestination' => FALSE, // If TRUE, the popup incorrectly reloads the current page after you submit.
-    ),
-));
+//popups_add_popups(array(
+//    '#webform-popup'=>array(
+//        'hijackDestination' => FALSE, // If TRUE, the popup incorrectly reloads the current page after you submit.
+//    ),
+//));
 ?>
 <?php
 // HTML format for the webform mail - envoi mail au format HTML
@@ -234,11 +239,11 @@ popups_add_popups(array(
 <?php
 /* Fonction pour splitter le contenu de $body en plusieurs colonnes
  * S'utilise en insérant dans le node.tpl
- * $output = Cyrano_PF_split_bodycontent ($content);
+ * $output = cyrano_pf_split_bodycontent ($content);
     print $output;
  * dans le node-custom.tpl et en ajoutant le tag <columns> dans le corps du node
  */
-function Cyrano_PF_split_bodycontent ($colcontent) {
+function cyrano_pf_split_bodycontent ($colcontent) {
     $coloutput =  "";
     $string = "<columns>";
     $columns = explode($string,$colcontent); // cut the text for splitting the body into columns

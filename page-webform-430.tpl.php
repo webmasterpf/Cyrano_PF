@@ -1,5 +1,15 @@
 <?php
-/* Permet de faire une page portail sans le header classique
+/* 
+ * Permet d'avoir un template spécial pour le webform
+ * NODE-WEBFORM.TPL GENERIK si besoin possible faire theme pour webform selon node-webform-NID.tpl.php
+ * Profil eleve : 419(dev) / 430(prod)
+ * Profil entreprise : 420(dev) / 431(prod)
+ */
+
+?>
+<?php
+/* Permet de faire une page sans le header classique (pas de menu)
+ * 
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -14,15 +24,15 @@
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 <body class="<?php print $body_classes; ?>">
-    <!-- TEMPLATE PAGE PORTAIL DE BASE  -->
+    <!-- TEMPLATE PAGE EPUREE DE BASE  --- PAGE-WEBFORM-[NID].TPL -- NID430 -->
   <div id="page">
     <div id="header-rwd">
       <div id="logo-title">
 
         <?php if (!empty($logo)): ?>
-          <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+<!--          <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">-->
             <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          </a>
+<!--          </a>-->
         <?php endif; ?>
 
         <div id="name-and-slogan-portail">
@@ -46,7 +56,7 @@
 
     </div> <!-- /header -->
 
-    <div id="contentPage-portail" class="clear-block">
+    <div id="contentPage-squeeze" class="clear-block">
 
        <?php if ($content_top): ?>
             <div id="content-top">
@@ -76,9 +86,12 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
           <div id="middle-content-portail" class="clear-block">
-               <?php if (!empty($title)): ?><h1 class="portail-title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+               <?php if (!empty($title)): ?><h1 class="portail-title" id="page-title"><?php //print $title; ?></h1><?php endif; ?>
                
-            <?php print $content; ?>
+          
+  <?php print $content; ?>
+  
+
           </div> <!-- /content-content -->
         </div> <!-- /content -->
 
@@ -90,7 +103,8 @@
     </div> <!-- /container -->
 
     <div id="footer-wrapper">
-      <div id="footer-portail">
+      <div id="footer-squeeze">
+<?php //retrait des infos du footer y compris logo ?>          
         <?php print $footer_message; ?>
         <?php if (!empty($footer)): print $footer; endif; ?>
       </div> <!-- /footer -->

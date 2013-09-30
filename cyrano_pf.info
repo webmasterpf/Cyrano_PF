@@ -28,7 +28,8 @@ stylesheets[all][] = css/navigation/superfish/blue.css
 stylesheets[all][] = css/css_galeries/views_galleriffic_default.css
 stylesheets[all][] = css/css_galeries/views_showcase.css
 stylesheets[all][] = css/css_galeries/views_slideshow.css
-
+;style CSS3
+stylesheets[all][] = css/css3effects.css
 
 regions[bandeau1] = Bandeau haut de page
 regions[header] = Header

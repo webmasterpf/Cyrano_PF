@@ -16,6 +16,22 @@ Drupal.behaviors.goTop = function(context) {
      $('html,body').animate({scrollTop:0},'slow');//smooth scroll
   });
 }
+//Redirection active pour Automodal (popup)
+//$(document).ready(function() {
+//$('a.automodal').each(function() {
+//  var href = this.href;
+//  if (href.indexOf('?') != -1) {
+//  //if this URL has other parameters
+//href = href + '&automodalReload=true';
+//  }
+//  else {
+//href = href + '?automodalReload=true';
+//  }
+//  $(this).attr('href', href);
+//});
+//});
+
+//****** ANALYTICS *******
 //Suivre les soumissions des webform
 jQuery(document).ready(function($) {
 // Track submission events for all forms with class="webform-client-form".
@@ -64,5 +80,19 @@ jQuery(document).ready(function($) {
 // Track submission events 
   $('#webform-client-form-389').submit(function() {
 _gaq.push(['_trackEvent', 'Webform-389 BTS(choix)', 'Form submission-389']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 430
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-430').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-430 Profil Etudiant', 'Form submission-430']);
+  });
+});
+//Suivre les soumissions d'un formulaire particulier: 431
+jQuery(document).ready(function($) {
+// Track submission events 
+  $('#webform-client-form-431').submit(function() {
+_gaq.push(['_trackEvent', 'Webform-431 Profil Entreprise', 'Form submission-431']);
   });
 });

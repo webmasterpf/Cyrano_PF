@@ -14,9 +14,11 @@
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 <body class="<?php print $body_classes; ?>">
-    <!-- TEMPLATE PAGE PORTAIL DE BASE  -->
+    <!-- // --
+    TEMPLATE PAGE SQUEEZE DE BASE  
+    -- // -->
   <div id="page">
-    <div id="header">
+    <div id="header-rwd">
       <div id="logo-title">
 
         <?php if (!empty($logo)): ?>
@@ -46,7 +48,7 @@
 
     </div> <!-- /header -->
 
-    <div id="contentPage-portail" class="clear-block">
+    <div id="contentPage-squeeze" class="clear-block">
 
        <?php if ($content_top): ?>
             <div id="content-top">
@@ -76,7 +78,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
           <div id="middle-content-portail" class="clear-block">
-               <?php if (!empty($title)): ?><h1 class="portail-title" id="page-title"><?php //print $title; ?></h1><?php endif; ?>
+   
                
             <?php print $content; ?>
             <!-- region-->

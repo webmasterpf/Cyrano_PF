@@ -1294,6 +1294,42 @@ strong#middle-content-fiche-bts {
 #table-portail img{
     box-shadow: 0px 0px 5px #606070;
 }
+/*-----------------------------------
+====== PAGES SPECIALES ============*/
+.squeeze-droite img:hover ,.squeeze-gauche img:hover{
+      filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+behavior: url(/sites/all/libraries/PIE/PIE.htc);        
+}
+.squeeze-droite img ,.squeeze-gauche img{
+-webkit-animation: fade 1s alternate 100;
+ animation: fade 1s alternate 100;
+ behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+.squeeze-droite img:focus ,.squeeze-gauche img:focus{
+-webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  animation-play-state:paused;
+ behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+
+.merci{-webkit-box-shadow:  0px 0px 5px 1px ;
+        box-shadow:  0px 0px 5px 1px ;
+padding: 10px;
+/*background: url("../images/bg-merci.gif") repeat;*/
+background: url("../images/zebra-gros-clair.gif") repeat;
+animation: animatedBackground 65s linear infinite;
+-webkit-animation:animatedBackground 65s linear infinite;
+behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+.merci h3{color: #4e4d5e;
+
+}
+.merci a{color: #D63E2A;}
+.merci a:hover{color: #91127D;}
 /*=
 == WEBFORM - FORMULAIRES =====
 */

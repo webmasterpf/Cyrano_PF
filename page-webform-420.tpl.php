@@ -11,18 +11,8 @@
  *
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
-
-<head>
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
-  <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
-</head>
-<body class="<?php print $body_classes; ?>">
+<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header_light.php'); ?>
+<body class="<?php print $body_classes; ?> form-profil">
     <!-- TEMPLATE PAGE EPUREE DE BASE  --- PAGE-WEBFORM-[NID].TPL -- 420 -->
   <div id="page">
     <div id="header-rwd">
@@ -113,6 +103,9 @@
     </div> <!-- /footer-wrapper -->
 
   </div> <!-- /page -->
-<div id="bloc_stats"><?php include "js/code_stats.php";?></div>
+<div id="bloc_stats">
+    <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/js/code_stats.php'); ?>
+    </div>
+<?php print $closure ?>
 </body>
 </html>

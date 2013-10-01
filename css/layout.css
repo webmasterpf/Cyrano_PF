@@ -1094,16 +1094,11 @@ h2.promesse{color: #911381; font-size: 2.5em;text-align: center;
 a.popups-processed {
     background: none;/*retrait de l'icone de popups API*/
  }
- 
-@media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
-  .text-vertical{margin: 0;}
-  .text-vertical h3{animation: h3decoforms 2s ease 0.5s infinite;
--webkit-animation:h3decoforms 2s ease 0.5s infinite;
-display: table-caption;
-width: 30em;
-line-height: 1em;
-}
 
+@media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
+     .text-vertical{}
+  .text-vertical h3{}
+}
 
 /*automodal style popup*/
 .modalframe {border: 2px solid #E2017B;}

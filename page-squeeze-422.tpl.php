@@ -1,20 +1,12 @@
 <?php
-/* 
- * Permet d'avoir un template spécial pour le webform
- * NODE-WEBFORM.TPL GENERIK si besoin possible faire theme pour webform selon node-webform-NID.tpl.php
- * Profil eleve : 419(dev) / 430(prod)
- * Profil entreprise : 420(dev) / 431(prod)
- */
-
-?>
-<?php
-/* Permet de faire une page sans le header classique (pas de menu)
- * 
+/* Permet de faire une page portail sans le header classique
  */
 ?>
 <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header_light.php'); ?>
-<body class="<?php print $body_classes; ?> form-profil">
-    <!-- TEMPLATE PAGE EPUREE DE BASE  --- PAGE-WEBFORM-[NID].TPL -- NID430 -->
+<body class="<?php print $body_classes; ?>">
+    <!-- // --
+    TEMPLATE PAGE SQUEEZE DE BASE  
+    -- // -->
   <div id="page">
     <div id="header-rwd">
       <div id="logo-title">
@@ -75,12 +67,14 @@
 
             </div> <!-- /#content-header -->
           <?php endif; ?>
-          <div id="middle-content-portail" class="clear-block">
-               <?php if (!empty($title)): ?><h1 class="portail-title" id="page-title"><?php //print $title; ?></h1><?php endif; ?>
+          <div id="middle-content-portail" class="merci clear-block">
+   
                
-          
-  <?php print $content; ?>
-  
+            <?php print $content; ?>
+            <!-- region-->
+              <?php if (!empty($col_G1)): ?>
+                <?php print $col_G1; ?>
+            <?php endif; ?> 
 
           </div> <!-- /content-content -->
         </div> <!-- /content -->
@@ -94,7 +88,6 @@
 
     <div id="footer-wrapper">
       <div id="footer-squeeze">
-<?php //retrait des infos du footer y compris logo ?>          
         <?php print $footer_message; ?>
         <?php if (!empty($footer)): print $footer; endif; ?>
       </div> <!-- /footer -->

@@ -658,7 +658,15 @@ table.galerie-modale-actu a:hover{}
 #block-views-GA_theming-block_1{margin: 5px auto;}
 #block-views-GA_theming-block_1{}
 #block-views-GA_theming-block_1 img{border: 2px solid #00ACD1;padding: 1px;}
-
+/*Table pour JPO*/
+.table-jpo{display: block;margin: 0 auto;width: 95%;}
+.table-jpo tbody{}
+.table-jpo tr{ border-bottom: 1px solid #E86064;display: block;margin: 0.3em 0;}
+.table-jpo tr:hover{background: #F2F2F2;}
+.table-jpo td{padding: 0 0.9em;}
+.table-jpo a{}
+.table-jpo a:hover{}
+/*Zone actu au hasard (Views)*/
 #block-views-liste_actu-block_1 h3{font-size: 1.8em;font-style: italic;}
 table#actu-hasard
 {background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;}
@@ -668,6 +676,7 @@ table#actu-hasard{}
 table#actu-hasard a{color: #E0001A;}
 table#actu-hasard img{border: 2px solid #ADC91F;margin: 2px;}
 table#actu-hasard td{margin: 3px;width: 24%;padding: 5px 0;}
+
 /*-----------  REDESIGN ACTU GLOBALE
 ---------------------------------------*/
 /*TITRES*/

@@ -8,6 +8,7 @@
  * - $class contains the class of the table.
  * - $attributes contains other attributes for the table.
  * @ingroup views_templates
+ * 
  */
 ?>
 <?php if (!empty($title)) : ?>

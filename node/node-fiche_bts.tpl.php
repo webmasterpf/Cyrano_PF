@@ -78,6 +78,7 @@
          <?php if ($node->field_detail_fiche_bts[0]['view']): ?>
         <div id="fiche-detaille-bts">
                 <?php  print $node->field_detail_fiche_bts[0]['view'] ?>
+            <?php  print $node->field_detail_fiche_bts[1]['view'] ?>
         </div>
    <?php endif; ?>
                   </td>

@@ -252,30 +252,29 @@
 }
 /*-----$$ RWD $$----*/
 @media screen and (min-width : 1024px) { /* appliqué uniquement sur grands écrans */
-  .text-vertical h3{
--webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
-  }
+    .text-vertical h3{
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    }
   .form-profil{
-    background: url(../images/bg-form-profil-gd.gif) no-repeat center fixed; 
-  -webkit-background-size: contain; /* pour Chrome et Safari */
-  -moz-background-size: contain; /* pour Firefox */
-  -o-background-size: contain; /* pour Opera */
-  background-size: contain; /* version standardisée */
-}
+      background: url(../images/bg-form-profil-gd.gif) no-repeat center fixed; 
+      -webkit-background-size: contain; /* pour Chrome et Safari */
+      -moz-background-size: contain; /* pour Firefox */
+      -o-background-size: contain; /* pour Opera */
+      background-size: contain; /* version standardisée */
+  }
   }
 @media screen and (min-width: 550px) and (max-width : 1023px) { /* appliqué uniquement sur petits écrans */
- .text-vertical h3{}
+.text-vertical h3{}
 .form-profil{
     background: url(../images/bg-form-profil.gif) no-repeat center fixed; 
-  -webkit-background-size: contain; /* pour Chrome et Safari */
-  -moz-background-size: contain; /* pour Firefox */
-  -o-background-size: contain; /* pour Opera */
-  background-size: contain; /* version standardisée */
+    -webkit-background-size: contain; /* pour Chrome et Safari */
+    -moz-background-size: contain; /* pour Firefox */
+    -o-background-size: contain; /* pour Opera */
+    background-size: contain; /* version standardisée */
 }
 }
 @media screen and (max-width: 549px) { /*Pour ecran mobile*/
     .form-profil{}
 }
-

@@ -82,3 +82,10 @@ ul.primary li{}
 ul.primary li.active a{color: #EB512F;}
 ul.primary li a{color: #606071;}
 ul.primary li a:hover{color:#E2017B;}
+
+/*
+== Message status ==
+*/
+#content-header .messages.status{
+    p{color: #E2017B; font-size: 16px; }
+}

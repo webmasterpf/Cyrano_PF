@@ -20,9 +20,9 @@
        <br clear="all"/>
       
       <?php if ($node->field_complement_fiche_bts[0]['view']): ?>
-      <span id="complement-bts">
+       <div class="complement-bts"><span><span><span>
                  <?php  print $node->field_complement_fiche_bts[0]['view'] ?>
-      </span>
+               </span></span></span></div>
              <?php endif; ?>
     
       <br clear="all"/>

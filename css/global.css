@@ -1143,8 +1143,45 @@ span#DossierBTS{}
     
 
 }
-#complement-bts h3{color: #00AAD2;}
+.complement-bts h3{color: #00AAD2;}
 #abreviation-bts{text-align: right;display: block;margin: 5px;}
+/*effet css3 pour fiche BTS*/
+#left-content-fiche-bts .complement-bts{
+  	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	rotation:45deg;
+	position:relative;
+	top:2em;
+	left:2em;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+        margin: 0 5em;
+	
+}
+#left-content-fiche-bts .complement-bts span{
+	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(-21.5deg);
+	-moz-transform:rotate(-21.5deg);
+	rotation:22.5deg;
+}
+@-webkit-keyframes blinker { from { opacity: 1.0; } to { opacity: 0.0; } }
+#left-content-fiche-bts .complement-bts span p{
+	text-decoration: blink;
+        -webkit-animation-name: blinker; -webkit-animation-iteration-count: infinite; 
+        -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0); 
+        -webkit-animation-duration: 1s; 
+       }
+ 
+ 
 /*table infos pratiques*/
 table#infos-pratiques-bts{ 
     border-top: 1px solid  #ACC624;

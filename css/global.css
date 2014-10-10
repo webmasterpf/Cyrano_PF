@@ -1153,7 +1153,7 @@ span#DossierBTS{}
 	background:#fe0;
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
-	rotation:45deg;
+	transform: rotate(45deg);/*Pour IE*/
 	position:relative;
 	top:2em;
 	left:2em;
@@ -1171,14 +1171,40 @@ span#DossierBTS{}
 	background:#fe0;
 	-webkit-transform:rotate(-21.5deg);
 	-moz-transform:rotate(-21.5deg);
-	rotation:22.5deg;
+	transform: rotate(-22.5deg);/*Pour IE*/
 }
-@-webkit-keyframes blinker { from { opacity: 1.0; } to { opacity: 0.0; } }
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
 #left-content-fiche-bts .complement-bts span p{
-	text-decoration: blink;
-        -webkit-animation-name: blinker; -webkit-animation-iteration-count: infinite; 
-        -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0); 
-        -webkit-animation-duration: 1s; 
+	-webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
        }
  
  
